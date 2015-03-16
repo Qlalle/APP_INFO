@@ -14,7 +14,9 @@ div#conteneur
     text-align: left ;
     border: 2px solid #ab4 ;
     background: #fff ;
-    background-image:url(prairie.jpeg);
+    background-image:url(vaches2.png);
+    height: 1135px;
+
 }
 h1#header
 {
@@ -27,67 +29,24 @@ h1#header
 }
 h1#header a
 {
-    width: 50px ;
-    height: 20px ;
+    width: 400px ;
+    height: 150px ;
     display: block ;
     background: url(Logo2.png) no-repeat ;
     position: relative ;
-    left: 55px ;
-    top: 260px ;
-    text-indent: -50px ;
-    font-family: "apple chancery";
-    font-size: 25px;
-    color : black;
+    left: 250px ;
+    top: 10px ;
+    text-indent: -5000px ;
 }
 
 header {
-    height: 400px;
+    height: 320px;
 }
-span#prix
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -10px ;
 
-}
-span#photo
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -30px ;
 
-}
-span
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -50px ;
 
-}
-span#region
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -80px ;
 
-}
-span#description
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -200px ;
 
-}
 
 p#pseudo
 {
@@ -130,8 +89,15 @@ a#ra{
     width:1040px; 
     height:0;
     color: black ;
-    top : -170;
+    top : -220;
     left:555;
+}
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
 }
 div#forum
 {
@@ -159,97 +125,75 @@ div#searchbar
     width:1040px; 
     height:0;
     color: #8a0 ;
-    top : -300;
+    top : -250;
     right:0;
 
 }
-ul#menu
+#onglets
 {
-    height: 50px ;
-    margin: 0 ;
-    padding: 0 ;
-    background: url(bg_menu.gif) repeat-x 0 -25px ;
-    list-style-type: none ;
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    top : -20px;
+    left : 105px;
+    position: relative;
 }
-ul#menu li
+#onglets li
 {
-    float: left; 
-    text-align: center ;
+    float : left;
+    height : 80px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    margin : 3px 3px 0 3px !important;  /* Pour les navigateurs autre que IE */
 }
-ul#menu li a
+#onglets li.active
 {
-    width: 160px ;
-    line-height: 25px ;
-    font-size: 1.2em ;
-    font-weight: bold ;
-    letter-spacing: 2px ;
-    color: #fff ;
-    display: block ;
-    text-decoration: none ;
-    border-right: 2px solid #dea ;
+    border-bottom: 1px solid green;
+    background-color: green;
+    border-radius: 5px 10px 0 5px;
 }
-ul#menu li a:hover
+#onglets a
 {
-    background: url(bg_menu.gif) repeat-x 0 0 ;
-    text-align: center;
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 10px 10px;
+    font-size: 35px;
+    display: block;
 }
+#Basdepage
+{
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 47px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    margin: 0 auto;
+    top : -20px;
+    left : -17px;
+    position: relative;
+}
+#Basdepage li
+{
+    float : left;
+    margin : 5px 5px 5px 5px !important;  /* Pour les navigateurs autre que IE */
+}
+#Basdepage a
+{
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 20px;
+    font-size: 35px;
+    display: block;
 
-div#contenu
+    }
+div#corp{
+    background-image:url(fond.png);
+}
+table
 {
     border-collapse: collapse;
-    background-image:url(Fond.png);
-    }
-
-
-
-h3{
-    height: 50px ;
-    margin: auto;
-    padding: auto ;
+    background-image:url(fond.png);
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ul#Basdepage
+td, th /* Mettre une bordure sur les td ET les th */
 {
-    height: 50px ;
-    margin: auto;
-    padding: auto ;
-    background: url(bg_menu.gif) repeat-x 0 -25px ;
-    list-style-type: none ;
-}
-ul#Basdepage li
-{
-    float: left; 
-    text-align: center ;
-}
-ul#Basdepage li a
-{
-    width: 180px ;
-    line-height: 25px ;
-    font-size: 1.2em ;
-    font-weight: bold ;
-    letter-spacing: 2px ;
-    color: #fff ;
-    display: block ;
-    text-decoration: none ;
-    border-right: 2px solid #dea ;
-}
-ul#Basdepage li a:hover
-{
-    background: url(bg_menu.gif) repeat-x 0 0 ;
     text-align: center;
 }

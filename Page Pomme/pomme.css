@@ -14,19 +14,15 @@ div#conteneur
     text-align: left ;
     border: 2px solid #ab4 ;
     background: #fff ;
-<<<<<<< HEAD
-    background-image:url(prairie.jpeg);
-=======
-    background-image:url(vaches2.png);
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
+    background-image:url(fond.jpg);
 }
 h1#header
 {
-    height: 270px;
+    height: 250px;
     background: url(Logo.png) no-repeat left top;
     margin: 0 ;
     position: relative ;
-    left: 40px ;
+    left: 50px ;
     top: 20px ;
 }
 h1#header a
@@ -40,11 +36,7 @@ h1#header a
     text-indent: -50px ;
     font-family: "apple chancery";
     font-size: 25px;
-<<<<<<< HEAD
-    color : 497A37;
-=======
     color : black;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
 }
 
 header {
@@ -102,11 +94,7 @@ p#pseudo
     padding-right: 10px ;
     line-height: 3px ;
     text-align: right ;
-<<<<<<< HEAD
-    color: #8a0 ;
-=======
     color: black ;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
     position:relative;
     top: -250;
     right:30;
@@ -117,11 +105,7 @@ p#mdp
     padding-right: 10px ;
     line-height: 30px ;
     text-align: right ;
-<<<<<<< HEAD
-    color: #8a0 ;
-=======
     color: black ;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
     position:relative;
     top:-250;
     right:30;
@@ -168,7 +152,6 @@ div#searchbar
     right:0;
 
 }
-<<<<<<< HEAD
 ul#menu
 {
     height: 50px ;
@@ -200,74 +183,55 @@ ul#menu li a:hover
     text-align: center;
 }
 
-=======
-#onglets
-{
-    font-family:  "apple chancery";
-    list-style-type : none;
-    padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
-    top : -20px;
-    left : 50px;
-    position: relative;
-}
-#onglets li
-{
-    float : left;
-    height : 80px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
-    margin : 3px 3px 0 3px !important;  /* Pour les navigateurs autre que IE */
-}
-#onglets li.active
-{
-    border-bottom: 1px solid green;
-    background-color: green;
-    border-radius: 5px 10px 0 5px;
-}
-#onglets a
-{
-    display : block;
-    color : orange;
-    text-decoration : none;
-    padding : 10px 10px;
-    font-size: 35px;
-    display: block;
-}
-#Basdepage
-{
-    font-family:  "apple chancery";
-    list-style-type : none;
-    padding-bottom : 47px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
-    margin: 0 auto;
-    top : -20px;
-    left : -10px;
-    position: relative;
-}
-#Basdepage li
-{
-    float : left;
-    margin : 5px 5px 5px 5px !important;  /* Pour les navigateurs autre que IE */
-}
-#Basdepage a
-{
-    display : block;
-    color : orange;
-    text-decoration : none;
-    padding : 20px;
-    font-size: 35px;
-    display: block;
-}
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
-table
+div#contenu
 {
     border-collapse: collapse;
     background-image:url(Fond.png);
-    
-}
-td, th /* Mettre une bordure sur les td ET les th */
+    }
+
+
+
+table
 {
-    text-align: center;
+    border-collapse: collapse;
+}
+td,tr{text-align: center;}
+
+
+table
+{
+    margin:10px 0;
+    padding: 0;
+    text-align: center ;
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    background: #dea ;
 }
 
-<<<<<<< HEAD
+
+
+
+ div#deux
+{
+   position:relative;
+    top:-10;
+    right:-10;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 20px;
+    color:red;
+ }
+
+ div#quatre
+{
+ border:1px dotted black;
+ }
+
+
+
+
+
+
+
+
 
 ul#Basdepage
 {
@@ -299,5 +263,42 @@ ul#Basdepage li a:hover
     background: url(bg_menu.gif) repeat-x 0 0 ;
     text-align: center;
 }
-=======
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
+
+pre
+{
+    overflow: auto ;
+    background: #dea ;
+    border: 2px solid #9b2 ;
+    padding: 5px 0 0 5px ;
+    font-size: 1.2em ;
+}
+
+pre span
+{
+    color: #560 ;
+}
+
+pre span.comment
+{
+    color: #b30000 ;
+}
+
+
+
+#quentin{
+
+
+width:200px;
+height:auto;
+left:0;
+margin-left: 5%; 
+
+}
+
+#pomme{
+width:500px;
+height:auto;
+margin-left: 40%; 
+position: relative;
+
+}

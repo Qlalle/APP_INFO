@@ -14,11 +14,7 @@ div#conteneur
     text-align: left ;
     border: 2px solid #ab4 ;
     background: #fff ;
-<<<<<<< HEAD
-    background-image:url(prairie.jpeg);
-=======
     background-image:url(vaches2.png);
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
 }
 h1#header
 {
@@ -28,6 +24,7 @@ h1#header
     position: relative ;
     left: 40px ;
     top: 20px ;
+
 }
 h1#header a
 {
@@ -40,60 +37,11 @@ h1#header a
     text-indent: -50px ;
     font-family: "apple chancery";
     font-size: 25px;
-<<<<<<< HEAD
-    color : 497A37;
-=======
     color : black;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
 }
 
 header {
     height: 400px;
-}
-span#prix
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -10px ;
-
-}
-span#photo
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -30px ;
-
-}
-span
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -50px ;
-
-}
-span#region
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -80px ;
-
-}
-span#description
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -200px ;
-
 }
 
 p#pseudo
@@ -102,11 +50,7 @@ p#pseudo
     padding-right: 10px ;
     line-height: 3px ;
     text-align: right ;
-<<<<<<< HEAD
-    color: #8a0 ;
-=======
     color: black ;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
     position:relative;
     top: -250;
     right:30;
@@ -117,11 +61,7 @@ p#mdp
     padding-right: 10px ;
     line-height: 30px ;
     text-align: right ;
-<<<<<<< HEAD
-    color: #8a0 ;
-=======
     color: black ;
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
     position:relative;
     top:-250;
     right:30;
@@ -153,7 +93,7 @@ h2#t
     font-family: Gabriola, "Gentium Basic", Georgia;
     font-size: 20px;
     color:red;
-    width: 10px;
+    width :10px;
 }
 
 div#searchbar
@@ -168,39 +108,6 @@ div#searchbar
     right:0;
 
 }
-<<<<<<< HEAD
-ul#menu
-{
-    height: 50px ;
-    margin: 0 ;
-    padding: 0 ;
-    background: url(bg_menu.gif) repeat-x 0 -25px ;
-    list-style-type: none ;
-}
-ul#menu li
-{
-    float: left; 
-    text-align: center ;
-}
-ul#menu li a
-{
-    width: 160px ;
-    line-height: 25px ;
-    font-size: 1.2em ;
-    font-weight: bold ;
-    letter-spacing: 2px ;
-    color: #fff ;
-    display: block ;
-    text-decoration: none ;
-    border-right: 2px solid #dea ;
-}
-ul#menu li a:hover
-{
-    background: url(bg_menu.gif) repeat-x 0 0 ;
-    text-align: center;
-}
-
-=======
 #onglets
 {
     font-family:  "apple chancery";
@@ -255,49 +162,39 @@ ul#menu li a:hover
     font-size: 35px;
     display: block;
 }
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd
-table
-{
+div#corps{
     border-collapse: collapse;
-    background-image:url(Fond.png);
-    
+    background-image:url(Fond22.png);
 }
-td, th /* Mettre une bordure sur les td ET les th */
+span{
+    font-size: 20px;
+    color : red;
+}
+label
 {
-    text-align: center;
+    display: block;
+    width: 150px;
+    float: left;
+    position: relative;
+    left: 20px;
 }
-
-<<<<<<< HEAD
-
-ul#Basdepage
-{
-    height: 50px ;
-    margin: auto;
-    padding: auto ;
-    background: url(bg_menu.gif) repeat-x 0 -25px ;
-    list-style-type: none ;
+p#objet{
+    position: relative;
+    left: 20px;
 }
-ul#Basdepage li
-{
-    float: left; 
-    text-align: center ;
+p#commentaire{
+    position: relative;
+    left: 20px;
 }
-ul#Basdepage li a
-{
-    width: 180px ;
-    line-height: 25px ;
-    font-size: 1.2em ;
-    font-weight: bold ;
-    letter-spacing: 2px ;
-    color: #fff ;
-    display: block ;
-    text-decoration: none ;
-    border-right: 2px solid #dea ;
+p#bouton1{
+    position: relative;
+    left: 500px;
+    top: 45px;
+    width: 140px;
 }
-ul#Basdepage li a:hover
-{
-    background: url(bg_menu.gif) repeat-x 0 0 ;
-    text-align: center;
+p#bouton2{
+    position: relative;
+    left: 300px;
+    top: 10px;
+    width: 140px;
 }
-=======
->>>>>>> 7d1d472d19cd2ac73899332460907c282a32f2cd

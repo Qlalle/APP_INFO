@@ -1,0 +1,156 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bio & Bon</title>
+    <link rel="stylesheet" href="Page vente.css" />
+
+
+</style>
+  </head>
+  
+  <body>
+  <div id="conteneur">    
+    <header>
+    <h1 id="header"><a href="#" title="Bio&Bon">Bio&Bon</a></h1>
+
+  <form method="post" action="traitement.php">
+    <p id="pseudo">
+        <label1>Votre pseudo</label1> : <input type="text" name="pseudo" size="25"/>
+    </p>
+    <p id="mdp">
+
+        <label1>Mot de passe</label1> : <input type="password" name="mot de passe" size="25" />
+    </p>
+    <p id="bouton">
+      <input type="submit" value="Valider" />
+    </p>
+    </form> 
+
+    <div id="forum"> <img src="Livre.png" alt="logo"  />
+  		<h2 id="t" class="Style5">Forum</h2>
+		</div>
+
+    <div id="searchbar">        
+            <form action="" class="formulaire">
+               <input class="champ" type="text" placeholder="Ex : Fraise/pomme de terre" size="70" maxlength="50" />
+               <input class="bouton" type="button" value="Rechercher" />
+            </form>
+    </div>
+
+    <a id="ra" href="#">Recherche avancée</a>
+    
+</header>
+    <div id="menu">
+  <ul id="onglets">
+    <li><a href="Page d'accueil.html"> Accueil </a></li>
+    <li><a href="Page achat.html"> Achat </a></li>
+    <li><a href="Page echange.html"> Echange </a></li>
+    <li><a href="Pagebio.html"> Bio </a></li>
+    <li><a href="#.html"> Promo </a></li>
+    <li class="active"><a href="Page vente.html"> Vente </a></li>
+  </ul>
+</div>
+
+<div id="corps" style="overflow:auto; height: 700px; width: 100%; border: 1px solid orange">
+  <h2>Mettre votre produit en ligne</h2>
+<form method="post" action="traitement.php">
+  <p>
+    <label for="Type">Type de vente*</label><br/>
+    <select name="Vente" id="Vente">
+          <option value"vide"></option>
+          <option value"Echange">Echange</option>
+          <option value"Vente">Vente</option>
+    </select>
+  </p>
+<br/>
+  <p>
+    <label for="produit">Choix du produit*</label><br/>
+    <select name="produit" id="produit">
+       <optgroup label="Fruits">
+          <option value"vide"></option>
+          <option value"Framboise">Framboise</option>
+          <option value"Fraise">Fraise</option>
+          <option value"Pomme">Pomme</option>
+          <option value"Banane">Banane</option>
+       </optgroup>
+       <optgroup label="Legumes">
+          <option value"vide"></option>
+          <option value"Pomme de terre">Pomme de terre</option>
+          <option value"Artichaut">Artichaut</option>
+          <option value"Carotte">Carotte</option>
+          <option value"Poireau">Poireau</option>
+       </optgroup>
+     </select>
+   </p>
+<br/>
+   <p>
+    <label for="Region">Choix de la region*</label><br/>
+    <select name="Region" id="Region">
+          <option value"vide"></option>
+          <option value"Nord-Pas-de-Calais Picardie">Nord-Pas-de-Calais Picardie</option>
+          <option value"Normandie">Normandie</option>
+          <option value"Ile de france">Ile de france</option>
+          <option value"Alsace Champagne-Ardenne Loraine">Alsace Champagne-Ardenne Loraine</option>
+          <option value"Bretagne">Bretagne</option>
+          <option value"Pays de la Loire">Pays de la Loire</option>
+          <option value"Centre Val de Loire">Centre Val de Loire</option>
+          <option value"Bourgogne Franche Comté">Bourgogne Franche Comté</option>
+          <option value"Aquitaine Limousin Poitou-Charentes">Aquitaine Limousin Poitou-Charentes</option>
+          <option value"Auvergne Rhône-Alpes">Auvergne Rhône-Alpes</option>
+          <option value"Languedoc-Roussillon Midi-Pyrénées">Languedoc-Roussillon Midi-Pyrénées</option>
+          <option value"PACA">PACA</option>
+          <option value"Corse">Corse</option>
+    </select>
+  </p>
+<br/>
+  <p>
+    <label for="Qualité">Choix de la qualité*</label><br/>
+    <select name="Qualité" id="Qualité">
+          <option value"vide"></option>
+          <option value"Bio">Bio</option>
+          <option value"Classique">Classique</option>
+    </select>
+  </p>
+  <br/>
+  <br/>
+  <br/>
+
+  <p>
+    <label>Quantité : *</label><input type="number" id="qt",step="1" value="0" min="0", size="10"/>
+  </p>
+  <p>
+    <label>Prix : *</label><input type="number" id="pr",step="1" value="0" min="0"/>
+  </p>
+  <br/>
+
+  <p id="Description">
+
+        <label>Description du produit</label><br/><br/>
+        <textarea name="Description" id="Description" rows="10" cols="50"></textarea>
+  </p>
+  <br/>
+  <br/>
+  <p id="champ">Champ obligatoire : *</p>
+  <br/>
+  <br/>
+
+  <p id="bouton1">
+      <input type="submit" value="Valider" style="width:130px"/>
+    </p>
+
+     <p id="bouton2">
+      <input type="submit" value="Annuler" style="width:130px"/>
+    </p>
+ </form>
+</div>
+    <ul id="Basdepage">
+        <li><a href="Page contact.html">Nous contacter</a></li>
+        <li><a href="#">Plan du site</a></li>
+        <li><a href="Réglement.html">Réglement</a></li>
+        <li><a href="page tarif.html">Tarif</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+  </div>
+  </body>
+</html>

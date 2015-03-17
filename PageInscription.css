@@ -191,9 +191,17 @@ table
 {
     border-collapse: collapse;
     background-image:url(fond.png);
-    
+    text-align: center;
 }
 td, th /* Mettre une bordure sur les td ET les th */
 {
+    text-align: center;
+}
+label {
+    display: block;
+    width: 250px;
+    float: left;
+}
+p{
     text-align: center;
 }

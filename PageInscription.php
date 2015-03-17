@@ -57,34 +57,33 @@
  <tbody >
 <form method="post" >
 
-<label>Adresse*                   <input type="text" name="country"/></label><br/>
-<label>Civilité*              </br> <select name="civilite">
+<label>Adresse*                 </label>  <input type="text" name="country"/><br/>
+<label>Civilité*              </label> <select name="civilite">
     <option value=""></option>
     <option value="M">M</option>
     <option value="Mme">Mme</option>
-</select></label><br/>
-<label>Prénom*                 <input type="text" name="first_name"/></label><br/>
-<label>Nom*                    <input type="text" name="last_name"/></label><br/>
-<label>Date de Naissance*      <input type="date" max="2016-01-01" min="2011-08-13" name="birthday"></label><br/>
-<label>Profession*              <input type="text" name="job"/></label><br/>
-<label>Code postale*            <input type="text" name="user_post_office_box"/></label><br/>
-<label>Ville*                  <input type="text" name="city"/></label><br/>
-<label>E-mail*                 <input type="text" name="email"/></label><br/>
-<label>Confirmez e-mail*       <input type="text" name="email2"/></label><br/>
-<label>Mot de passe*           <input type="password" name="password"/></label><br/>
-<label>Confirmer mot de passe* <input type="password" name="passe2"/></label><br/>
+</select><br/>
+<label>Prénom*                </label> <input type="text" name="first_name"/><br/>
+<label>Nom*                    </label><input type="text" name="last_name"/><br/>
+<label>Date de Naissance*      </label><input type="date" max="2016-01-01" min="2011-08-13" name="birthday"><br/>
+<label>Profession*              </label><input type="text" name="job"/><br/>
+<label>Code postale*           </label> <input type="text" name="user_post_office_box"/><br/>
+<label>Ville*                  </label><input type="text" name="city"/><br/>
+<label>E-mail*                 </label><input type="text" name="email"/><br/>
+<label>Confirmez e-mail*       </label><input type="text" name="email2"/><br/>
+<label>Mot de passe*           </label><input type="password" name="password"/><br/>
+<label>Confirmer mot de passe* </label><input type="password" name="passe2"/><br/>
 <input type="submit" name="valider" value="M'inscrire"/>
 </form>
  </tbody >
 
-</table>
-</div>
+
 <?php
   
   if(isset($_POST['valider']))
     {
   
-        echo 'jai appuié';
+        
 
      // D'abord, je me connecte à la base de données.
      $bdd = new PDO('mysql:host=localhost;dbname=bioetbon;charset=utf8', 'root', '');
@@ -121,13 +120,14 @@
  
           else
           {
-          echo 'Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas';
+          echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
           }
       }
     }
     
 ?>
-
+</table>
+</div>
 
 
 

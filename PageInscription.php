@@ -86,7 +86,7 @@
         
 
      // D'abord, je me connecte à la base de données.
-     $bdd = new PDO('mysql:host=localhost;dbname=bioetbon;charset=utf8', 'root', '');
+     $bdd = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
     
       
       // Je recupere les infos
@@ -117,7 +117,7 @@
 
        
          $passwordh=password_hash($password, PASSWORD_DEFAULT);
-         $reponse = $bdd->query("INSERT INTO users VALUES('', '$country','$civilite', '$first_name','$last_name','$birthday', '$job', '$user_post_office_box', '$city', '$email','$passwordh','','')");
+         $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$user_post_office_box','', '$email','$passwordh','','','')");
          }
  
           else

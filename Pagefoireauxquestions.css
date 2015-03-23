@@ -5,8 +5,8 @@ body
     text-align: center ;
     font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
     background: #dea ;
-   } 
 
+}
 div#conteneur
 {
     width: 1000px ;
@@ -14,65 +14,159 @@ div#conteneur
     text-align: left ;
     border: 2px solid #ab4 ;
     background: #fff ;
-    background-image:url(prairie2.jpg);
+    background-image:url(vaches2.png);
+    height: 865px;
+
 }
-
-
 h1#header
 {
     height: 270px;
     background: url(Logo.png) no-repeat left top;
-    margin: 0px ;
-}
+    margin: 0 ;
+    position: relative ;
+    left: 40px ;
+    top: 20px ;
 
+}
 h1#header a
 {
-    width: 500px ;
+    width: 400px ;
     height: 150px ;
     display: block ;
     background: url(Logo2.png) no-repeat ;
     position: relative ;
-    left: 300px ;
+    left: 250px ;
     top: 10px ;
     text-indent: -5000px ;
 }
 
+header {
+    height: 320px;
+}
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
+#onglets
+{
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    top : -20px;
+    left : 105px;
+    position: relative;
+}
+#onglets li
+{
+    float : left;
+    height : 80px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    margin : 3px 3px 0 3px !important;  /* Pour les navigateurs autre que IE */
+}
+#onglets li.active
+{
+    border-bottom: 1px solid green;
+    background-color: green;
+    border-radius: 5px 10px 0 5px;
+}
+#onglets a
+{
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 10px 10px;
+    font-size: 35px;
+    display: block;
+}
+#Basdepage
+{
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 47px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    margin: 0 auto;
+    top : -20px;
+    left : -17px;
+    position: relative;
+}
+#Basdepage li
+{
+    float : left;
+    margin : 5px 5px 5px 5px !important;  /* Pour les navigateurs autre que IE */
+}
+#Basdepage a
+{
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 20px;
+    font-size: 35px;
+    display: block;
+}
 p#pseudo
 {
     margin: 0 ;
-    padding-right: 10px ;
-    line-height: 30px ;
+    padding-right: 91px ;
+    line-height: 3px ;
     text-align: right ;
-    color: #8a0 ;
+    color: black ;
     position:relative;
-    top: -250px;
-    right:30px;
+    top: -250;
+    right:30;
 }
-
 p#mdp
 {
     margin: 0 ;
-    padding-right: 10px ;
+    padding-right: 91px ;
     line-height: 30px ;
     text-align: right ;
-    color: #8a0 ;
+    color: black ;
     position:relative;
-    top:-250px;
-    right:30px;
+    top:-250;
+    right:30;
 }
-
 p#bouton 
 {
     margin: 0 ;
-    padding-right: 10px ;
+    padding-right: 91px ;
     line-height: 30px ;
     text-align: right; ;
     color: #8a0 ;
     position:relative;
-    top:-250px;
-    right:30px;}
+    top:-250;
+    right:30;
 
-#searchbar
+}
+a#ra{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: black ;
+    top : -220;
+    left:555;
+}
+div#forum
+{
+    position:relative;
+    top:-200;
+    right:-890;
+    width: 10px;
+}
+h2#t
+{
+    position:relative;
+    top:-20;
+    right:-10;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 20px;
+    color:red;
+    width :10px;
+}
+
+div#searchbar
 {
     position:relative; 
     padding-right: 0px ;
@@ -80,121 +174,30 @@ p#bouton
     width:1040px; 
     height:0;
     color: #8a0 ;
-    top : -200;
+    top : -250;
     right:0;
-    top:-34.5px;}
 
-
-ul#Basdepage
-{
-    height: 50px ;
-    margin: auto;
-    padding: auto ;
-    background: url(bg_menu.gif) repeat-x 0 -25px ;
-    list-style-type: none ;
 }
-ul#Basdepage li
-{
-    float: left; 
-    text-align: center ;
-}
-ul#Basdepage li a
-{
-    width: 180px ;
-    line-height: 25px ;
-    font-size: 1.2em ;
-    font-weight: bold ;
-    letter-spacing: 2px ;
-    color: #fff ;
-    display: block ;
-    text-decoration: none ;
-    border-right: 2px solid #dea ;
-}
-ul#Basdepage li a:hover
-{
-    background: url(bg_menu.gif) repeat-x 0 0 ;
-    text-align: center;
-}
-
-table
+div#corps
 {
     border-collapse: collapse;
     background-image:url(Fond.png);
     margin: 0 auto;
-    width:700px;
+    width:300px;
     height:50px;
 }
 
-td#Titrefoire{
-    text-align: center;
-    line-height:100px;
-     width:200px;
-     margin: 10px 0 ;
-     border:2px solid black ;
-     background-color:#FFFF66;
-     font-family:"Lucida Calligraphy";
-     font-size:55px;
-
-
-}
-
-#pagePrincipale{
-margin:auto;
-
-
-}
-
-#Cadre1{
+h1{
     position: relative;
-	border:2px solid black;
-    margin:auto;
-    width: 1000px;
-    height:10px;
+    left: -350px;
 }
 
-#commenconsParLeCommencement{
-background-color:#98FB98;
-text-align:left;
-line-height:70px;
+h2{
+    position: relative;
+    left: 20px;
 }
-#question1{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-#question2{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-
-#question3{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-
-#question4{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-#etEncoreUneQuestion{
-
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-
-#allezCourage{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-}
-
-#fini{
-    background-color:#98FB98;
-    text-align:left;
-    line-height:70px;
-
+p{
+    position: relative;
+    left: 50px;
+    margin: auto;
 }

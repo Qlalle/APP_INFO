@@ -43,6 +43,13 @@ h1#header a
 header {
     height: 320px;
 }
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
 #onglets
 {
     font-family:  "apple chancery";

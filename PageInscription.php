@@ -116,8 +116,10 @@
           {
 
        
-         $passwordh=password_hash($password, PASSWORD_DEFAULT);
-         $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$user_post_office_box','', '$email','$passwordh','','','')");
+        $passwordh=password_hash($password, PASSWORD_DEFAULT);
+         $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','','')");
+         //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
+         echo"Bonjour $first_name votre compte est bien enregistré";
          }
  
           else

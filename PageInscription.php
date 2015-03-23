@@ -104,24 +104,31 @@
       
 
       // Je verifie que TOUT les champs sont remplis.
-      if(($password == 0)||($email == 0)||($civilite == 0) || ($first_name == 0) || ($last_name == 0) || ($birthday == 0) || ($job == 0) || ($user_post_office_box == 0) || ($city == 0) || ($email == 0) )
+      if(empty($password)||empty($email)||empty($civilite) || empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
       {
         echo'Vous devez remplir toutes les coordonnées';
       }
       else
       {
-       if(($password == $passe2) && ($email == $email2) )
+       if(filter_var($email, FILTER_VALIDATE_EMAIL))
+       {
+        if(($password == $passe2) && ($email == $email2) )
           {
 
        
-
-         $reponse = $bdd->query("INSERT INTO users VALUES('', '$country','$civilite', '$first_name','$last_name','$birthday', '$job', '$user_post_office_box', '$city', '$email','$password','','')");
+         $passwordh=password_hash($password, PASSWORD_DEFAULT);
+         $reponse = $bdd->query("INSERT INTO users VALUES('', '$country','$civilite', '$first_name','$last_name','$birthday', '$job', '$user_post_office_box', '$city', '$email','$passwordh','','')");
          }
  
           else
           {
           echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
           }
+        }
+        else
+        {
+          echo'Votre email n\'est pas valide';
+        } 
       }
     }
     

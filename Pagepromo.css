@@ -15,7 +15,8 @@ div#conteneur
     border: 2px solid #ab4 ;
     background: #fff ;
     background-image:url(vaches2.png);
-    height: 1080px;
+    height: 1135px;
+
 }
 h1#header
 {
@@ -40,6 +41,51 @@ h1#header a
 
 header {
     height: 320px;
+}
+span#prix
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: -10px ;
+
+}
+span#photo
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: 25px ;
+
+}
+span
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -20px ;
+
+}
+span#region
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: -80px ;
+
+}
+span#description
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -190px ;
+
 }
 
 p#pseudo
@@ -86,6 +132,13 @@ a#ra{
     top : -220;
     left:555;
 }
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
 div#forum
 {
     position:relative;
@@ -101,7 +154,7 @@ h2#t
     font-family: Gabriola, "Gentium Basic", Georgia;
     font-size: 20px;
     color:red;
-    width :10px;
+    width: 10px;
 }
 
 div#searchbar
@@ -115,13 +168,6 @@ div#searchbar
     top : -250;
     right:0;
 
-}
-a#inscription{
-    position: relative;
-    top: -273px;
-    right:-830;
-    width: 10px;
-    color: black;
 }
 #onglets
 {
@@ -177,39 +223,51 @@ a#inscription{
     font-size: 35px;
     display: block;
 }
-div#corps{
-    border-collapse: collapse;
-    background-image:url(fon.png);
-}
-span{
-    font-size: 20px;
-    color : red;
-}
-label
+table
 {
-    display: block;
-    width: 150px;
-    float: left;
-    position: relative;
-    left: 20px;
+    border-collapse: collapse;
+    background-image:url(Fond.png);
 }
-p#objet{
-    position: relative;
-    left: 20px;
+
+
+tr#mangue{
+        line-height:100px;
+        width:100px;
+    }
+
+tr#papaye{
+        line-height:100px;
+        width:100px;
+    }
+
+tr#pitaya{
+        line-height:100px;
+        width:100px;
+    }
+tr#melon{
+        line-height:100px;
+        width:100px;
+    }
+tr#patate{
+        line-height:100px;
+        width:100px;
+    }
+
+#ancienPrix{
+    text-decoration:line-through;
+    height: 20px;
+    width: 108px;
 }
-p#commentaire{
-    position: relative;
-    left: 20px;
+
+#nouveauPrix{
+    font-size:1.2em;
+    color:#FF0000;
+    font-weight: bold;
+    height: -1px;
+    width: 108px;
 }
-p#bouton1{
-    position: relative;
-    left: 500px;
-    top: 45px;
-    width: 140px;
-}
-p#bouton2{
-    position: relative;
-    left: 300px;
-    top: 10px;
-    width: 140px;
+td{
+    height: 92px;
+    width: 159px;
+    text-align: center;
 }

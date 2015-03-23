@@ -9,14 +9,14 @@
   <body>
   <div id="conteneur">    
     <header>
-    <h1 id="header"><a href="#" title="Bio&Bon">Bio&Bon</a></h1>
+    <h1 id="header"><a href="Page d'accueil.html" title="Bio&Bon">Bio&Bon</a></h1>
 
     <p id="pseudo">
-        <label>Votre pseudo</label> : <input type="text" name="pseudo" size="25"/>
+        <label>Email</label> : <input type="text" name="email" size="25"/>
     </p>
     <p id="mdp">
 
-        <label>Mot de passe</label> : <input type="password" name="mot de passe" size="25" />
+        <label>Mot de passe</label> : <input type="password" name="mdp" size="25" />
     </p>
     <p id="bouton">
       <input type="submit" value="Valider" />
@@ -44,7 +44,7 @@
     <li  class="active"><a href="Page achat.html"> Achat </a></li>
     <li><a href="Page echange.html"> Echange </a></li>
     <li><a href="Pagebio.html"> Bio </a></li>
-    <li><a href="#.html"> Promo </a></li>
+    <li><a href="Pagepromo.html"> Promo </a></li>
     <li><a href="Page vente.html"> Vente </a></li>
   </ul>
 </div>
@@ -73,7 +73,7 @@
        <td>Ile de France</td>
        <td>Pomme</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'pomme.html';"/></td>
        </tr>
        <tr>
            <td>4,20€/kg</td>
@@ -82,7 +82,7 @@
        <td>Ile de France</td>
        <td>Banane bio</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
        </tr> 
        <tr>
            <td>1,40€/kg</td>
@@ -91,7 +91,7 @@
        <td>Ile de France</td>
        <td>Pomme</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'pomme.html';"/></td>
        </tr>
        <tr>
            <td>2,50€/kg</td>
@@ -100,7 +100,7 @@
        <td>Ile de France</td>
        <td>fraise</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Html css Fraise.html';"/></td>
        </tr>     
        <tr>
            <td>2,20€/kg</td>
@@ -109,7 +109,7 @@
        <td>Ile de France</td>
        <td>Banane</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
        </tr>
        <tr>
            <td>1,40€/kg</td>
@@ -118,7 +118,7 @@
        <td>Ile de France</td>
        <td>Pomme</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'pomme.html';"/></td>
        </tr>     
        <tr>
            <td>2,20€/kg</td>
@@ -127,7 +127,7 @@
        <td>Ile de France</td>
        <td>Banane</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
        </tr>
        <tr>
            <td>2,50€/kg</td>
@@ -136,7 +136,7 @@
        <td>Ile de France</td>
        <td>Fraise</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Html css Fraise.html';"/></td>
        </tr>     
        <tr>
            <td>1,40</td>
@@ -145,7 +145,7 @@
        <td>Ile de France</td>
        <td>Pomme</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'pomme.html';"/></td>
        </tr>
        <tr>
            <td>4,20€/kg</td>
@@ -154,7 +154,7 @@
        <td>Ile de France</td>
        <td>Banane bio</td>
        <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
+       <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
        </tr>         
    </tbody>
 </table>
@@ -162,10 +162,10 @@
 
       <ul id="Basdepage">
         <li><a href="Page contact.html">Nous contacter</a></li>
-        <li><a href="#">Plan du site</a></li>
+        <li><a href="Plandusite.html">Plan du site</a></li>
         <li><a href="Réglement.html">Réglement</a></li>
         <li><a href="page tarif.html">Tarif</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="Pagefoireauxquestions.html">FAQ</a></li>
       </ul>
 
   </div>

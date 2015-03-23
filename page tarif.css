@@ -15,7 +15,7 @@ div#conteneur
     border: 2px solid #ab4 ;
     background: #fff ;
     background-image:url(vaches2.png);
-    height: 1080px;
+    height: 1670px;
 }
 h1#header
 {
@@ -85,6 +85,13 @@ a#ra{
     color: black ;
     top : -220;
     left:555;
+}
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
 }
 div#forum
 {

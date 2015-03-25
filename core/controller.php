@@ -1,6 +1,7 @@
 <?php
-class Controller{
-	//ceci est le controlleur
+class Controller
+{
+    //ceci est le controlleur
 
 }
 ?>

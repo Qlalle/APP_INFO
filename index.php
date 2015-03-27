@@ -9,10 +9,9 @@ $params = explode('/', $_GET['p']);
 $controller = $params[0];
 $action = isset( $params[1]) ? $params[1] : 'index';
 
-
 require('controllers/'.$controller.'.php');
 $controller = new $controller();
-if (methode_exists($controller, $action)){
+if (method_exists($controller, $action)){
     $controller->$controller();
 }
 else{

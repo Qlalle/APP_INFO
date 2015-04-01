@@ -7,7 +7,7 @@
  */
  class test extends Controller{
 
-     function index (){
+     function index(){
          echo 'lol';
      }
  }

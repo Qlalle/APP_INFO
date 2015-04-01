@@ -102,7 +102,7 @@
       $user_post_office_box = $_POST['user_post_office_box'];
       $city = $_POST['city'];
       
-
+        // empecher les codes php dans la base
       // Je verifie que TOUT les champs sont remplis.
       if(empty($password)||empty($email)||empty($civilite) || empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
       {

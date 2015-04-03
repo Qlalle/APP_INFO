@@ -89,18 +89,19 @@
      $bdd = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
     
       
-      // Je recupere les infos
-      $password = $_POST['password'];
-      $passe2 = $_POST['passe2'];
-      $email = $_POST['email'];
-      $email2 = $_POST['email2'];$country = $_POST['country'];
-      $civilite = $_POST['civilite'];
-      $first_name = $_POST['first_name'];
-      $last_name = $_POST['last_name'];
-      $birthday = $_POST['birthday'];
-      $job = $_POST['job'];
-      $user_post_office_box = $_POST['user_post_office_box'];
-      $city = $_POST['city'];
+      // Je recupere les infos, plus securité pour le code.
+        htmlentities($password = $_POST['password']);
+        htmlentities($passe2 = $_POST['passe2']);
+        htmlentities($email = $_POST['email']);
+        htmlentities($email2 = $_POST['email2']);
+        htmlentities($country = $_POST['country']);
+        htmlentities($civilite = $_POST['civilite']);
+        htmlentities($first_name = $_POST['first_name']);
+        htmlentities($last_name = $_POST['last_name']);
+        htmlentities($birthday = $_POST['birthday']);
+        htmlentities($job = $_POST['job']);
+        htmlentities($user_post_office_box = $_POST['user_post_office_box']);
+        htmlentities($city = $_POST['city']);
       
         // empecher les codes php dans la base
       // Je verifie que TOUT les champs sont remplis.
@@ -115,13 +116,13 @@
         if(($password == $passe2) && ($email == $email2) )
           {
 
-       
+
         $passwordh=password_hash($password, PASSWORD_DEFAULT);
          $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','','')");
          //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
          echo"Bonjour $first_name votre compte est bien enregistré";
          }
- 
+
           else
           {
           echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
@@ -130,7 +131,7 @@
         else
         {
           echo'Votre email n\'est pas valide';
-        } 
+        }
       }
     }
     

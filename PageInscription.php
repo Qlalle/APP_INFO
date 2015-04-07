@@ -1,4 +1,4 @@
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -111,33 +111,35 @@
       }
       else
       {
-       if(filter_var($email, FILTER_VALIDATE_EMAIL))
-       {
-        if(($password == $passe2) && ($email == $email2) )
-          {
+          $result = $bdd->query("SELECT email FROM user WHERE email ='".$_GET["email"]."'");
+          $result2 = $result -> fetch();
+          if (empty($result2['email'])){
+              if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                  if (($password == $passe2) && ($email == $email2)) {
 
 
-        $passwordh=password_hash($password, PASSWORD_DEFAULT);
-         $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','','')");
-         //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
-         echo"Bonjour $first_name votre compte est bien enregistré";
-         }
-
-          else
-          {
-          echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
+                      $passwordh = password_hash($password, PASSWORD_DEFAULT);
+                      $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','','')");
+                      //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
+                      echo "Bonjour $first_name votre compte est bien enregistré";
+                  } else {
+                      echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
+                  }
+              } else {
+                  echo 'Votre email n\'est pas valide';
+              }
           }
-        }
-        else
-        {
-          echo'Votre email n\'est pas valide';
-        }
+          else{
+           echo 'votre email est déjà utilisé.';
+          }
       }
     }
     
 ?>
 </table>
 </div>
+
+
 
 
 

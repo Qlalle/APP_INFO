@@ -15,7 +15,7 @@ div#conteneur
     border: 2px solid #ab4 ;
     background: #fff ;
     background-image:url(vaches2.png);
-    height: 1090px;
+    height: 1200px;
 
 }
 h1#header
@@ -186,7 +186,7 @@ table#user
     border-collapse: collapse;
     position: relative;
     top: 45px;
-    left: -700px;
+    left: 0px;
 }
 table#produit{
 
@@ -226,4 +226,19 @@ margin-left: 5%;
 #fraise{
     position: relative;
     left: 0px;
+}
+
+table#Prix
+{
+     border-collapse: collapse;
+    position: relative;
+    top:-730;
+    right: -750; 
+}
+#panier
+{
+    position:relative;
+    top:-150;
+    right:-900;
+    width: 20px;
 }

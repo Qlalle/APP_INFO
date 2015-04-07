@@ -15,7 +15,7 @@ div#conteneur
     border: 2px solid #ab4 ;
     background: #fff ;
     background-image:url(vaches2.png);
-    height: 1090px;
+    height: 1200px;
 
 }
 h1#header
@@ -186,7 +186,7 @@ table#user
     border-collapse: collapse;
     position: relative;
     top: 45px;
-    left: -700px;
+    left: 0px;
 }
 table#produit{
 
@@ -195,21 +195,7 @@ table#produit{
     top: -350px;
     left: 300px;
 }
-h3{
-    position: relative;
-    top: -350px;
-    left: 20px;
-}
-p#retour{
-    position: relative;
-    top: -350px;
-    left: 20px;
-}
-p#ajout{
-    position: relative;
-    top: -383px;
-    left: 100px;
-}
+
 div#corps{
     border-collapse: collapse;
     background-image:url(fon.png);
@@ -226,4 +212,20 @@ margin-left: 5%;
 #pomme{
     position: relative;
     left: 0px;
+}
+
+table#Prix
+{
+     border-collapse: collapse;
+    position: relative;
+    top:-730;
+    right: -750; 
+}
+
+div#panier
+{
+    position:relative;
+    top:-150;
+    right:-900;
+    width: 20px;
 }

@@ -111,7 +111,7 @@
       }
       else
       {
-          $result = $bdd->query("SELECT email FROM user WHERE email ='".$_GET["email"]."'");
+          $result = $bdd->query("SELECT email FROM users WHERE email = $email");
           $result2 = $result -> fetch();
           if (empty($result2['email'])){
               if (filter_var($email, FILTER_VALIDATE_EMAIL)) {

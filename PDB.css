@@ -1,0 +1,90 @@
+body
+{
+    margin: 10px 0 ;
+    padding: 0 ;
+    text-align: center ;
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    background: #dea ;
+
+}
+div#conteneur
+{
+    width: 1000px ;
+    margin: 0 auto ;
+    text-align: left ;
+    border: 2px solid #ab4 ;
+    background: #fff ;
+    background-image:url(vaches2.png);
+    height: 369px;
+
+}
+h1#header
+{
+    height: 270px;
+    background: url(Logo.png) no-repeat left top;
+    margin: 0 ;
+    position: relative ;
+    left: 40px ;
+    top: 20px ;
+}
+h1#header a
+{
+    width: 400px ;
+    height: 150px ;
+    display: block ;
+    background: url(Logo2.png) no-repeat ;
+    position: relative ;
+    left: 250px ;
+    top: 10px ;
+    text-indent: -5000px ;
+}
+
+header {
+    height: 320px;
+}
+
+
+p#pseudo
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top: -250;
+    right:30;
+}
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right; ;
+    color: #8a0 ;
+    position:relative;
+    top:-250;
+    right:30;
+
+}
+
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
+
+

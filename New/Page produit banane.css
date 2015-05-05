@@ -1,0 +1,244 @@
+body
+{
+    margin: 10px 0 ;
+    padding: 0 ;
+    text-align: center ;
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    background: #dea ;
+
+}
+div#conteneur
+{
+    width: 1000px ;
+    margin: 0 auto ;
+    text-align: left ;
+    border: 2px solid #ab4 ;
+    background: #fff ;
+    background-image:url(vaches2.png);
+    height: 1200px;
+
+}
+h1#header
+{
+    height: 270px;
+    background: url(Logo.png) no-repeat left top;
+    margin: 0 ;
+    position: relative ;
+    left: 40px ;
+    top: 20px ;
+}
+h1#header a
+{
+    width: 400px ;
+    height: 150px ;
+    display: block ;
+    background: url(Logo2.png) no-repeat ;
+    position: relative ;
+    left: 250px ;
+    top: 10px ;
+    text-indent: -5000px ;
+}
+
+header {
+    height: 320px;
+}
+
+
+p#pseudo
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top: -250;
+    right:30;
+}
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right; ;
+    color: #8a0 ;
+    position:relative;
+    top:-250;
+    right:30;
+
+}
+a#ra{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: black ;
+    top : -220;
+    left:555;
+}
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
+div#forum
+{
+    position:relative;
+    top:-200;
+    right:-890;
+    width: 10px;
+}
+h2#t
+{
+    position:relative;
+    top:-20;
+    right:-10;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 20px;
+    color:red;
+    width: 10px;
+}
+
+div#searchbar
+{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: #8a0 ;
+    top : -250;
+    right:0;
+
+}
+#onglets
+{
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    top : -20px;
+    left : 105px;
+    position: relative;
+}
+#onglets li
+{
+    float : left;
+    height : 80px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    margin : 3px 3px 0 3px !important;  /* Pour les navigateurs autre que IE */
+}
+#onglets li.active
+{
+    border-bottom: 1px solid green;
+    background-color: green;
+    border-radius: 5px 10px 0 5px;
+}
+#onglets a
+{
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 10px 10px;
+    font-size: 35px;
+    display: block;
+}
+#Basdepage
+{
+    font-family:  "apple chancery";
+    list-style-type : none;
+    padding-bottom : 47px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    margin: 0 auto;
+    top : -20px;
+    left : -17px;
+    position: relative;
+}
+#Basdepage li
+{
+    float : left;
+    margin : 5px 5px 5px 5px !important;  /* Pour les navigateurs autre que IE */
+}
+#Basdepage a
+{
+    display : block;
+    color : orange;
+    text-decoration : none;
+    padding : 20px;
+    font-size: 35px;
+    display: block;
+}
+
+
+table#user
+{
+    border-collapse: collapse;
+    position: relative;
+    top: 45px;
+    left: 0px;
+}
+table#produit{
+
+    border-collapse: collapse;
+    position: relative;
+    top: -350px;
+    left: 300px;
+}
+h3{
+    position: relative;
+    top: -350px;
+    left: 20px;
+}
+p#retour{
+    position: relative;
+    top: -350px;
+    left: 20px;
+}
+p#ajout{
+    position: relative;
+    top: -383px;
+    left: 100px;
+}
+div#corps{
+    border-collapse: collapse;
+    background-image:url(fon.png);
+}
+#quentin{
+
+height: 50px;
+width:200px;
+height:auto;
+left:0;
+margin-left: 5%; 
+
+}
+#banane{
+    position: relative;
+    left: 100px;
+}
+
+table#Prix
+{
+     border-collapse: collapse;
+    position: relative;
+    top:-780;
+    right: -750; 
+}
+div#panier
+{
+    position:relative;
+    top:-150;
+    right:-900;
+    width: 20px;
+}

@@ -10,7 +10,7 @@
   <div id="conteneur">    
     <header>
     <h1 id="header"><a href="Page_d'accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
-
+    <form action="connexion.php" metod=""Post">
     <p id="pseudo">
         <label>Email</label> : <input type="text" name="email" size="25"/>
     </p>
@@ -21,6 +21,7 @@
     <p id="bouton">
       <input type="submit" value="Valider" />
     </p>
+        </form>
     <a id="inscription" href="PageInscription.php">Inscription</a>
  
     <div id="forum"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>

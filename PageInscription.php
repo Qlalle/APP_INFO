@@ -79,16 +79,16 @@
 
 
 <?php
-  
+
   if(isset($_POST['valider']))
     {
-  
-        
+
+
 
      // D'abord, je me connecte à la base de données.
      $bdd = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
-    
-      
+
+
       // Je recupere les infos, plus securité pour le code.
         htmlentities($password = $_POST['password']);
         htmlentities($passe2 = $_POST['passe2']);
@@ -134,7 +134,7 @@
           }
       }
     }
-    
+
 ?>
 </table>
 </div>

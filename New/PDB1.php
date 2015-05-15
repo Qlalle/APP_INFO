@@ -1,4 +1,4 @@
-<!DOCTYPE html">
+<DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
     <header>
     <h1 id="header"><a href="Page d'accueil.html" title="Bio&Bon">Bio&Bon</a></h1>
     <form action="connexion.php" method="Post">
-    <p id="pseudo">
+    <p id="email">
         <label>Email</label> : <input type="text" name="email" size="25"/>
     </p>
     <p id="mdp">

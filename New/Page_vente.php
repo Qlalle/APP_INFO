@@ -119,7 +119,7 @@ include("haut_de_page.php");
     <label>Quantité : *</label><input type="number" name="quantity" id="qt" step="1" value="0" min="0"/>
   </p>
   <p>
-    <label>Prix : *</label><input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>
+    <label>Prix : *</label><br/>vente uniquement<input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>
   </p>
   <br/>
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Bio & Bon</title>
-    <link rel="stylesheet" href="Pagefoireauxquestions.css" />
+    <link rel="stylesheet" href="FAQ.css" />
 
 
 </style>

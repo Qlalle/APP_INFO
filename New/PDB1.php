@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html">
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -10,8 +10,8 @@
   <div id="conteneur">    
     <header>
     <h1 id="header"><a href="Page d'accueil.html" title="Bio&Bon">Bio&Bon</a></h1>
-    <form action="connexion.php" method="Post">
-    <p id="email">
+
+    <p id="pseudo">
         <label>Email</label> : <input type="text" name="email" size="25"/>
     </p>
     <p id="mdp">
@@ -22,7 +22,7 @@
       <input type="submit" value="Valider" />
     </p>
     <a id="inscription" href="PageInscription.php">Inscription</a>
-  </form>
+ 
     <div id="forum"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>
   		<h2 id="t" class="Style5"><a href="Forum.php">Forum</h2></a>
 		</div>

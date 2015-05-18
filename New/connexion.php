@@ -1,7 +1,7 @@
 <?php
 
 // connexion à la base de donnée
-$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
 
 $email = $_POST['email'];
 $mdp = $_POST['mdp'];
@@ -12,12 +12,10 @@ $req->execute(array($email));
 
 
 
-
-
 if (password_verify($mdp, $password['user_password']))
 {
   
-    echo 'Vous etes connecté !';
+    echo 'Vous etes connecte !';
 }
 else
 {

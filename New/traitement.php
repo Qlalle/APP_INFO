@@ -1,21 +1,21 @@
  <?php
 
-if(isset($_POST['sale_or_change']))      $sale_or_change=$_POST['sale_or_change'];
+if(isset($_POST['sale_or_change'])){      $sale_or_change=$_POST['sale_or_change'];}
 else      $sale_or_change="";
 
-if(isset($_POST['quality_type']))      $quality_type=$_POST['quality_type'];
+if(isset($_POST['quality_type'])){     $quality_type=$_POST['quality_type'];}
 else      $quality_type="";
 
-if(isset($_POST['quantity']))      $quantity=$_POST['quantity'];
+if(isset($_POST['quantity'])){      $quantity=$_POST['quantity'];}
 else      $quantity="";
 
-if(isset($_POST['product_price']))      $product_price=$_POST['product_price'];
+if(isset($_POST['product_price'])){     $product_price=$_POST['product_price'];}
 else      $product_price="";
 
-if(isset($_POST['product_comment_user']))      $product_comment_user=$_POST['product_comment_user'];
+if(isset($_POST['product_comment_user'])){     $product_comment_user=$_POST['product_comment_user'];}
 else      htmlentities($product_comment_user="");
 
-if(empty($sale_or_change) || empty($quality_type) || empty($product_price) || empty($quality_type) || empty($product_price) && ($EnvoyerDonnee <> "")) 
+if(empty($sale_or_change) && empty($quality_type) && empty($quantity) && empty($product_price) && ($EnvoyerDonnee <> "")) 
     {
     echo '<font color="red">Attention, seul le champs <b>Commentaire</b> peut rester vide !</font>';
     }
@@ -23,7 +23,7 @@ if(empty($sale_or_change) || empty($quality_type) || empty($product_price) || em
 
 else     
     {
-       $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', '');
+       $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
         $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
  
@@ -46,7 +46,7 @@ else
     
     echo 'Vos infos on été ajoutées.';
     ?>
-    <a href="untitled.php">retour page vente</a> 
+    <a href="Page_d'accueil.php">retour page vente</a> 
     <?php
 
    $req->closeCursor();   

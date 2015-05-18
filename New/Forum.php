@@ -1,12 +1,12 @@
-<?php 
-include ("PDB.php");
+<DOCTYPE html>
+<?php
+include("haut_de_page.php");
 ?>
-
-
-<link rel="stylesheet" href="Forum.css" />
+    <link rel="stylesheet" href="forum.css" />
+ 
 <h1 id="Forum">Forum</h1>
 		
-<table style="overflow:auto; height: 50px; width: 1000px; border: 1px solid orange">
+<table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
 	<thead> <!-- En-tête du tableau -->
        <tr>
            <th align=center><span>Sujet</span></th>
@@ -16,7 +16,7 @@ include ("PDB.php");
     </thead>
  </table>
 
-<div style="overflow:auto; height: 600px; width: 1000px; border: 1px solid orange">
+<div style="overflow:auto; height: 600px; width: 100% border: 1px solid orange">
 <table style="width: 100%;">
    <tbody > <!-- Corps du tableau -->
        <tr>
@@ -25,7 +25,7 @@ include ("PDB.php");
 		<?php
 			
 			//connexion au serveur
-			$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', '');
+			$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
 			//test connexion au serveur
 			if(!$bdd) {
 				echo "impossible de ce connecter au serveur";

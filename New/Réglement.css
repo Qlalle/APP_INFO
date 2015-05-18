@@ -1,21 +1,12 @@
-body
-{
-    margin: 10px 0 ;
-    padding: 0 ;
-    text-align: center ;
-    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
-    background: #dea ;
-
-}
 div#conteneur
 {
-    width: 1000px ;
+    width: 1200px ;
     margin: 0 auto ;
     text-align: left ;
     border: 2px solid #ab4 ;
     background: #fff ;
-    background-image:url(vaches2.png);
-    height: 1105px;
+    background-image:url(tomates3.jpg);
+    height: 1135px;
 
 }
 h1#header
@@ -26,6 +17,7 @@ h1#header
     position: relative ;
     left: 40px ;
     top: 20px ;
+    width: 900px;
 }
 h1#header a
 {
@@ -34,7 +26,7 @@ h1#header a
     display: block ;
     background: url(Logo2.png) no-repeat ;
     position: relative ;
-    left: 250px ;
+    left: 340px ;
     top: 10px ;
     text-indent: -5000px ;
 }
@@ -42,13 +34,59 @@ h1#header a
 header {
     height: 320px;
 }
+span#prix
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: -15px ;
+
+}
+span#photo
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -35px ;
+
+}
+span
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -70px ;
+
+}
+span#Departement
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: -200px ;
+
+}
+span#description
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -315px ;
+
+}
+
 p#pseudo
 {
     margin: 0 ;
     padding-right: 10px ;
     line-height: 3px ;
     text-align: right ;
-    color: black ;
+    color: white ;
     position:relative;
     top: -250;
     right:30;
@@ -59,7 +97,7 @@ p#mdp
     padding-right: 10px ;
     line-height: 30px ;
     text-align: right ;
-    color: black ;
+    color: white;
     position:relative;
     top:-250;
     right:30;
@@ -69,46 +107,36 @@ p#bouton
     margin: 0 ;
     padding-right: 10px ;
     line-height: 30px ;
-    text-align: right; ;
+    text-align: right ;
     color: #8a0 ;
-    position:relative;
-    top:-250;
-    right:30;
 
 }
-a#ra{
-    position:relative; 
-    padding-right: 0px ;
-    text-align: center;
-    width:1040px; 
-    height:0;
-    color: black ;
-    top : -220;
-    left:555;
-}
+
 a#inscription{
-    position: relative;
-    top: -273px;
-    right:-830;
     width: 10px;
-    color: black;
+    color: white;
+    
 }
 div#forum
 {
     position:relative;
     top:-200;
-    right:-890;
+    right:-1090px;
     width: 10px;
+}
+a#fo{
+    color:orange;
+    text-align: center;
 }
 h2#t
 {
     position:relative;
-    top:-20;
-    right:-10;
+    top:-20px;
+    right:-25px;
     font-family: Gabriola, "Gentium Basic", Georgia;
     font-size: 20px;
-    color:red;
     width: 10px;
+    color: white;
 }
 
 div#searchbar
@@ -120,8 +148,18 @@ div#searchbar
     height:0;
     color: #8a0 ;
     top : -250;
-    right:0;
+    left: 55px;
 
+}
+a#ra{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: white ;
+    top : -220;
+    left:600px;
 }
 #onglets
 {
@@ -129,8 +167,9 @@ div#searchbar
     list-style-type : none;
     padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
     top : -20px;
-    left : 105px;
+    left : 250px;
     position: relative;
+    width:800px;
 }
 #onglets li
 {
@@ -159,9 +198,10 @@ div#searchbar
     list-style-type : none;
     padding-bottom : 47px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
     margin: 0 auto;
-    top : 0px;
-    left : -17px;
+    top : -20px;
+    left : 20px;
     position: relative;
+    width: 1000px;
 }
 #Basdepage li
 {
@@ -176,6 +216,31 @@ div#searchbar
     padding : 20px;
     font-size: 35px;
     display: block;
+}
+table
+{
+    border-collapse: collapse;
+    background-image:url(Fond.png);
+    
+}
+td /* Mettre une bordure sur les td ET les th */
+{
+    text-align: center;
+}
+#qt{
+    width:35px;
+    position: relative;
+    left:40px;
+}
+td#dep{
+    position: relative;
+    left: 50px;
+}
+table#hd{
+    position: relative;
+    top:-247px;
+    left: 1010px;
+    background: transparent;
 }
 
 h1#titre{

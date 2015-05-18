@@ -33,7 +33,7 @@ include("haut_de_page.php");
       <optgroup label="Fruits">
       <?php
           $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
-          $reponse = $bdd->query('SELECT product_name, family_product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="0" ORDER BY family_product_name, product_name ');
+          $reponse = $bdd->query('SELECT product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="0" ORDER BY family_product_name, product_name ');
           $alreadyItrerates = array();
           
           while ($donnees = $reponse->fetch())
@@ -57,7 +57,7 @@ include("haut_de_page.php");
     <optgroup label="Légumes">
       <?php
           $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
-          $reponse = $bdd->query('SELECT product_name, family_product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="1" ORDER BY family_product_name, product_name');
+          $reponse = $bdd->query('SELECT product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="1" ORDER BY family_product_name, product_name');
           $alreadyItrerates = array();
 
           while ($donnees = $reponse->fetch())

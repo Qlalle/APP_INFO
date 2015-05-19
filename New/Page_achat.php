@@ -2,6 +2,7 @@
 
 <?php
 include("haut_de_page.php");
+include("bdd_connect.php");
 ?>
 
 <link rel="stylesheet" href="Page achat.css" />
@@ -36,7 +37,7 @@ include("haut_de_page.php");
    <tbody > <!-- Corps du tableau -->
           <tr>
            <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+
           $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id where sale_or_change="0" ORDER BY product_on_line_id DESC');
 
           while ($donnees = $reponse->fetch())
@@ -59,15 +60,9 @@ include("haut_de_page.php");
            
    </tbody>
 </table>
-     </div>
 
-      <ul id="Basdepage">
-        <li><a href="Page_contact.php">Nous contacter</a></li>
-        <li><a href="#">Plan du site</a></li>
-        <li><a href="Réglement.php">Réglement</a></li>
-        <li><a href="page_tarif.php">Tarif</a></li>
-        <li><a href="FAQ.php">FAQ</a></li>
-      </ul>
+     </div>
+<?php include("footer.php"); ?>
 
   </div>
   </body>

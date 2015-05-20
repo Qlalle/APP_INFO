@@ -40,15 +40,15 @@ include("haut_de_page.php");
           while ($donnees = $reponse->fetch())
           {
       ?>
-      <td><?php    echo $donnees['product_price'];?>€/kg</td> 
+   <form method="POST" action="add.php?id=">
+      <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt" step="1" value="0" min="0" /></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
-           <form method="post" action="panier.php">
-        <td><input type="submit" name="ajout_prod" value="Ajouter au panier" /></td>
-           </form>
+        <td><input type="submit" value="Ajouter au panier" /></td>
         <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+      </form>
        </tr> 
       
       

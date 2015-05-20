@@ -40,7 +40,11 @@ include("bdd_connect.php");
           {
       ?>
       <td><?php    echo $donnees['product_price'];?>€/kg</td> 
-      <td> <img src="<?php echo $donnees['image'];?>"/></td>
+      <td> <img src="<?php echo $donnees['image'];?>"/>
+          <div style="color:orange">
+              <center><b>Bio</b></center>
+          </div>
+      </td>
       <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0" /></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>

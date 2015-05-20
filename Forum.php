@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <?php
 include("haut_de_page.php");
+include("bdd_connect.php");
 ?>
     <link rel="stylesheet" href="forum.css" />
  
@@ -25,7 +26,7 @@ include("haut_de_page.php");
 		<?php
 			
 			//connexion au serveur
-			$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+			
 			//test connexion au serveur
 			if(!$bdd) {
 				echo "impossible de ce connecter au serveur";

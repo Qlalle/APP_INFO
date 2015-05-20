@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <?php
 include("haut_de_page.php");
+include("bdd_connect.php");
 ?>
     <link rel="stylesheet" href="Page vente.css" />
 <div id="menu">
@@ -32,7 +33,6 @@ include("haut_de_page.php");
     <select name="produit" id="produit">
       <optgroup label="Fruits">
       <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
           $reponse = $bdd->query('SELECT product_name, family_product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="0" ORDER BY family_product_name, product_name ');
           $alreadyItrerates = array();
           
@@ -56,7 +56,6 @@ include("haut_de_page.php");
     </optgroup>
     <optgroup label="Légumes">
       <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
           $reponse = $bdd->query('SELECT product_name, family_product_name, family_product_id, product_date_id FROM  product_data INNER JOIN family_product ON id_family_product = family_product_id WHERE Fruits_Legumes="1" ORDER BY family_product_name, product_name');
           $alreadyItrerates = array();
 
@@ -84,7 +83,6 @@ include("haut_de_page.php");
     <label for="departement">Choix du departement*</label><br/>
 <select name="departement" id="departement">
       <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
           $reponse = $bdd->query('select departement_nom,departement_id, departement_code FROM departement');
 
           while ($donnees = $reponse->fetch())
@@ -143,13 +141,9 @@ include("haut_de_page.php");
     </p>
  </form>
 </div>
-    <ul id="Basdepage">
-        <li><a href="Page_contact.php">Nous contacter</a></li>
-        <li><a href="#">Plan du site</a></li>
-        <li><a href="Réglement.php">Réglement</a></li>
-        <li><a href="page_tarif.php">Tarif</a></li>
-        <li><a href="FAQ.php">FAQ</a></li>
-      </ul>
+    <?php
+    include("footer.php");
+    ?>
   </div>
   </body>
 </html>

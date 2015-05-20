@@ -1,7 +1,7 @@
 <?php
 
 // connexion à la base de donnée
-$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+include("bdd_connect.php");
 
 $email = $_POST['email'];
 $mdp = $_POST['mdp'];

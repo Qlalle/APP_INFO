@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <?php
 include("haut_de_page.php");
+include("bdd_connect.php");
 ?>
     <link rel="stylesheet" href="recherche.css" />
   <div id="menu">
@@ -36,7 +37,7 @@ include("haut_de_page.php");
 include ('connect.php'); // lien avec l'autre page
 
    
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+          
           $keyword = $_GET["keyword"];
           $reponse = $bdd->query("SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id WHERE product_name LIKE '%". $keyword."%' ORDER BY product_on_line_id DESC");
           $ordonne = array();
@@ -69,14 +70,9 @@ include ('connect.php'); // lien avec l'autre page
       </table>
 </div>
 
-
-<ul id="Basdepage">
-        <li><a href="Page contact.html">Nous contacter</a></li>
-        <li><a href="Plandusite.html">Plan du site</a></li>
-        <li><a href="Réglement.html">Réglement</a></li>
-        <li><a href="page tarif.html">Tarif</a></li>
-        <li><a href="Pagefoireauxquestions.html">FAQ</a></li>
-      </ul>
+<?php
+include("footer.php");
+?>
   </div>
   </body>
 </html>

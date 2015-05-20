@@ -23,7 +23,7 @@ if(empty($sale_or_change) && empty($quality_type) && empty($quantity) && empty($
 
 else     
     {
-       $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+       include("bdd_connect.php");
         $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
  
@@ -46,7 +46,7 @@ else
     
     echo 'Vos infos on été ajoutées.';
     ?>
-    <a href="Page_d'accueil.php">retour page vente</a> 
+    <a href="Page_d'accueil.php">retour page d'accueil</a> 
     <?php
 
    $req->closeCursor();   

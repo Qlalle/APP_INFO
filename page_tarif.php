@@ -1,53 +1,9 @@
 <DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Bio & Bon</title>
+<?php
+include("haut_de_page.php");
+?>
+
     <link rel="stylesheet" href="page tarif.css" />
-  </head>
-  
-  <body>
-  <div id="conteneur">    
-    <header>
-    <h1 id="header"><a href="Page_d'accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
-
-    <p id="pseudo">
-        <label>Email</label> : <input type="text" name="email" size="25"/>
-    </p>
-    <p id="mdp">
-
-        <label>Mot de passe</label> : <input type="password" name="mdp" size="25" />
-    </p>
-    <table id="hd">
-      <tr>
-        <td>
-        <a id="inscription" href="PageInscription.php">Inscription</a>
-  </td>
-  <td>
-
-    <p id="bouton">
-      <input type="submit" value="Valider" />
-    </p>
- </td>
-</tr>
-</table>
-    <div id="forum"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>
-      <h2 id="t" class="Style5"><a id="fo" href="Forum.php">Forum</h2></a>
-    </div>
-
-   <div id="searchbar">        
-            <form action="recherche.php" class="formulaire">
-              <label id="product_name"></label> 
-               <input id ="product_name" class="champ" name="keyword" type="text" placeholder="Ex : Fraise/pomme de terre" size="70" maxlength="50"required />
-
-               
-               <input class="bouton" type="submit" value="Rechercher" />                                                                              
-            </form>
-    </div>
-
-    <a id="ra" href="#">Recherche avancée</a>
-    
-</header>
 
     <div id="menu">
   <ul id="onglets">
@@ -94,13 +50,9 @@ PayPal est un service qui vous permet de payer en ligne, d'envoyer et de recevoi
 </td>
 </table>
 </div>
- <ul id="Basdepage">
-        <li><a href="Page_contact.php">Nous contacter</a></li>
-        <li><a href="#">Plan du site</a></li>
-        <li><a href="Réglement.php">Réglement</a></li>
-        <li><a href="page_tarif.php">Tarif</a></li>
-        <li><a href="FAQ.php">FAQ</a></li>
-      </ul>
+ <?php
+ include("footer.php");
+ ?>
   </div>
   </body>
 </html>

@@ -1,7 +1,8 @@
 <DOCTYPE html>
-<?php
-include("haut_de_page.php");
-?>
+  <?php
+    include("haut_de_page.php");
+    include("bdd_connect.php");
+  ?>
     <link rel="stylesheet" href="Page echange.css" />
   <div id="menu">
   <ul id="onglets">
@@ -32,13 +33,13 @@ include("haut_de_page.php");
    <tbody > <!-- Corps du tableau -->
        <tr>
            <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+
           $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id where sale_or_change="1" ORDER BY product_on_line_id DESC');
 
           while ($donnees = $reponse->fetch())
           {
       ?>
-      <td><?php    echo $donnees['product_price'];?>€/kg</td>
+      <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0" /></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>

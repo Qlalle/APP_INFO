@@ -1,9 +1,10 @@
 <DOCTYPE html>
 
-<?php
-session_start();
-include("haut_de_page.php");
-?>
+  <?php
+    session_start();
+    include("haut_de_page.php");
+    include("bdd_connect.php");
+  ?>
     <link rel="stylesheet" href="Page_d'accueil.css" />
 
 <div id="menu">
@@ -34,7 +35,6 @@ include("haut_de_page.php");
    <tbody > <!-- Corps du tableau -->
        <tr>
            <?php
-          $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
           $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id ORDER BY product_on_line_id DESC');
 
           while ($donnees = $reponse->fetch())

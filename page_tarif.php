@@ -18,7 +18,7 @@ include("haut_de_page.php");
 
     
 
-    <div id="pagetarif">
+    <div id="pagetarif" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
       <h3 id="titre1"> PAYEZ EN TOUTE SÉCURITÉ !</h3>
       <img src="paiement_img.jpg" class="images_centre" />
       <h4>Pour vous simplifier la vie et répondre au plus près à l'ensemble de vos besoins, nous vous proposons un large choix de modes de paiement 100% sécurisé.</h4>
@@ -50,6 +50,7 @@ PayPal est un service qui vous permet de payer en ligne, d'envoyer et de recevoi
 </td>
 </table>
 </div>
+
  <?php
  include("footer.php");
  ?>

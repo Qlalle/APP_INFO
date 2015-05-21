@@ -43,12 +43,12 @@
    <form method="POST" action="add.php?id=">
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
-      <td><input type="number" name="quantity" id="qt" step="1" value="0" min="0" /></td>
+      <td><input type="number" name="quantity" id="qt" step="1" value="0" min="0" max=<?php '.$quantity';?>/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
         <td><input type="submit" value="Ajouter au panier" /></td>
         <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
-                <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
+      <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
       </form>
        </tr> 
       

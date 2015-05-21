@@ -46,7 +46,7 @@ else
     
     echo 'Vos infos on été ajoutées.';
     ?>
-    <a href="Page_d'accueil.php">retour page d'accueil</a> 
+    <meta http-equiv="refresh" content="3;Page_d'accueil.php" />
     <?php
 
    $req->closeCursor();   

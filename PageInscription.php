@@ -1,7 +1,10 @@
 <DOCTYPE html>
 
 <?php
-include("haut_de_page.php");
+
+session_start();
+    include("haut_de_page.php");
+    include("bdd_connect.php");
 ?>
 <div id="menu">
   <ul id="onglets">
@@ -34,7 +37,7 @@ include("haut_de_page.php");
 <label>Date de Naissance*      </label><input type="date" max="2100-01-01" min="1900-01-01" name="birthday"><br/>
 <label>Adresse*                 </label>  <input type="text" name="user_post_office_box"/><br/>
 <label>Profession*              </label><input type="text" name="job"/><br/>
-<label>Code postale*           </label> <input type="text" name="country"/><br/>
+<label>Code postal*           </label> <input type="text" name="country"/><br/>
 <label>Ville*                  </label><input type="text" name="city"/><br/>
 <label>E-mail*                 </label><input type="text" name="email"/><br/>
 <label>Confirmez e-mail*       </label><input type="text" name="email2"/><br/>
@@ -53,7 +56,7 @@ include("haut_de_page.php");
         
 
      // D'abord, je me connecte à la base de données.
-     $bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
+     //$bdd = new PDO('mysql:host=localhost;dbname=mydb2;charset=utf8', 'root', 'root');
     
       
       // Je recupere les infos, plus securité pour le code.

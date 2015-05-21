@@ -47,7 +47,8 @@ include("bdd_connect.php");
         <td><input type="submit" value="Ajouter au panier" /></td>
         <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
                 <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
-      
+      </form>
+       </tr> 
       
       <?php
           }

@@ -15,7 +15,7 @@ include("bdd_connect.php");
   </ul>
 </div>  
 
-<div id="corps" style="overflow:auto; height: 700px; width: 100%; border: 1px solid orange">
+<div id="corps" style="overflow:none; height: 700px; width: 1169px; border: 1px solid orange">
   <h2>Mettre votre produit en ligne</h2>
 <form method="post" action="traitement.php">
   <p>
@@ -27,7 +27,7 @@ include("bdd_connect.php");
     </select>
 
   </p>
-<br/>
+
   <p>
     <label for="produit">Choix du produit*</label><br/>
     <select name="produit" id="produit">
@@ -78,7 +78,7 @@ include("bdd_connect.php");
     </optgroup>
      </select>
    </p>
-<br/>
+
    <p>
     <label for="departement">Choix du departement*</label><br/>
 <select name="departement" id="departement">
@@ -100,7 +100,7 @@ include("bdd_connect.php");
       
           
   </p>
-<br/>
+
   <p>
     <label for="Qualité">Choix de la qualité*</label><br/>
     <select name="quality_type" id="Qualité">
@@ -109,9 +109,7 @@ include("bdd_connect.php");
           
     </select>
   </p>
-  <br/>
-  <br/>
-  <br/>
+
 
   <p>
     <label>Quantité : *</label><input type="number" name="quantity" id="qt" step="1" value="0" min="0"/>
@@ -119,18 +117,14 @@ include("bdd_connect.php");
   <p>
     <label>Prix : *</label><input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>
   </p>
-  <br/>
 
   <p id="Description">
 
         <label>Description du produit</label><br/><br/>
         <textarea name="product_comment_user" id="Description" rows="10" cols="50"></textarea>
   </p>
-  <br/>
-  <br/>
   <p id="champ">Champ obligatoire : *</p>
-  <br/>
-  <br/>
+
 
   <p id="bouton1">
       <input type="submit" name="EnvoyerDonnee" value="Valider" onclick="self.location.href='Page_d'accueil.php'" style="width:130px"/>

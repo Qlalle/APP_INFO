@@ -40,7 +40,7 @@ include("bdd_connect.php");
             {
               if (!in_array($donnees['family_product_name'], $alreadyItrerates)) {
                 ?>
-      <option value="<?php    echo $donnees['family_product_id'];?>"><?php    echo $donnees['family_product_name'];?></option>
+      <optgroup label="<?php    echo $donnees['family_product_name'];?>">
                 <?php
                 $alreadyItrerates[] = $donnees['family_product_name'];
               }
@@ -52,7 +52,7 @@ include("bdd_connect.php");
           }
           $reponse->closeCursor(); 
       ?> 
-
+      </optgroup>
     </optgroup>
     <optgroup label="Légumes">
       <?php
@@ -63,7 +63,7 @@ include("bdd_connect.php");
           {
               if (!in_array($donnees['family_product_name'], $alreadyItrerates)) {
                 ?>
-      <option value="<?php    echo $donnees['family_product_id'];?>"><?php echo $donnees['family_product_name'];?></option>
+      <optgroup label="<?php    echo $donnees['family_product_name'];?>">
                 <?php
                 $alreadyItrerates[] = $donnees['family_product_name'];
               }
@@ -75,6 +75,7 @@ include("bdd_connect.php");
           }
           $reponse->closeCursor(); 
       ?> 
+      </optgroup>
     </optgroup>
      </select>
    </p>

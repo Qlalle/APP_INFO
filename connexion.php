@@ -15,11 +15,14 @@ $req->execute(array($email));
 if (password_verify($mdp, $password['user_password']))
 {
   
-    echo 'Vous etes connecte !';
+    $_session['user_email']= $email;
 }
 else
 {
 
     echo 'Mot de passe incorrect!';
 }
+
+ 
+
 ?>

@@ -1,8 +1,6 @@
 <DOCTYPE html>
 
 <?php
-
-session_start();
     include("haut_de_page.php");
     include("bdd_connect.php");
 ?>
@@ -98,7 +96,10 @@ session_start();
               }
           
       }
+       $_session['user_email']=$_POST['user_email'];
+       echo "bonjour" .$user_name.;
     }
+   
     
 ?>
 </table>

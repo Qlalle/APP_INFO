@@ -1,7 +1,8 @@
+<?php session_start();?>
+
 <DOCTYPE html>
 
   <?php
-    //session_start();
     include("haut_de_page.php");
     include("bdd_connect.php");
   ?>
@@ -39,6 +40,7 @@
 
           while ($donnees = $reponse->fetch())
           {
+
       ?>
    <form method="POST" action="add.php?id=">
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 

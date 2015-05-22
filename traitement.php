@@ -1,4 +1,4 @@
- <?php
+<?php
 
 if(isset($_POST['sale_or_change'])){      $sale_or_change=$_POST['sale_or_change'];}
 else      $sale_or_change="";
@@ -17,7 +17,7 @@ else      htmlentities($product_comment_user="");
 
 if(empty($sale_or_change) && empty($quality_type) && empty($quantity) && empty($product_price) && ($EnvoyerDonnee <> "")) 
     {
-    echo '<font color="red">Attention, seul le champs <b>Commentaire</b> peut rester vide !</font>';
+    //echo '<font color="red">Attention, seul le champs <b>Commentaire</b> peut rester vide !</font>';
     }
 
 
@@ -29,7 +29,7 @@ else
  
     $req = $bdd->prepare('INSERT INTO product_on_line VALUES (NULL,:sale_or_change,:quality_type,:quantity, :product_price,:product_comment_user, NULL, NULL, "'.$_POST["produit"].'", "'.$_POST["departement"].'")');
     if (!$req) {
-        print_r($bdd->errorInfo());
+        //print_r($bdd->errorInfo());
     }
     $req->execute(array(
     	'sale_or_change'=>$sale_or_change,
@@ -38,17 +38,13 @@ else
     	'product_price'=>$product_price,
     	'product_comment_user'=>$product_comment_user
     	));
+
+    header("Location: Page_d'accueil.php");
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
+     
     
-
-    
-    echo 'Vos infos on été ajoutées.';
-    ?>
-    <meta http-equiv="refresh" content="2;Page_d'accueil.php" />
-    <?php
-
    $req->closeCursor();   
     } 
 ?>

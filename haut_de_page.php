@@ -13,11 +13,12 @@
     <h1 id="header"><a href="Page_d'accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
 
 <?php
-if(isset($_SESSION['$user_email'])){
-  echo "Bonjour" .$_SESSION['$user_email'];
+
+if ((!isset($_SESSION['user_email'])) || ($_SESSION['user_email'] == '')){
+    include ('cadre_connect.php');
 }
 else {
-include ('cadre_connect.php');
+    echo "Bonjour" .$_SESSION['user_email'];
 }
 ?>
 

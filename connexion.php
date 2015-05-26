@@ -15,7 +15,7 @@ $req->execute(array($email));
 if (password_verify($mdp, $password['user_password']))
 {
     session_start();
-    $_session['user_email']= $email;
+    $_SESSION['user_email']= $email;
     header('Location: /APP_INFO/Page_d\'accueil.php');
     echo 'vous etes bien connecte.';
 }

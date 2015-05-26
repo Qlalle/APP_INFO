@@ -1,12 +1,19 @@
-div#conteneur
+div#conteneur1
 {
     width: 1200px ;
     margin: 0 auto ;
-    text-align: left ;
+
     border: 2px solid #ab4 ;
     background: #fff ;
     background-image:url(tomates3.jpg);
     height: 1135px;
+
+}
+div#cadre
+{
+    text-align: right;
+    top :1px;
+    color: white;
 
 }
 h1#header

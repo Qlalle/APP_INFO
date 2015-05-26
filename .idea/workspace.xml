@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1d94e6-1753-4716-88d5-272fd0cdc907" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haut_de_page.php" afterPath="$PROJECT_DIR$/haut_de_page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page produit banane.php" afterPath="$PROJECT_DIR$/Page produit banane.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PageInscription.php" afterPath="$PROJECT_DIR$/PageInscription.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page_contact.php" afterPath="$PROJECT_DIR$/Page_contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page_echange.php" afterPath="$PROJECT_DIR$/Page_echange.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pagebio.php" afterPath="$PROJECT_DIR$/Pagebio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/panier.php" afterPath="$PROJECT_DIR$/panier.php" />
     </list>
     <ignored path="APP_INFO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="haut_de_page.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="haut_de_page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haut_de_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12556732" vertical-offset="172" max-vertical-offset="833">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="833">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <marker date="1432647485397" expanded="true" signature="496:637" placeholder="..." />
                 <marker date="1432647485397" expanded="true" signature="662:1138" placeholder="..." />
@@ -54,13 +58,57 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Page produit banane.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Page produit banane.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2856">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Page_contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Page_d'accueil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Page_d'accueil.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1309">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
               <folding>
                 <marker date="1432643705029" expanded="true" signature="1209:1386" placeholder="SELECT * FRO..product_on_line..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_echange.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Page_echange.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1224">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding>
+                <marker date="1432648521545" expanded="true" signature="1226:1428" placeholder="SELECT * FRO..product_on_line..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pagebio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pagebio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <folding>
+                <marker date="1432648391082" expanded="true" signature="1157:1357" placeholder="SELECT * FRO..product_on_line..." />
               </folding>
             </state>
           </provider>
@@ -69,10 +117,23 @@
       <file leaf-file-name="PageInscription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PageInscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="2210">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2227">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <marker date="1432644241591" expanded="true" signature="3552:3701" placeholder="INSERT INTO ..." />
+                <marker date="1432648538152" expanded="true" signature="3577:3726" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="panier.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/panier.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3343419" vertical-offset="119" max-vertical-offset="867">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <marker date="1432648554121" expanded="true" signature="237:393" placeholder="SELECT baske..basket_sale..." />
+                <marker date="1432648554121" expanded="true" signature="458:650" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -98,9 +159,14 @@
         <option value="$PROJECT_DIR$/New/PageInscription.php" />
         <option value="$PROJECT_DIR$/New/PDB1.php" />
         <option value="$PROJECT_DIR$/New/connexion.php" />
-        <option value="$PROJECT_DIR$/PageInscription.php" />
         <option value="$PROJECT_DIR$/connexion.php" />
         <option value="$PROJECT_DIR$/haut_de_page.php" />
+        <option value="$PROJECT_DIR$/Pagebio.php" />
+        <option value="$PROJECT_DIR$/Page_contact.php" />
+        <option value="$PROJECT_DIR$/Page produit banane.php" />
+        <option value="$PROJECT_DIR$/Page_echange.php" />
+        <option value="$PROJECT_DIR$/PageInscription.php" />
+        <option value="$PROJECT_DIR$/panier.php" />
       </list>
     </option>
   </component>
@@ -318,16 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PageInscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="2210">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <marker date="1432644241591" expanded="true" signature="3552:3701" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bdd_connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.051437218" vertical-offset="0" max-vertical-offset="661">
@@ -344,16 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Page_d'accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1309">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1432643705029" expanded="true" signature="1209:1386" placeholder="SELECT * FRO..product_on_line..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="595">
@@ -366,12 +412,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/haut_de_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12556732" vertical-offset="172" max-vertical-offset="833">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="833">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <marker date="1432647485397" expanded="true" signature="496:637" placeholder="..." />
             <marker date="1432647485397" expanded="true" signature="662:1138" placeholder="..." />
             <marker date="1432647485397" expanded="true" signature="731:1127" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pagebio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding>
+            <marker date="1432648391082" expanded="true" signature="1157:1357" placeholder="SELECT * FRO..product_on_line..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_d'accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
+          <folding>
+            <marker date="1432643705029" expanded="true" signature="1209:1386" placeholder="SELECT * FRO..product_on_line..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page produit banane.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_echange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding>
+            <marker date="1432648521545" expanded="true" signature="1226:1428" placeholder="SELECT * FRO..product_on_line..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageInscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1432648538152" expanded="true" signature="3577:3726" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3343419" vertical-offset="119" max-vertical-offset="867">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <marker date="1432648554121" expanded="true" signature="237:393" placeholder="SELECT baske..basket_sale..." />
+            <marker date="1432648554121" expanded="true" signature="458:650" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

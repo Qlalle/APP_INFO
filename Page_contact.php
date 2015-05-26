@@ -1,3 +1,4 @@
+<?php session_start();?>
 <DOCTYPE html>
 <?php
 include("haut_de_page.php");

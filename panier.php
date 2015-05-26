@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php
 session_start();
 include("bdd_connect.php");

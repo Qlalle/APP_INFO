@@ -12,5 +12,5 @@ $_SESSION = array();
 
 
 session_destroy();
-header('Location: /APP_INFO/Page_d\'accueil.php');
+header('Location: /APP_INFO/Page_accueil.php');
 ?>

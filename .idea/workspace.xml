@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae1d94e6-1753-4716-88d5-272fd0cdc907" name="Default" comment="" />
+    <list default="true" id="ae1d94e6-1753-4716-88d5-272fd0cdc907" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page_accueil.php" afterPath="$PROJECT_DIR$/Page_accueil.php" />
+    </list>
     <ignored path="APP_INFO.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -52,10 +54,13 @@
       <file leaf-file-name="Page_accueil.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Page_accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5302752" vertical-offset="0" max-vertical-offset="1343">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
-                <marker date="1432720680240" expanded="true" signature="1212:1389" placeholder="SELECT * FRO..product_on_line..." />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#!!top" expanded="true" />
+                <marker date="1432721962203" expanded="true" signature="1206:1383" placeholder="SELECT * FRO..product_on_line..." />
               </folding>
             </state>
           </provider>
@@ -100,6 +105,7 @@
         <option value="$PROJECT_DIR$/cadre_membre.php" />
         <option value="$PROJECT_DIR$/haut_de_page.css" />
         <option value="$PROJECT_DIR$/panier.php" />
+        <option value="$PROJECT_DIR$/Page_accueil.php" />
       </list>
     </option>
   </component>
@@ -210,7 +216,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -370,10 +376,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Page_accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5302752" vertical-offset="0" max-vertical-offset="1343">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
-            <marker date="1432720680240" expanded="true" signature="1212:1389" placeholder="SELECT * FRO..product_on_line..." />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1432721962203" expanded="true" signature="1206:1383" placeholder="SELECT * FRO..product_on_line..." />
           </folding>
         </state>
       </provider>

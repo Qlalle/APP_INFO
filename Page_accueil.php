@@ -6,11 +6,11 @@
     include("haut_de_page.php");
     include("bdd_connect.php");
   ?>
-    <link rel="stylesheet" href="Page_d'accueil.css" />
+    <link rel="stylesheet" href="Page_accueil.css" />
 
 <div id="menu">
   <ul id="onglets">
-    <li  class="active"><a href="Page_d'accueil.php"> Accueil </a></li>
+    <li  class="active"><a href="Page_accueil.php"> Accueil </a></li>
     <li><a href="Page_achat.php"> Achat </a></li>
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>

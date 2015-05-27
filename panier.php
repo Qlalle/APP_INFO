@@ -11,14 +11,14 @@ echo "le type de vente : ".$_POST['qualityType'];
 echo "vous etes : ".$email;echo "   ";
 
 ?>
-<form method="POST" action="Page_d'accueil.php">
+<form method="POST" action="Page_accueil.php">
     <input type="hidden" name="idid_prod" value=" <?php echo $id_productq; ?> " /> </input>
 </form>
 <?php
 //if($email==NULL){
 ?>
 
-    <a  href="Page_d'accueil.php">Retour page d'accueil</a>
+    <a  href="Page_accueil.php">Retour page d'accueil</a>
 
 <?php
 $reponse1 = $bdd->query('SELECT user_id FROM users WHERE user_email="'.$email.'"');

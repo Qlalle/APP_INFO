@@ -7,11 +7,12 @@
  */
  echo "Bonjour " .$_SESSION['user_email'];
 ?>
+
 <DOCTYPE html>
 <html>
-<form action="deconnexion.php" method="post">
-<p id="boutonDeco">
-    <input type="submit" value="Déconnexion" />
-</p>
-</form>
+	<form action="deconnexion.php" method="post">
+		<p id="boutonDeco">
+		    <input type="submit" value="Déconnexion" />
+		</p>
+	</form>
 </html>

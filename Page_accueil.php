@@ -1,6 +1,6 @@
 <?php session_start();?>
 
-<!DOCTYPE html>
+<DOCTYPE html>
 
   <?php
     include("haut_de_page.php");
@@ -15,11 +15,7 @@
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-<<<<<<< HEAD
-    <li><a href="verif_connect.php"> Vente/Echange</form></a></li>
-=======
-    <li><a href="Page_vente.php"> Vente </a></li>
->>>>>>> 8e52c99e38ca4f6d16eeb962dac87077fbf0f0b3
+    <li><a href="verif_connect.php"> Vente/Echange</a></li>
   </ul>
 </div>
   
@@ -46,7 +42,7 @@
           {
 
       ?>
-           <form method="POST" action="panier.php">
+   <form method="POST" action="panier.php">
                <input type="hidden" name="id_prod" value=" <?php echo $donnees['product_on_line_id']; ?> " />
                <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 

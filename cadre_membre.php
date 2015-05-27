@@ -13,5 +13,5 @@
 <p id="boutonDeco">
     <input type="submit" value="Déconnexion" />
 </p>
-    </form>
+</form>
 </html>

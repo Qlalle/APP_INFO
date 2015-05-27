@@ -25,14 +25,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="panier.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="panier.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panier.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4036697" vertical-offset="0" max-vertical-offset="867">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state vertical-scroll-proportion="-39.23077" vertical-offset="1819" max-vertical-offset="2941">
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding>
-                <marker date="1432720680906" expanded="true" signature="235:391" placeholder="SELECT baske..basket_sale..." />
-                <marker date="1432720680906" expanded="true" signature="456:648" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="618:673" placeholder="SELECT user_..users..." />
+                <marker date="1432715937776" expanded="true" signature="788:894" placeholder="SELECT baske..basket_sale..." />
+                <marker date="1432715937776" expanded="true" signature="1011:1120" placeholder="SELECT baket..basket_change..." />
+                <marker date="1432715937776" expanded="true" signature="1441:1519" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="1810:1916" placeholder="SELECT baske..basket_sale..." />
+                <marker date="1432715937776" expanded="true" signature="2067:2161" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="2648:2754" placeholder="SELECT baske..basket_sale..." />
+                <marker date="1432715937776" expanded="true" signature="2905:2999" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="3632:3712" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="4003:4112" placeholder="SELECT baket..basket_change..." />
+                <marker date="1432715937776" expanded="true" signature="4262:4360" placeholder="INSERT INTO ..." />
+                <marker date="1432715937776" expanded="true" signature="4788:4901" placeholder="SELECT baket..basket_change..." />
+                <marker date="1432715937776" expanded="true" signature="5053:5151" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_accueil.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Page_accueil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1432720680240" expanded="true" signature="1212:1389" placeholder="SELECT * FRO..product_on_line..." />
               </folding>
             </state>
           </provider>
@@ -63,7 +86,6 @@
         <option value="$PROJECT_DIR$/Page produit banane.php" />
         <option value="$PROJECT_DIR$/Page_echange.php" />
         <option value="$PROJECT_DIR$/PageInscription.php" />
-        <option value="$PROJECT_DIR$/panier.php" />
         <option value="$PROJECT_DIR$/Forum.php" />
         <option value="$PROJECT_DIR$/Page_achat.php" />
         <option value="$PROJECT_DIR$/Page_vente.php" />
@@ -77,6 +99,7 @@
         <option value="$PROJECT_DIR$/deconnexion.php" />
         <option value="$PROJECT_DIR$/cadre_membre.php" />
         <option value="$PROJECT_DIR$/haut_de_page.css" />
+        <option value="$PROJECT_DIR$/panier.php" />
       </list>
     </option>
   </component>
@@ -325,11 +348,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/panier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4036697" vertical-offset="0" max-vertical-offset="867">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="-39.23077" vertical-offset="1819" max-vertical-offset="2941">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding>
-            <marker date="1432720680906" expanded="true" signature="235:391" placeholder="SELECT baske..basket_sale..." />
-            <marker date="1432720680906" expanded="true" signature="456:648" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="618:673" placeholder="SELECT user_..users..." />
+            <marker date="1432715937776" expanded="true" signature="788:894" placeholder="SELECT baske..basket_sale..." />
+            <marker date="1432715937776" expanded="true" signature="1011:1120" placeholder="SELECT baket..basket_change..." />
+            <marker date="1432715937776" expanded="true" signature="1441:1519" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="1810:1916" placeholder="SELECT baske..basket_sale..." />
+            <marker date="1432715937776" expanded="true" signature="2067:2161" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="2648:2754" placeholder="SELECT baske..basket_sale..." />
+            <marker date="1432715937776" expanded="true" signature="2905:2999" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="3632:3712" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="4003:4112" placeholder="SELECT baket..basket_change..." />
+            <marker date="1432715937776" expanded="true" signature="4262:4360" placeholder="INSERT INTO ..." />
+            <marker date="1432715937776" expanded="true" signature="4788:4901" placeholder="SELECT baket..basket_change..." />
+            <marker date="1432715937776" expanded="true" signature="5053:5151" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1432720680240" expanded="true" signature="1212:1389" placeholder="SELECT * FRO..product_on_line..." />
           </folding>
         </state>
       </provider>

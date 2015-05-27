@@ -1,21 +1,21 @@
 <?php session_start();?>
 
-<DOCTYPE html>
+<!DOCTYPE html>
 
   <?php
     include("haut_de_page.php");
     include("bdd_connect.php");
   ?>
-    <link rel="stylesheet" href="Page_accueil.css" />
+    <link rel="stylesheet" href="Page_d'accueil.css" />
 
 <div id="menu">
   <ul id="onglets">
-    <li  class="active"><a href="Page_accueil.php"> Accueil </a></li>
+    <li  class="active"><a href="Page_d'accueil.php"> Accueil </a></li>
     <li><a href="Page_achat.php"> Achat </a></li>
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php"> Vente/Echange</a></li>
+    <li><a href="Page_vente.php"> Vente </a></li>
   </ul>
 </div>
   
@@ -42,7 +42,9 @@
           {
 
       ?>
-   <form method="POST" action="add.php?id=">
+           <form method="POST" action="panier.php">
+               <input type="hidden" name="id_prod" value=" <?php echo $donnees['product_on_line_id']; ?> " />
+               <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt" step="1" value="0" min="0" max="<?php echo $donnees['quantity'];?>"/></td>
@@ -63,7 +65,7 @@
    </tbody>
 </table>
      </div>
-<?
+<?php
 include("footer.php");
 ?>
       

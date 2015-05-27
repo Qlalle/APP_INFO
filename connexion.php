@@ -16,7 +16,7 @@ if (password_verify($mdp, $password['user_password']))
 {
     session_start();
     $_SESSION['user_email']= $email;
-    header('Location: /APP_INFO/Page_d\'accueil.php');
+    header('Location: /APP_INFO/Page_accueil.php');
     echo 'vous etes bien connecte.';
 }
 else

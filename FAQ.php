@@ -1,5 +1,5 @@
 <?php session_start();?>
-<!DOCTYPE html">
+<DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +13,7 @@
   <body>
   <div id="conteneur">    
     <header>
-    <h1 id="header"><a href="Page_d'accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
+    <h1 id="header"><a href="Page_accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
 
     <p id="pseudo">
         <label1>Email</label1> : <input type="text" name="email" size="25"/>
@@ -43,12 +43,12 @@
 </header>
     <div id="menu">
   <ul id="onglets">
-    <li><a href="Page_d'accueil.php"> Accueil </a></li>
+    <li><a href="Page_accueil.php"> Accueil </a></li>
     <li><a href="Page_achat.php"> Achat </a></li>
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php"> Vente </a></li>
+    <li><a href="Page_vente.php">Vente/Echange</a></li>
   </ul>
 </div>
 <div id="corps" style="overflow:none; height: 400px; width: 1000px; border: 1px solid orange">

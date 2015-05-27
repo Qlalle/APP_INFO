@@ -10,7 +10,7 @@
   <body>
     <div id="conteneur">    
       <header>
-        <h1 id="header"><a href="Page_d'accueil.php" title="Bio&amp;Bon">Bio&amp;Bon</a></h1>
+        <h1 id="header"><a href="Page_accueil.php" title="Bio&amp;Bon">Bio&amp;Bon</a></h1>
 
         <p id="pseudo">
           <label>Email</label> : <input type="text" name="email" size="25"/>

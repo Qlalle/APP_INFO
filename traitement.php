@@ -39,7 +39,7 @@ else
     	'product_comment_user'=>$product_comment_user
     	));
 
-    header("Location: Page_d'accueil.php");
+    header("Location: Page_accueil.php");
     } catch (PDOException $e) {
         echo $e->getMessage();
     }

@@ -10,7 +10,7 @@
   <body>
   <div id="conteneur1">
     <header>
-    <h1 id="header"><a href="Page_d'accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
+    <h1 id="header"><a href="Page_accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
 <div id="cadre">
 <?php
 

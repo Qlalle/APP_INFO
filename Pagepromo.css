@@ -167,9 +167,9 @@ a#ra{
     list-style-type : none;
     padding-bottom : 48px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
     top : -20px;
-    left : 250px;
+    left : 130px;
     position: relative;
-    width:800px;
+    width:850px;
 }
 #onglets li
 {

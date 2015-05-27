@@ -7,12 +7,12 @@
 ?>
 <div id="menu">
   <ul id="onglets">
-    <li><a href="Page_d'accueil.php"> Accueil </a></li>
+    <li><a href="Page_accueil.php"> Accueil </a></li>
     <li><a href="Page_achat.php"> Achat </a></li>
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php"> Vente </a></li>
+    <li><a href="Page_vente.php">Vente/Echange</a></li>
   </ul>
 </div>
     <link rel="stylesheet" href="PageInscription.css" />

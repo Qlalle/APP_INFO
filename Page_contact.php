@@ -6,27 +6,25 @@ include("haut_de_page.php");
     <link rel="stylesheet" href="Page_contact.css" />
   
 
-<div id="corps" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
-<h3>Vous souhaitez contacter le service Livraison, écrivez à <span>bioetbon@isep.fr</span></h3>
+<div id="corps" style="overflow:none; height: 745px; width: 1178px; border: 1px solid orange">
+<h3>Vous souhaitez contacter le service Livraison, écrivez à <span>bioetbon@gmail.com</span></h3>
 <h3>Pour toute autre demande, merci de remplir le formulaire ci-dessous :</h3>
-<br>
-    <p id="prenom">
+<br/>
+<br/>
+    <p>
         <label>Prenom :</label><input type="text" name="Prenom" size="25"/>
     </p>
-    <p id="nom">
-
+    <p>
         <label>Nom :</label><input type="text" name="Nom" size="25" />
     </p>
-    <p id="Email">
-
+    <p>
         <label>Email :</label><input type="text" name="Email" size="25" />
     </p>
-    <p id="Telephone">
-
+    <p>
         <label>Telephone :</label><input type="text" name="Telephone" size="25" />
     </p>
-    <br>
-    <br>
+    <br/>
+    <br/>
     <p id="objet">
 
         <label>Objet :</label><br/><input type="text" name="Objet" size="53" />

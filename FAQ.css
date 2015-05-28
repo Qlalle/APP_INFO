@@ -247,6 +247,7 @@ div#corps
     border-collapse: collapse;
     background-image:url(Fond.png);
     margin: 0 auto;
+    padding-left: 20px;
 }
 
 

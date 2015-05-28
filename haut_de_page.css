@@ -9,14 +9,6 @@ div#conteneur1
     height: 1135px;
 
 }
-div#cadre
-{
-    position: relative;
-    right: -1000px;
-    top :-250px;
-    color: white;
-
-}
 h1#header
 {
     height: 270px;
@@ -42,43 +34,7 @@ h1#header a
 header {
     height: 320px;
 }
-p#pseudo
-{
-    margin: 0 ;
-    padding-right: 10px ;
-    line-height: 3px ;
-    text-align: right ;
-    color: white ;
-    position:relative;
-    top: -250;
-    right:30;
-}
-p#mdp
-{
-    margin: 0 ;
-    padding-right: 10px ;
-    line-height: 30px ;
-    text-align: right ;
-    color: white;
-    position:relative;
-    top:-250;
-    right:30;
-}
-p#bouton 
-{
-    margin: 0 ;
-    padding-right: 10px ;
-    line-height: 30px ;
-    text-align: right ;
-    color: #8a0 ;
 
-}
-
-a#inscription{
-    width: 10px;
-    color: white;
-    
-}
 div#forum
 {
     position:relative;
@@ -162,10 +118,4 @@ a#ra{
 td#dep{
     position: relative;
     left: 50px;
-}
-table#hd{
-    position: relative;
-    top:-247px;
-    left: 1010px;
-    background: transparent;
 }

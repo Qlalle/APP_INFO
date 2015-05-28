@@ -11,7 +11,7 @@
     <table id="hd">
       <tr>
         <td>
-        <a id="inscription" href="PageInscription.php">Inscription</a>
+        <a href="PageInscription.php">Inscription</a>
   </td>
   <td>
 
@@ -22,3 +22,4 @@
 </tr>
 </table>
 </form>
+</html>

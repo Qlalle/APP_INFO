@@ -11,9 +11,8 @@
   <div id="conteneur1">
     <header>
     <h1 id="header"><a href="Page_accueil.php" title="Bio&Bon">Bio&Bon</a></h1>
-<div id="cadre">
-<?php
 
+<?php
 if ((!isset($_SESSION['user_email'])) || ($_SESSION['user_email'] == '')){
     include ('cadre_connect.php');
 }
@@ -22,7 +21,6 @@ else {
     include('cadre_membre.php');
 }
 ?>
-</div>
 
 
     <div id="forum"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>

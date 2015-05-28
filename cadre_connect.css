@@ -1,0 +1,47 @@
+p#pseudo
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top: -250;
+    right:30;
+}
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: black ;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right; ;
+    color: #8a0 ;
+    position:relative;
+    top:-250;
+    right:30;
+
+}
+a#inscription{
+    position: relative;
+    top: -273px;
+    right:-830;
+    width: 10px;
+    color: black;
+}
+table#hd{
+    position: relative;
+    top:-247px;
+    left: 1010px;
+    background: transparent;
+}

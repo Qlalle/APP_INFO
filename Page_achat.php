@@ -18,7 +18,7 @@ include("bdd_connect.php");
     <li><a href="Page_vente.php">Vente/Echange</a></li>
   </ul>
 </div>
-    <link rel="stylesheet" href="Page achat.css" />
+   
   
   
 <table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">

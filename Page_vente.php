@@ -16,7 +16,7 @@ include("bdd_connect.php");
   </ul>
 </div>  
 
-<div id="corps" style="overflow:none; height: 700px; width: 1169px; border: 1px solid orange">
+<div id="corps" style="overflow:none; height: 660px; width: 1198px; border: 1px solid orange">
   <h2>Mettre votre produit en ligne</h2>
 <form method="post" action="traitement.php">
   <p>

@@ -1,18 +1,17 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Guillaume
- * Date: 26/05/2015
- * Time: 16:25
- */
- echo "Bonjour " .$_SESSION['user_email'];
-?>
-
 <DOCTYPE html>
 <html>
+<link rel="stylesheet" href="cadre_membre.css">
+<div id="membre">
+<?php
+ echo "Bonjour " .$_SESSION['user_email'];
+?>
+</br>
+<a href="#">Mon profil</a>
+
 	<form action="deconnexion.php" method="post">
 		<p id="boutonDeco">
 		    <input type="submit" value="Déconnexion" />
 		</p>
 	</form>
+</div>
 </html>

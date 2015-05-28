@@ -27,7 +27,7 @@ else
         $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
  
-    $req = $bdd->prepare('INSERT INTO product_on_line VALUES (NULL,:sale_or_change,:quality_type,:quantity, :product_price,:product_comment_user, NULL, NULL, "'.$_POST["produit"].'", "'.$_POST["departement"].'")');
+    $req = $bdd->prepare('INSERT INTO product_on_line VALUES (NULL,:sale_or_change,:quality_type,:quantity, :product_price,:product_comment_user, NOW(), DATE_ADD(NOW(), INTERVAL 5 DAY), NULL, "'.$_POST["produit"].'", "'.$_POST["departement"].'")');
     if (!$req) {
         //print_r($bdd->errorInfo());
     }
@@ -38,6 +38,7 @@ else
     	'product_price'=>$product_price,
     	'product_comment_user'=>$product_comment_user
     	));
+
 
     header("Location: Page_accueil.php");
     } catch (PDOException $e) {

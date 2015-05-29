@@ -2,16 +2,16 @@
 
 <form method="post" action="connexion.php">
     <p id="pseudo">
-        <label>Email</label> : <input type="text" name="email" size="25"/>
+        Email : <input type="text" name="email" size="25"/>
     </p>
     <p id="mdp">
 
-        <label>Mot de passe</label> : <input type="password" name="mdp" size="25" />
+        Mot de passe: <input type="password" name="mdp" size="25" />
     </p>
     <table id="hd">
       <tr>
         <td>
-        <a href="PageInscription.php">Inscription</a>
+        <a href="Inscription.php">Inscription</a>
   </td>
   <td>
 

@@ -117,7 +117,7 @@ include("bdd_connect.php");
     <label>Quantité : *</label><input type="number" name="quantity" id="qt" step="1" value="0" min="0"/>
   </p>
   <p>
-    <label>Prix : *</label><input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>
+    <label>Prix : *</label><input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>€/kg
   </p>
 
   <p id="Description">
@@ -129,7 +129,7 @@ include("bdd_connect.php");
 
 
   <p id="bouton1">
-      <input type="submit" name="EnvoyerDonnee" value="Valider" onclick="self.location.href='Page_d'accueil.php'" style="width:130px"/>
+      <input type="submit" name="EnvoyerDonnee" value="Valider" onclick="self.location.href='Page_accueil.php'" style="width:130px"/>
     </p>
 
      <p id="bouton2">

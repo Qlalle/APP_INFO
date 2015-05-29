@@ -3,7 +3,11 @@
 
 <?php
 include("haut_de_page.php");
+include("bdd_connect.php");
 ?>
+
+<link rel="stylesheet" href="Pagepromo.css" />
+
 <div id="menu">
   <ul id="onglets">
     <li><a href="Page_accueil.php"> Accueil </a></li>
@@ -14,9 +18,10 @@ include("haut_de_page.php");
     <li><a href="Page_vente.php">Vente/Echange</a></li>
   </ul>
 </div>
-    <link rel="stylesheet" href="Pagepromo.css" />
+   
   
-    <table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
+  
+<table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
    <thead> <!-- En-tête du tableau -->
        <tr>
            <th><span id="prix">Prix</span></th>
@@ -28,75 +33,56 @@ include("haut_de_page.php");
        </tr>
    </thead>
  </table>
-<div style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
+ <div id="corps" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
 <table style="width: 100%;">
-   <tbody>
-   <tr>
-        <td> <p id="ancienPrix">4,20€/kg</p> <p id="nouveauPrix">3,10€/kg</p></td>
-           <td><img src="images3.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>Ile de France</td>
-       <td>Banane bio</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-       </tr>
-       
+   <tbody > <!-- Corps du tableau -->
+          <tr>
+           <?php
 
-<tr id="mangue">
-          <td> <p id="ancienPrix">3,00€/kg</p> <p id="nouveauPrix">2,10€/kg</p></td>
-           <td><img src="imagesmangue.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>Nord-Pas-de-Calais</td>
-       <td>Mangue bio</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-   </tr>
+          $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id where sale_or_change="0" ORDER BY product_on_line_id DESC');
 
-   <tr id="papaye">
-          <td> <p id="ancienPrix">2,00€/kg</p> <p id="nouveauPrix">1,40€/kg</p></td>
-           <td><img src="papaye.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>Martinique</td>
-       <td>Papaye</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-   </tr>
-       
-<tr id="pitaya">
-          <td> <p id="ancienPrix">2,00€/kg</p> <p id="nouveauPrix">1,10€/kg</p></td>
-           <td><img src="pitaya.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>Réunion</td>
-       <td>Pitaya</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-   </tr>
+          while ($donnees = $reponse->fetch())
+          {
+      ?>
+      <?php   
+          $date=$donnees['date_fin'];
+          $datetime = DateTime::createFromFormat('Y-m-d m:i:s',$date);
+if ($datetime) {
+          $datetime = $datetime->getTimestamp();
+} else {
+          $datetime = new DateTime("+5 day");
+}
+          $now = new DateTime();
+          $now = $now->getTimestamp();
+?>
+<?php if ($now>$datetime){ ?>
+      <td><?php echo $donnees['product_price'];?>€/kg </td> 
+      <td> <img src="<?php echo $donnees['image'];?>"/></td>
+      <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0"  max="<?php echo $donnees['quantity'];?>"/></td>
+       <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
+       <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
+        <td><input type="submit" value="Ajouter au panier" /></td>
+        <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+        <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
+       </tr> 
+      <?php 
+    }
 
-<tr id="melon">
-          <td> <p id="ancienPrix">2,00€/kg</p> <p id="nouveauPrix">1,10€/kg</p></td>
-           <td><img src="melonbio.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>France</td>
-       <td>Melon</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-   </tr>
-
-<tr id="patate">
-          <td> <p id="ancienPrix">2,00€/kg</p> <p id="nouveauPrix">1,10€/kg</p></td>
-           <td><img src="patate.png"height="90" width="90"/></td>
-           <td><input type="number",step="1" value="0" min="0" /></td>
-       <td>France</td>
-       <td>Pomme de terre</td>
-       <td><input type="submit" value="Ajouter au panier" /></td>
-       <td><input type="submit" value="En savoir plus" /></td>
-   </tr>   
+     else {  
+     } ?>
+      <?php
+          }
+          ?>
+           <h3><?php echo "Pas de promo actuellement";?></h3>
+           <?php
+          $reponse->closeCursor(); 
+      ?>
+           
    </tbody>
-   </table>
-   </div>
-         <?php
-         include("footer.php");
-         ?>
-    </div>
-</body>
+</table>
+
+     </div>
+
+<?php include("footer.php"); ?>
+
 </html>

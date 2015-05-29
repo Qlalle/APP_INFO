@@ -19,7 +19,7 @@
   </ul>
 </div>
 
- <div id="corp" style="overflow:auto; height: 665px; width: 1198px; border: 1px solid orange">
+ <div id="corp" style="overflow:auto; height: 665px; width: 1178px; border: 1px solid orange">
 <table style="width: 100%;">
 
 <h3>REMPLISSEZ CE FORMULAIRE POUR ACCÉDER AUX VENTES</h3>

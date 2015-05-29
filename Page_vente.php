@@ -16,7 +16,7 @@ include("bdd_connect.php");
   </ul>
 </div>  
 
-<div id="corps" style="overflow:none; height: 660px; width: 1198px; border: 1px solid orange">
+<div id="corps" style="overflow:none; height: 660px; width: 1178px; border: 1px solid orange">
   <h2>Mettre votre produit en ligne</h2>
 <form method="post" action="traitement.php">
   <p>
@@ -129,7 +129,7 @@ include("bdd_connect.php");
 
 
   <p id="bouton1">
-      <input type="submit" name="EnvoyerDonnee" value="Valider" onclick="self.location.href='Page_accueil.php'" style="width:130px"/>
+      <input type="submit" name="EnvoyerDonnee" value="Valider" style="width:130px"/>
     </p>
 
      <p id="bouton2">

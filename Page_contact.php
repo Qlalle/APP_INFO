@@ -81,7 +81,7 @@ include("haut_de_page.php");
             if ( !$mail->Send() ) {
               echo "Echec de l'envoi du mail, Erreur: " . $mail->ErrorInfo;
             } else {
-               echo "Message envoyé!";
+               ?> <div align="center"><h3 class="ok"><strong><?php echo "Message envoyé!"; ?></strong> </h3> </div> <?php
             }
         }
         unset($mail);

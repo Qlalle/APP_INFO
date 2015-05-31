@@ -13,5 +13,6 @@
 		    <input type="submit" value="Déconnexion" />
 		</p>
 	</form>
+<a href="monPanier.php">Mon panier</a>
 </div>
 </html>

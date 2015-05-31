@@ -62,6 +62,10 @@ if($reponse2['baket_change_id']!= NULL) {
 else{
     echo "panier d'échanges vide...";
 }
+?>
+</br>
+</br>
+<a href="Page_accueil.php"> Accueil </a>
 
-//prix, photo, quantité, région, description avec un total à la fin
-    //retiré quantité de produit-on_line quand on ajoute au panier
+<!--prix, photo, quantité, région, description avec un total à la fin
+    //retiré quantité de produit-on_line quand on ajoute au panier-->

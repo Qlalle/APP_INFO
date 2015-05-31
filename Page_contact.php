@@ -58,6 +58,10 @@ include("haut_de_page.php");
 
         if(isset($_POST['valider'])){
 
+          $to=$_POST['Email'];
+          $subject=$_POST['Objet'];
+          $Prenom=$_POST['Prenom'];
+          $Nom=$_POST['Nom'];
           $mail = new PHPMailer();
           $msg=$_POST['Commentaire'];
           $mail->IsSMTP(); // enable SMTP
@@ -71,10 +75,10 @@ include("haut_de_page.php");
           $mail->Password = "bioetbon";
           $mail->CharSet = "utf-8";
           $mail->SetFrom('bioetbon.isep@gmail.com');
-          $mail->Subject = 'test'; ?> </br> <?php
+          $mail->Subject = $subject; ?> </br> <?php
           $mail->Body = $msg;
-          $mail->AddAddress('quentin.lalle@gmail.com');
-          /*,'mlegallois@gmail.com'*/
+          $mail->AddAddress($to,'quentin.lalle@gmail.com');
+          /**/
 
 
 
@@ -84,9 +88,11 @@ include("haut_de_page.php");
                ?> <div align="center"><h3 class="ok"><strong><?php echo "Message envoyé!"; ?></strong> </h3> </div> <?php
             }
         }
+
         unset($mail);
 
       ?>
+
 
 </div>
 

@@ -15,7 +15,7 @@ include("bdd_connect.php");
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li  class="active"><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php">Vente/Echange</a></li>
+    <li><a href="verif_connect.php">Vente/Echange</a></li>
   </ul>
 </div>
    

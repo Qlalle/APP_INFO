@@ -13,15 +13,15 @@ include("haut_de_page.php");
 <br/>
     <p>
         <form method="POST"> 
-        <label>Prenom :</label><input type="text" name="Prenom" size="25"/>
+        <label>Prenom :*</label><input type="text" name="Prenom" size="25"/>
     </p>
     <p>
         <form method="POST"> 
-        <label>Nom :</label><input type="text" name="Nom" size="25" />
+        <label>Nom :*</label><input type="text" name="Nom" size="25" />
     </p>
     <p>
         <form method="POST"> 
-        <label>Email :</label><input type="text" name="Email" size="25" />
+        <label>Email :*</label><input type="text" name="Email" size="25" />
     </p>
     <p>
         <form method="POST"> 
@@ -31,12 +31,12 @@ include("haut_de_page.php");
     <br/>
     <p id="objet">
 
-        <label>Objet :</label><br/><input type="text" name="Objet" size="53" />
+        <label>Objet :*</label><br/><input type="text" name="Objet" size="53" />
 
     </p>
     <form method="POST"> 
     <p id="Commentaire">
-        <label>Commentaire :</label><br/>
+        <label>Commentaire :*</label><br/>
         <textarea name="Commentaire" type="text" rows="10" cols="50"></textarea>
     </p>
 

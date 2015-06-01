@@ -14,9 +14,9 @@ var testverifpost=true;
 function color(champ, erreur)
 {
 	if(erreur)
-		champ.style.backgroundColor = "red";
+		champ.style.backgroundColor = "#EE5E1B";
 	else
-		champ.style.backgroundColor = "green";
+		champ.style.backgroundColor = "#69B934";
 }
 
 

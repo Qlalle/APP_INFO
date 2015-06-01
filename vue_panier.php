@@ -1,3 +1,10 @@
+
+<DOCTYPE html>
+  <?php
+    include("haut_de_page.php");
+  ?>
+    <link rel="stylesheet" href="Page_echange.css" />
+
 <?php
 
 //include("haut_de_page.php");
@@ -27,23 +34,43 @@
 ----------------------------------------------------------------------------------------------*/
 
 if($choixV == 1){//panier achat non vide
+?>
+    <table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
+   <thead> <!-- En-tête du tableau -->
+       <tr>
+           <th><span id="prix">Prix</span></th>
+           <th><span id="photo">Photo</span></th>
+           <th><span id="region">Région</span></th>
+           <th><span id="description">Description</span></th>
+           <th> </th>
+       </tr>
+   </thead>
+ </table>
+<div id="fon" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
+<table id="fond" style="width: 100%;">
+    <?php
+    for($i=0;$i<count();i++){
 
-    echo "choixV1";?>
-<h1>1</h1>
+  $matrice0[$i][0];
+}
+   ?>
+</table>
+  </div>
+  </body>
+</html>
     <!--code html (et css) d'un panier vente ou il y a quelques chose, on utilise alors les tableaux et les données cités précédement dans la partie "PANIER VENTE"-->
 
     <!--<form method="POST" action="validation_panier_achat.php">
 
     </form>-->
-
-<?php}
-
+<?php 
+}
 else{//panier achat vide
     echo "choix2";?>
 <h1>2</h1>
     <!--code html (et css) d'un panier vente vide, les variables et tableaux n'existent pas.-->
 
-<?php}
+<?php }
 
 if($choixE == 1){//panier echange non vide
     echo "choix3";?>
@@ -52,12 +79,12 @@ if($choixE == 1){//panier echange non vide
     <!--<form method="POST" action="validation_panier_echange.php">
 
     </form>-->
-<?php}
+<?php }
 
 else{//panier echange vide
     echo "choix4";?>
 <h1>4</h1>
     <!--code html (et css) d'un panier echange vide, les variables et tableaux n'existent pas.-->
 
-<?php}
+<?php }
 echo "hello world !";

@@ -43,6 +43,7 @@
 <label>Confirmez e-mail*      </label><input type="text" name="email2" id="email2" onkeyup="verifmail2()" /><br/><br/>
 <label>Mot de passe*          </label><input type="password" name="password"/><br/><br/>
 <label>Confirmer mot de passe*</label><input type="password" name="passe2"/><br/><br/>
+<input type="checkbox" name="Regle"><a href="Reglement.php"> Reglement à valider </a></br></br>
 <input type="submit" name="valider" value="M'inscrire"/>
 </form>
  </tbody >
@@ -68,10 +69,11 @@
         htmlentities($job = $_POST['job']);
         htmlentities($user_post_office_box = $_POST['user_post_office_box']);
         htmlentities($city = $_POST['city']);
+        htmlentities($Regle=$_POST['Regle']);
       
         // empecher les codes php dans la base
       // Je verifie que TOUT les champs sont remplis.
-      if(empty($password)||empty($email)||empty($civilite) || empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
+      if(empty($password)||empty($email)|| empty($Regle)||empty($civilite) || empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
       {
         echo'Vous devez remplir toutes les coordonnées';
       }

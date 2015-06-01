@@ -3,7 +3,7 @@ session_start();
 include("bdd_connect.php");
 
 
-$email=$_SESSION['user_email'];
+$email=$_SESSION['user_firstname'];
 ?>
 
 <h1>BONJOUR <?php echo($email) ?> !!!</h1><h1>VLA TA BARQUETTE !</h1><?php

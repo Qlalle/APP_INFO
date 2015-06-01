@@ -63,7 +63,19 @@ include("haut_de_page.php");
           $Prenom=$_POST['Prenom'];
           $Nom=$_POST['Nom'];
           $mail = new PHPMailer();
-          $msg=$_POST['Commentaire'];
+          $message=$_POST['Commentaire'];
+          $msg='<html>
+          <body>
+            <p><b>Vous nous avez posé une question </b>'.$Prenom.'<b> et nous vous en remercions</b></p></br>   
+            <p>Le sujet : '.$subject.'</p>
+            <p>Votre message est :"'.$message.'"</p></br></br>
+            <p>Vous êtes : '.$Prenom.' '.$Nom.'</p>
+            <p>Votre email : '.$to.'</p></br></br>
+            <p>Nous vous repondrons très prochainement.</p></br>
+            <p>La team de BIO&BON vous remercie</p>
+            <p>Le pole Com : bioetbon.isep@gmail.com</p>          
+          </body>
+        </html>';
           $mail->IsSMTP(); // enable SMTP
           $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
           $mail->SMTPAuth = true; // authentication enabled
@@ -77,7 +89,7 @@ include("haut_de_page.php");
           $mail->SetFrom('bioetbon.isep@gmail.com');
           $mail->Subject = $subject; ?> </br> <?php
           $mail->Body = $msg;
-          $mail->AddAddress($to,'quentin.lalle@gmail.com');
+          $mail->AddAddress($to.',quentin.lalle@gmail.com');
           /**/
 
 

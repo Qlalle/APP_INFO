@@ -6,13 +6,14 @@
  echo "Bonjour " .$_SESSION['user_firstname'];
 ?>
 </br>
-<a href="#">Mon profil</a>
+<a href="#">Mon profil</a> &nbsp;
+<a href="monPanier.php">Mon panier</a>
 
 	<form action="deconnexion.php" method="post">
 		<p id="boutonDeco">
 		    <input type="submit" value="Déconnexion" />
 		</p>
 	</form>
-<a href="monPanier.php">Mon panier</a>
+
 </div>
 </html>

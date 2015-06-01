@@ -34,7 +34,7 @@ if($choixV = 1){//panier achat non vide
      <tbody > <!-- Corps du tableau -->
        <tr>
     <?php
-        for($i=0;$i<5;$i++){
+        for($i=0;$i<$index0;$i++){
   ?>
   <td><?php echo $matrice0[$i][0];?>€/kg</td>
   <td><img src="<?php echo $matrice0[$i][1];?>"/></td>
@@ -42,7 +42,7 @@ if($choixV = 1){//panier achat non vide
   <td><?php echo $matrice0[$i][3];?></td>
   <td><?php echo $matrice0[$i][5];?><br/><?php echo $matrice0[$i][4];?></td>
   <td><?php echo $matrice0[$i][6];?>€</td>
-  <td><input type="submit" value="Supprimer" /></td>
+  <td><input type="submit" value="Supprimer du panier achat" /></td>
   <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
         </tr>
   <?php
@@ -113,14 +113,14 @@ if($choixE = 1){//panier echange non vide
      <tbody > <!-- Corps du tableau -->
        <tr>
     <?php
-        for($i=0;$i<3;$i++){
+        for($i=0;$i<($index1);$i++){
   ?>
   <td><?php echo "Echange";?></td>
   <td><img src="<?php echo $matrice1[$i][0];?>"/></td>
   <td><?php echo $matrice1[$i][1];?></td>
   <td><?php echo $matrice1[$i][2];?></td>
   <td><?php echo $matrice1[$i][4];?><br/><?php echo $matrice1[$i][3];?></td>
-  <td><input type="submit" value="Supprimer" /></td>
+  <td><input type="submit" value="Supprimer du panier échange" /></td>
   <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
         </tr>
   <?php

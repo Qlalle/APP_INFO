@@ -2,8 +2,8 @@
 session_start();
 include("bdd_connect.php");
 
-//$_SESSION['email']=$email;
-$email="jb@gmail.com";
+$email=$_SESSION['user_email'];
+
 $id_productq=$_POST['id_prod'];
 echo "id du produit en ligne : ".$id_productq; echo "   ";
 echo "quantite choisie : ".$_POST['quantity']; echo "   ";

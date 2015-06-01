@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="cadre_membre.css">
 <div id="membre">
 <?php
- echo "Bonjour " .$_SESSION['user_email'];
+ echo "Bonjour " .$_SESSION['user_firstname'];
 ?>
 </br>
 <a href="#">Mon profil</a>

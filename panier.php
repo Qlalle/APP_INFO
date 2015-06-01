@@ -17,7 +17,6 @@ echo "vous etes : ".$email;echo "   ";
     <input type="hidden" name="idid_prod" value=" <?php echo $id_productq; ?> " /> </input>
 </form>
 <?php
-//if($email==NULL){
 ?>
 
     <a  href="Page_accueil.php">Retour page d'accueil</a>

@@ -76,7 +76,9 @@ if($reponse0['basket_sale_id']==NULL && $_POST['qualityType']!=0){
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
-
+    $reponse5 = $bdd->query('SELECT quantity FROM product_on_line WHERE product_on_line_id="'.$_POST['id_prod'].'"  ');
+    $reponse5 = $reponse5->fetch();
+    $bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse5['quantity']-$_POST['quantity']).'"  WHERE product_on_line_id="' . $_POST['id_prod'] . '"');
 }
 elseif($reponse0['basket_sale_id']!=NULL && $_POST['qualityType']!=0){
     echo "l'utilisateur a un panier achat";

@@ -60,7 +60,7 @@ if ($datetime) {
           //var_dump($datetime);
 ?>
 <?php if ($now>$datetime){ ?>
-      <td><?php echo $donnees['product_price']*0.5;?>€/kg <br/><?php ?><strike> <?php echo $donnees['product_price'];?></strike><strike>€/kg</strike></td> 
+      <td><font color="red"><?php echo $donnees['product_price']*0.5;?>€/kg</font> <br/><?php ?><strike> <?php echo $donnees['product_price'];?></strike><strike>€/kg</strike></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0"  max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>

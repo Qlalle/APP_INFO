@@ -123,9 +123,10 @@ if($reponse2['baket_change_id']!= NULL) {
     }$reponse5->closeCursor();
     $choixE=1;
 }
+
 else{
     echo "panier d'échanges vide...";
     $choixE=2;
 }
-for
-echo
+echo $matrice0[0][0];
+

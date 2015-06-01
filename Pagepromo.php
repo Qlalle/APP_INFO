@@ -41,22 +41,26 @@ include("bdd_connect.php");
 
           $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id where sale_or_change="0" ORDER BY product_on_line_id DESC');
 
+          $promo = false;
           while ($donnees = $reponse->fetch())
           {
+            $promo = true;
       ?>
       <?php   
           $date=$donnees['date_fin'];
-          $datetime = DateTime::createFromFormat('Y-m-d m:i:s',$date);
+          $datetime = DateTime::createFromFormat('Y-m-d H:i:s',$date);
 if ($datetime) {
           $datetime = $datetime->getTimestamp();
+          //echo $datetime;
 } else {
-          $datetime = new DateTime("+5 day");
+          $datetime = new DateTime("+1 day");
 }
           $now = new DateTime();
           $now = $now->getTimestamp();
+          //var_dump($datetime);
 ?>
 <?php if ($now>$datetime){ ?>
-      <td><?php echo $donnees['product_price'];?>€/kg </td> 
+      <td><?php echo $donnees['product_price']*0.5;?>€/kg <br/><?php ?><strike> <?php echo $donnees['product_price'];?></strike><strike>€/kg</strike></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0"  max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
@@ -73,7 +77,7 @@ if ($datetime) {
       <?php
           }
           ?>
-           <h3><?php echo "Pas de promo actuellement";?></h3>
+           <h3><?php echo ($promo)?"":"Pas de promo actuellement";?></h3>
            <?php
           $reponse->closeCursor(); 
       ?>

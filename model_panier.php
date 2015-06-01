@@ -37,6 +37,9 @@ if($reponse1['basket_sale_id']!=NULL) {
 
         $sous_total = ($reponse2['product_price'])*($donnees0['quantity_basket_sale']);
         $total_sale+=$sous_total;
+
+        $bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse2['quantity']-$donnees0['quantity_basket_sale']).'"  WHERE product_on_line_id="' . $donnees0['id_product_on_line'] . '"');
+
         ?>
         <p>
             type de produit : <?php echo $reponse2['product_name'];?><br>
@@ -95,6 +98,8 @@ if($reponse2['baket_change_id']!= NULL) {
 
         $reponse6 = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON id_departement=departement_id WHERE product_on_line_id="' . $donnees5['id_product_on_line'] . '"');
         $reponse6 = $reponse6->fetch();
+
+        $bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse4['quantity']-$donnees5['quantity_basket_change']).'"  WHERE product_on_line_id="' . $donnees5['id_product_on_line'] . '"');
         ?>
         <p>
             type de produit : <?php echo $reponse4['product_name'];?><br>

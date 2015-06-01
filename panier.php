@@ -43,7 +43,7 @@ if($reponse0['basket_sale_id']==NULL && $_POST['qualityType']!=0){
     $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
 
-        $req = $bdd->prepare('INSERT INTO basket_sale VALUES (NULL,"25-02-2015 00:00",:validation,:id_user )');
+        $req = $bdd->prepare('INSERT INTO basket_sale VALUES (NULL,NOW(),:validation,:id_user )');
         if (!$req) {
             print_r($bdd->errorInfo());
         }
@@ -108,7 +108,7 @@ elseif($reponse3['baket_change_id']==NULL && $_POST['qualityType']==0){
     $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
 
-        $req = $bdd->prepare('INSERT INTO basket_change VALUES (NULL,"25-02-2015 00:00",:validation,:id_user )');
+        $req = $bdd->prepare('INSERT INTO basket_change VALUES (NULL,NOW(),:validation,:id_user )');
         if (!$req) {
             print_r($bdd->errorInfo());
         }

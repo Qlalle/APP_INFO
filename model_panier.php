@@ -16,13 +16,14 @@ if($reponse1['basket_sale_id']!=NULL) {
     ?><br><?php
     $choixV=1;
     $total_sale=0;
-    $tab_sale_nom=array();
-    $tab_sale_photo=array();
-    $tab_sale_price_unit=array();
-    $tab_sale_quantite=array();
-    $tab_sale_dep=array();
-    $tab_sale_prod_desc=array();
-    $tab_sale_price_sous_tot=array();
+    //$tab_sale_nom=array();
+    //$tab_sale_photo=array();
+    //$tab_sale_price_unit=array();
+    //$tab_sale_quantite=array();
+    //$tab_sale_dep=array();
+    //$tab_sale_prod_desc=array();
+    //$tab_sale_price_sous_tot=array();
+    $matrice0=array();
     $index0=0;
 
     $reponse0 = $bdd->query('SELECT * FROM product_in_basket_sale INNER JOIN product_on_line ON id_product_on_line=product_on_line_id WHERE id_basket_sale="' . $reponse1['basket_sale_id'] . '"');
@@ -51,13 +52,14 @@ if($reponse1['basket_sale_id']!=NULL) {
             prix sous total total :<?php echo $sous_total;?> euro(s)
         </p>
         <?php
-        $tab_sale_nom[$index0]=$reponse2['product_name'];
-        $tab_sale_photo[$index0]=$reponse2['image'];
-        $tab_sale_price_unit[$index0]=$reponse2['product_price'];
-        $tab_sale_quantite[$index0]=$donnees0['quantity_basket_sale'];
-        $tab_sale_dep[$index0]=$reponse7['departement_nom'];
-        $tab_sale_prod_desc[$index0]=$reponse2['product_description'];
-        $tab_sale_price_sous_tot[$index0]=$sous_total;
+        //$tab_sale_nom[$index0]=$reponse2['product_name'];
+        //$tab_sale_photo[$index0]=$reponse2['image'];
+        //$tab_sale_price_unit[$index0]=$reponse2['product_price'];
+        //$tab_sale_quantite[$index0]=$donnees0['quantity_basket_sale'];
+        //$tab_sale_dep[$index0]=$reponse7['departement_nom'];
+        //$tab_sale_prod_desc[$index0]=$reponse2['product_description'];
+        //$tab_sale_price_sous_tot[$index0]=$sous_total;
+        $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$reponse7['departement_nom'],$reponse2['product_description'],$sous_total);
         $index0+=1;
 
 
@@ -68,7 +70,7 @@ if($reponse1['basket_sale_id']!=NULL) {
 }
 else{
     echo "panier d'achats vide...";?><br><?php
-    //$choiV=2;
+    $choiV=2;
 }
 
 
@@ -82,12 +84,13 @@ if($reponse2['baket_change_id']!= NULL) {
     echo "votre panier d'échanges :";
     ?><br><?php
     $reponse5 = $bdd->query('SELECT * FROM product_in_basket_change INNER JOIN product_on_line ON id_product_on_line=product_on_line_id WHERE id_basket_change="' . $reponse2['baket_change_id'] . '"');
-
-    $tab_echange_nom=array();
-    $tab_echange_photo=array();
-    $tab_echange_quantite=array();
-    $tab_echange_dep=array();
-    $tab_echange_prod_desc=array();
+//prix unitaire, photo, region , desc, sous total,
+    //$tab_echange_nom=array();
+    //$tab_echange_photo=array();
+    //$tab_echange_quantite=array();
+    //$tab_echange_dep=array();
+    //$tab_echange_prod_desc=array();
+    $matrice1=array();
     $index1=0;
 
 
@@ -109,11 +112,12 @@ if($reponse2['baket_change_id']!= NULL) {
             description : <?php echo $reponse4['product_description'];?><br>
         </p>
         <?php
-        $tab_echange_nom[$index1]=$reponse4['product_name'];
-        $tab_echange_photo[$index1]=$reponse4['image'];
-        $tab_echange_quantite[$index1]=$donnees5['quantity_basket_change'];
-        $tab_echange_dep[$index1]=$reponse6['departement_nom'];
-        $tab_echange_prod_desc[$index1]=$reponse4['product_description'];
+        $matrice1[$index1]=array($reponse4['product_name'],$reponse4['image'],$reponse6['departement_nom'],$reponse4['product_description']);
+        //$tab_echange_nom[$index1]=$reponse4['product_name'];
+        //$tab_echange_photo[$index1]=$reponse4['image'];
+        //$tab_echange_quantite[$index1]=$donnees5['quantity_basket_change'];
+        //$tab_echange_dep[$index1]=$reponse6['departement_nom'];
+        //$tab_echange_prod_desc[$index1]=$reponse4['product_description'];
         $index1+=1;
 
     }$reponse5->closeCursor();
@@ -121,5 +125,7 @@ if($reponse2['baket_change_id']!= NULL) {
 }
 else{
     echo "panier d'échanges vide...";
-    //$choixE=2;
+    $choixE=2;
 }
+for
+echo

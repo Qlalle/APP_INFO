@@ -7,7 +7,7 @@
 
 <table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
 <?php
-if($choixV = 1){//panier achat non vide
+if($choixV == 1){//panier achat non vide
 ?>
 <table style="overflow:none; height: 50px; width: 100%; border: 1px solid orange">
    <thead> <!-- En-tête du tableau -->
@@ -36,6 +36,11 @@ if($choixV = 1){//panier achat non vide
     <?php
         for($i=0;$i<$index0;$i++){
   ?>
+           <form method="POST" action="supr_objet_panier_vente.php">
+               <input type="hidden" name="id_prod_panier_achat" value=" <?php echo $matrice0[$i][7]; ?> " />
+               <input type="hidden" name="id_prod_on_line" value=" <?php echo $matrice0[$i][8]; ?> " />
+               <input type="hidden" name="quantity_panier" value=" <?php echo $matrice0[$i][2]; ?> " />
+               <input type="hidden" name="quantity_line" value=" <?php echo $matrice0[$i][9]; ?> " />
   <td><?php echo $matrice0[$i][0];?>€/kg</td>
   <td><img src="<?php echo $matrice0[$i][1];?>"/></td>
   <td><?php echo $matrice0[$i][2];?></td>
@@ -43,6 +48,7 @@ if($choixV = 1){//panier achat non vide
   <td><?php echo $matrice0[$i][5];?><br/><?php echo $matrice0[$i][4];?></td>
   <td><?php echo $matrice0[$i][6];?>€</td>
   <td><input type="submit" value="Supprimer du panier achat" /></td>
+               </form>
   <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
         </tr>
   <?php
@@ -65,6 +71,7 @@ if($choixV = 1){//panier achat non vide
     <!--<form method="POST" action="validation_panier_achat.php">
 
     </form>-->
+    <td><input type="submit" value="validerPanierAchat" /></td>
 <?php }
 else {//panier achat vide
     ?>
@@ -81,13 +88,13 @@ else {//panier achat vide
  </table>
  <div id="fon" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
- <h3 style="color:red">Votre Panier est vide</h3>
+ <h3 style="color:red">Votre Panier d'achat est vide</h3>
 </table>
     <!--code html (et css) d'un panier vente vide, les variables et tableaux n'existent pas.-->
 
 <?php }
 
-if($choixE = 1){//panier echange non vide
+if($choixE == 1){//panier echange non vide
     ?>
     <table style="overflow:auto; height: 50px; width: 100%; border: 1px solid orange">
    <thead> <!-- En-tête du tableau -->
@@ -151,7 +158,7 @@ else {//panier echange vide
  </table>
  <div id="fon" style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
- <h3 style="color:red">Votre Panier est vide</h3>
+ <h3 style="color:red">Votre Panier d'echange est vide</h3>
 </table>
 </table>
     <!--code html (et css) d'un panier echange vide, les variables et tableaux n'existent pas.-->

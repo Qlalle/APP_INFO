@@ -5,6 +5,8 @@ $choixE=0;
 $reponse1=$bdd->query('SELECT basket_sale_id FROM basket_sale INNER JOIN users ON id_user=user_id WHERE user_email="'.$email.'"');
 $reponse1 = $reponse1->fetch();
 
+
+
 //panier des achats
 
 if($reponse1['basket_sale_id']!=NULL) {
@@ -25,22 +27,23 @@ if($reponse1['basket_sale_id']!=NULL) {
         $sous_total = ($reponse2['product_price'])*($donnees0['quantity_basket_sale']);
         $total_sale+=$sous_total;
 
-        $bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse2['quantity']-$donnees0['quantity_basket_sale']).'"  WHERE product_on_line_id="' . $donnees0['id_product_on_line'] . '"');
+        //$bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse2['quantity']-$donnees0['quantity_basket_sale']).'"  WHERE product_on_line_id="' . $donnees0['id_product_on_line'] . '"');
 
         ?>
         <?php
-        $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$donnees0['quantity_basket_sale'],$reponse7['departement_nom'],$reponse2['product_description'],$reponse2['product_name'],$sous_total);
+        $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$donnees0['quantity_basket_sale'],$reponse7['departement_nom'],$reponse2['product_description'],$reponse2['product_name'],$sous_total,$donnees0['product_in_basket_sale_id'],$reponse7['product_on_line_id'],$reponse7['quantity']);
         $index0+=1;
 
 
     }$reponse0->closeCursor();
+    $choixV=1;
     ?>
 <?php
-    echo $matrice0[0][0];
+    //echo $matrice0[0][0];
 }
 else{
-    echo "panier d'achats vide";?><br><?php
-    $choiV=2;
+
+    $choixV=2;
 }
 
 

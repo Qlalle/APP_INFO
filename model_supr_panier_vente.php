@@ -1,4 +1,6 @@
 <?php
+
+    $email=$_SESSION['user_email'];
 $var0=$_POST['id_prod_panier_achat'];
 $var1=$_POST['id_prod_on_line'];
 

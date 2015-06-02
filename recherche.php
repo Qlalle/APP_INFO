@@ -12,7 +12,7 @@ include("bdd_connect.php");
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php">Vente/Echange</a></li>
+    <li><a href="Page_vente.php">Ajout produit</a></li>
   </ul>
 </div>
   
@@ -54,7 +54,7 @@ include ('connect.php'); // lien avec l'autre page
                <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
-      <td><input type="number" name="quantity" id="qt" step="1" value="0" min="0" max="<?php echo $donnees['quantity'];?>"/></td>
+      <td><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
         <td><input type="submit" value="Ajouter au panier" /></td>
@@ -64,12 +64,21 @@ include ('connect.php'); // lien avec l'autre page
        </tr> 
 
       <?php
+
+
+
             $count = $reponse->rowCount(); 
               }
-            }
-      ?>
-       <h3><?php echo "Il y a $count produit correspondant à votre recherche.";?></h3>
-       <?php
+      }    
+      if($count!=0){?>
+       <h3><?php echo "Il y a ".$count." produit(s) correspondant à votre recherche.";?></h3>
+       <?php }
+       else {
+        ?>
+
+<h3><?php echo "Il n'y a aucun produit correspondant à votre recherche.";?></h3>
+<?php
+       }
             $reponse->closeCursor(); 
       ?> 
       </table>

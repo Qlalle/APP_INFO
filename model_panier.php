@@ -1,5 +1,4 @@
 <?php
-
 $choixV=0;
 $choixE=0;
 $reponse1=$bdd->query('SELECT basket_sale_id FROM basket_sale INNER JOIN users ON id_user=user_id WHERE user_email="'.$email.'"');
@@ -69,7 +68,7 @@ if($reponse2['baket_change_id']!= NULL) {
         $bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse4['quantity']-$donnees5['quantity_basket_change']).'"  WHERE product_on_line_id="' . $donnees5['id_product_on_line'] . '"');
         ?>
         <?php
-        $matrice1[$index1]=array($reponse4['image'],$donnees5['quantity_basket_change'],$reponse6['departement_nom'],$reponse4['product_description'],$reponse4['product_name']);
+        $matrice1[$index1]=array($reponse4['image'],$donnees5['quantity_basket_change'],$reponse6['departement_nom'],$reponse4['product_description'],$reponse4['product_name'],$donnees5['product_in_basket_change_id'],$reponse6['product_on_line_id'],$reponse6['quantity']);
         $index1+=1;
 
     }$reponse5->closeCursor();
@@ -77,7 +76,6 @@ if($reponse2['baket_change_id']!= NULL) {
 }
 
 else{
-    echo "panier d'échanges vide";
     $choixE=2;
 }
 

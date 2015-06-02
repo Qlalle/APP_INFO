@@ -15,7 +15,7 @@ include("bdd_connect.php");
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="verif_connect.php">Vente/Echange</a></li>
+    <li><a href="verif_connect.php">Ajout produit</a></li>
   </ul>
 </div>
    
@@ -46,7 +46,7 @@ include("bdd_connect.php");
       ?>
      <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
-      <td><input type="number" name="quantity" id="qt",step="1" value="0" min="0"  max="<?php echo $donnees['quantity'];?>"/></td>
+      <td><input type="number" name="quantity" id="qt",step="1" value="1" min="1"  max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
         <td><input type="submit" value="Ajouter au panier" /></td>

@@ -30,6 +30,60 @@ h1#header a
 header {
     height: 320px;
 }
+span#prix1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: 0px ;
+
+}
+span#photo1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: 0px ;
+
+}
+span#quant1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -50px ;
+
+}
+span#region1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative ;
+    left: -150px ;
+
+}
+span#description1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -270px ;
+
+}
+span#soustotal1
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: left; 
+    position: relative ;
+    left: -375px ;
+
+}
 span#prix
 {
     font-family: sans-serif;
@@ -48,13 +102,13 @@ span#photo
     left: -45px ;
 
 }
-span
+span#quant
 {
     font-family: sans-serif;
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -130px ;
+    left: -155px ;
 
 }
 span#region
@@ -63,7 +117,7 @@ span#region
     font-size: 20px;
     text-align: left;
     position: relative ;
-    left: -225px ;
+    left: -275px ;
 
 }
 span#description
@@ -72,7 +126,7 @@ span#description
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -340px ;
+    left: -410px ;
 
 }
 
@@ -170,18 +224,22 @@ td /* Mettre une bordure sur les td ET les th */
 {
     text-align: center;
 }
-#qt{
-    width:35px;
-    position: relative;
-    left:15px;
-}
+
 td#dep{
     position: relative;
-    left: 50px;
+    left: 30px;
 }
 table#hd{
     position: relative;
     top:-247px;
     left: 1010px;
     background: transparent;
+}
+td#qq{
+    position: relative;
+    left: -20px;
+}
+td#pho{
+    position: relative;
+    left: -30px;
 }

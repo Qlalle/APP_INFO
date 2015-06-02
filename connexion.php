@@ -9,7 +9,11 @@ $mdp = $_POST['mdp'];
 $req = $bdd->prepare("SELECT user_password FROM users WHERE user_email = ?");
 $req->execute(array($email));
     $password = $req->fetch();
+
 $req1 =$bdd->prepare("SELECT *  FROM users WHERE user_email= ?");
+
+$req1 =$bdd->prepare("SELECT * FROM users WHERE user_email= ?");
+
 $req1->execute(array($email));
     $tab = $req1->fetch();
 $firstname = $tab['user_firstname'];
@@ -34,7 +38,7 @@ if (password_verify($mdp, $password['user_password']))
 else
 {
 
-    echo 'Mot de passe incorrect!';
+    echo 'Mot de passe ou email incorrect!';
 }
 
  

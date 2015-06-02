@@ -6,12 +6,14 @@ $email=$_SESSION['user_email'];
 
 
 //$_SESSION['email']=$email;
-$id_productq=$_POST['id_prod'];
+/*$id_productq=$_POST['id_prod'];
 echo "id du produit en ligne : ".$id_productq; echo "   ";
 echo "quantite choisie : ".$_POST['quantity']; echo "   ";
 echo "le type de vente : ".$_POST['qualityType'];
-echo "vous etes : ".$email;echo "   ";
+echo "vous etes : ".$email;echo "   ";*/
+$message='Votre produit a ete ajouter au panier';
 
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
 ?>
 <form method="POST" action="Page_accueil.php">
     <input type="hidden" name="idid_prod" value=" <?php echo $id_productq; ?> " /> </input>

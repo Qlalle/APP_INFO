@@ -14,7 +14,7 @@ include("haut_de_page.php");
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php">Vente/Echange</a></li>
+    <li><a href="Page_vente.php">Ajout produit</a></li>
   </ul>
 </div>
 <div id="corps" style="overflow:none; height: 660px; width: 1178px; border: 1px solid orange">

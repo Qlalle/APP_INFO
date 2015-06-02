@@ -6,7 +6,7 @@
  echo "Bonjour " .$_SESSION['user_firstname'];
 ?>
 </br>
-<a href="#">Mon profil</a> &nbsp;
+<a href="pageprofil.php">Mon profil</a> &nbsp;
 <a href="monPanier.php">Mon panier</a>
 
 	<form action="deconnexion.php" method="post">

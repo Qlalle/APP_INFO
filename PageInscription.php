@@ -12,7 +12,7 @@
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php">Vente/Echange</a></li>
+    <li><a href="Page_vente.php">Ajout produit</a></li>
   </ul>
 </div>
     <link rel="stylesheet" href="PageInscription.css" />

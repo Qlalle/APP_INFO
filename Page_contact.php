@@ -9,34 +9,35 @@ include("haut_de_page.php");
 <div id="corps" style="overflow:none; height: 745px; width: 1178px; border: 1px solid orange">
 <h3>Vous souhaitez contacter le service Livraison, écrivez à <span>bioetbon.isep@gmail.com</span></h3>
 <h3>Pour toute autre demande, merci de remplir le formulaire ci-dessous :</h3>
+<h6> Champs obligatoires *</h6>
 <br/>
 <br/>
     <p>
         <form method="POST"> 
-        <label>Prenom :*</label><input type="text" name="Prenom" size="25"/>
+        <label>Prenom : *</label><input type="text" name="Prenom" size="25"/>
     </p>
     <p>
         <form method="POST"> 
-        <label>Nom :*</label><input type="text" name="Nom" size="25" />
+        <label>Nom : *</label><input type="text" name="Nom" size="25" />
     </p>
     <p>
         <form method="POST"> 
-        <label>Email :*</label><input type="text" name="Email" size="25" />
+        <label>Email : *</label><input type="text" name="Email" size="25" />
     </p>
-    <p>
+    <!--<p>
         <form method="POST"> 
         <label>Telephone :</label><input type="text" name="Telephone" size="25" />
-    </p>
+    </p>-->
     <br/>
     <br/>
     <p id="objet">
 
-        <label>Objet :*</label><br/><input type="text" name="Objet" size="53" />
+        <label>Objet : *</label><br/><input type="text" name="Objet" size="53" />
 
     </p>
     <form method="POST"> 
     <p id="Commentaire">
-        <label>Commentaire :*</label><br/>
+        <label>Commentaire : *</label><br/>
         <textarea name="Commentaire" type="text" rows="10" cols="50"></textarea>
     </p>
 
@@ -89,7 +90,8 @@ include("haut_de_page.php");
           $mail->SetFrom('bioetbon.isep@gmail.com');
           $mail->Subject = $subject; ?> </br> <?php
           $mail->Body = $msg;
-          $mail->AddAddress($to.',quentin.lalle@gmail.com');
+          $mail->AddAddress('quentin.lalle@gmail.com');
+          $mail->AddCC($to,$Prenom);
           /**/
 
 

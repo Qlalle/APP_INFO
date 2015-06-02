@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("bdd_connect.php");
-
+include("verif_panier.php");
 $email=$_SESSION['user_email'];
 
 

@@ -37,8 +37,10 @@ if (password_verify($mdp, $password['user_password']))
 }
 else
 {
+        $message='Mot de passe ou email incorrect!';
 
-    echo 'Mot de passe ou email incorrect!';
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
+
 }
 
  

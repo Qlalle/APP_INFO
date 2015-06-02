@@ -91,7 +91,7 @@ else {//panier achat vide
        </tr>
    </thead>
  </table>
- <div id="fon" style="overflow:auto; height: 275px; width: 100%; border: 1px solid orange">
+ <div id="fon" style="overflow:auto; height: 350px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
  <h3 style="color:red">Votre Panier d'achat est vide</h3>
 </table>
@@ -181,7 +181,7 @@ else {//panier echange vide
        </tr>
    </thead>
  </table>
- <div id="fon" style="overflow:auto; height: 275px; width: 100%; border: 1px solid orange">
+ <div id="fon" style="overflow:auto; height: 350px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
  <h3 style="color:red">Votre Panier d'echange est vide</h3>
 </table>

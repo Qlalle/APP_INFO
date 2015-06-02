@@ -65,12 +65,11 @@ include ('connect.php'); // lien avec l'autre page
 
       <?php
 
-
-
-            $count = $reponse->rowCount(); 
+             
               }
       }    
-      if($count!=0){?>
+      $count = $reponse->rowCount();
+      if($count!= 0) { ?>
        <h3><?php echo "Il y a ".$count." produit(s) correspondant à votre recherche.";?></h3>
        <?php }
        else {

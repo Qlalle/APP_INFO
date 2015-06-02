@@ -1,3 +1,11 @@
-div{
-	background: url(fon.png) no-repeat ;
+div#corps{
+	background: url(fon.png);
+	padding-left: 20px;
+}
+label{
+	font-size: 20px;
+}
+h1{
+	text-align: center;
+	
 }

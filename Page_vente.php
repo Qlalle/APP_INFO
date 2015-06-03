@@ -131,11 +131,13 @@ include("bdd_connect.php");
   <p id="bouton1">
       <input type="submit" name="EnvoyerDonnee" value="Valider" style="width:130px"/>
     </p>
-
-     <p id="bouton2">
-      <input type="submit" value="Annuler" style="width:130px"/>
-    </p>
  </form>
+      <form method="POST" action="verif_vente.php">
+     <p id="bouton2">
+      <input type="submit" value="Annuler" name="annuler" style="width:130px"/>
+    </p>
+  </form>
+
 </div>
     <?php
     include("footer.php");

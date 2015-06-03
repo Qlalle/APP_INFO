@@ -40,7 +40,7 @@
 
           while ($donnees = $reponse->fetch())
           {
-
+        $id=$donnees['product_on_line_id'];
       ?>
    <form method="POST" action="panier.php">
                <input type="hidden" name="id_prod" value=" <?php echo $donnees['product_on_line_id']; ?> " />
@@ -51,9 +51,12 @@
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
         <td><input type="submit" value="Ajouter au panier"/></td>
-        <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+          </form>
+          <form method="POST" action="<?php echo "En_savoir_plus.php?id=$id";?>">
+        <td><input type="submit" value="En savoir plus"/></td>
+          </form>
       <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
-      </form>
+    
        </tr> 
       
       

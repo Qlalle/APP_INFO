@@ -9,9 +9,9 @@
 -- http://www.phpmyadmin.net\
 --\
 -- Client :  localhost:8889\
--- G\'e9n\'e9r\'e9 le :  Mer 20 Mai 2015 \'e0 10:23\
+-- G\'e9n\'e9r\'e9 le :  Mer 03 Juin 2015 \'e0 11:31\
 -- Version du serveur :  5.5.38\
--- Version de PHP :  5.6.2\
+-- Version de PHP :  5.5.18\
 \
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";\
 SET time_zone = "+00:00";\
@@ -31,7 +31,7 @@ CREATE TABLE `basket_change` (\
   `validation` tinyint(1) DEFAULT NULL,\
   `date` datetime DEFAULT NULL,\
   `id_user` int(10) unsigned zerofill NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;\
 \
 -- --------------------------------------------------------\
 \
@@ -44,7 +44,7 @@ CREATE TABLE `basket_sale` (\
   `date` datetime DEFAULT NULL,\
   `validation` tinyint(1) DEFAULT NULL,\
   `id_user` int(10) unsigned zerofill NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;\
 \
 -- --------------------------------------------------------\
 \
@@ -336,9 +336,10 @@ INSERT INTO `product_data` (`product_date_id`, `product_name`, `image`, `price_s
 \
 CREATE TABLE `product_in_basket_change` (\
 `product_in_basket_change_id` int(11) NOT NULL,\
+  `quantity_basket_change` float DEFAULT NULL,\
   `id_basket_change` int(11) NOT NULL,\
   `id_product_on_line` int(11) NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;\
 \
 -- --------------------------------------------------------\
 \
@@ -348,10 +349,10 @@ CREATE TABLE `product_in_basket_change` (\
 \
 CREATE TABLE `product_in_basket_sale` (\
 `product_in_basket_sale_id` int(11) NOT NULL,\
-  `quantity` float DEFAULT NULL,\
+  `quantity_basket_sale` float DEFAULT NULL,\
   `id_basket_sale` int(11) NOT NULL,\
   `id_product_on_line` int(11) NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;\
 \
 -- --------------------------------------------------------\
 \
@@ -366,47 +367,36 @@ CREATE TABLE `product_on_line` (\
   `quantity` float DEFAULT NULL,\
   `product_price` float DEFAULT NULL,\
   `product_comment_user` text,\
-  `date` datetime DEFAULT NULL,\
+  `date_debut` datetime DEFAULT NULL,\
+  `date_fin` datetime DEFAULT NULL,\
   `proposition` text,\
   `id_product_date` int(11) NOT NULL,\
   `id_departement` int(11) NOT NULL\
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=123 DEFAULT CHARSET=utf8;\
 \
 --\
 -- Contenu de la table `product_on_line`\
 --\
 \
-INSERT INTO `product_on_line` (`product_on_line_id`, `sale_or_change`, `quality_type`, `quantity`, `product_price`, `product_comment_user`, `date`, `proposition`, `id_product_date`, `id_departement`) VALUES\
-(2, 0, 0, 1, 1, '', NULL, NULL, 7, 1),\
-(3, 0, 0, 1, 2, '', NULL, NULL, 7, 3),\
-(4, 0, 0, 1, 2, '', NULL, NULL, 7, 3),\
-(5, 0, 0, 1, 2, '', NULL, NULL, 9, 4),\
-(6, 0, 0, 1, 1, '', NULL, NULL, 3, 1),\
-(7, 0, 0, 1, 2, '', NULL, NULL, 1, 1),\
-(8, 0, 0, 2, 2, '', NULL, NULL, 9, 6),\
-(9, 0, 0, 2, 1, '', NULL, NULL, 4, 16),\
-(10, 0, 0, 3, 1, '', NULL, NULL, 2, 3),\
-(11, 0, 0, 2, 2, '', NULL, NULL, 2, 1),\
-(12, 0, 0, 2, 2, '', NULL, NULL, 5, 94),\
-(13, 0, 0, 2, 2, '', NULL, NULL, 19, 6),\
-(14, 0, 0, 4, 4, '', NULL, NULL, 25, 9),\
-(16, 0, 0, 2, 4, 'Cette banane est tres bonne', NULL, NULL, 8, 12),\
-(17, 0, 0, 2, 2, '', NULL, NULL, 9, 7),\
-(18, 0, 0, 2, 5, '', NULL, NULL, 23, 1),\
-(30, 0, 0, 2, 4.7, '', NULL, NULL, 9, 4),\
-(34, 1, 0, 2, 0, '', NULL, NULL, 5, 15),\
-(35, 1, 0, 3, 0, '', NULL, NULL, 5, 12),\
-(36, 1, 0, 4, 0, '', NULL, NULL, 7, 10),\
-(37, 1, 0, 4, 0, '', NULL, NULL, 20, 4),\
-(38, 1, 0, 3, 0, '', NULL, NULL, 5, 9),\
-(39, 1, 0, 3, 0, '', NULL, NULL, 19, 100),\
-(40, 1, 0, 5, 0, '', NULL, NULL, 17, 19),\
-(41, 1, 0, 2, 0, '', NULL, NULL, 18, 17),\
-(42, 1, 0, 4, 0, '', NULL, NULL, 8, 1),\
-(43, 0, 1, 4, 5.8, '', NULL, NULL, 2, 12),\
-(44, 0, 1, 4, 5.1, '', NULL, NULL, 2, 17),\
-(45, 0, 0, 2, 3.5, '', NULL, NULL, 3, 7),\
-(47, 0, 0, 4, 3.1, '', NULL, NULL, 11, 7);\
+INSERT INTO `product_on_line` (`product_on_line_id`, `sale_or_change`, `quality_type`, `quantity`, `product_price`, `product_comment_user`, `date_debut`, `date_fin`, `proposition`, `id_product_date`, `id_departement`) VALUES\
+(87, 0, 0, 18, 2.2, '', '2015-05-28 13:30:23', '2015-06-02 13:30:23', NULL, 21, 85),\
+(88, 0, 0, 4, 2.2, '', '2015-05-29 09:56:46', '2015-06-03 09:56:46', NULL, 20, 14),\
+(92, 0, 0, 7, 3.9, '', '2015-05-29 10:08:25', '2015-06-03 10:08:25', NULL, 15, 84),\
+(93, 0, 0, 12, 2.1, '', '2015-05-29 10:12:22', '2015-06-03 10:12:22', NULL, 7, 1),\
+(97, 0, 0, 13, 2.2, '', '2015-05-29 10:20:34', '2015-06-03 10:20:34', NULL, 2, 12),\
+(98, 0, 0, 13, 3.4, '', '2015-05-29 10:20:50', '2015-06-03 10:20:50', NULL, 19, 1),\
+(102, 0, 0, 25, 1.5, '', '2015-05-29 14:34:05', '2015-06-03 14:34:05', NULL, 25, 12),\
+(106, 0, 1, 13, 2.2, '', '2015-05-29 14:35:38', '2015-06-03 14:35:38', NULL, 16, 10),\
+(110, 0, 1, 45, 4.1, '', '2015-05-29 14:36:40', '2015-06-03 14:36:40', NULL, 6, 89),\
+(113, 0, 0, 17, 6.3, '', '2015-05-29 16:30:09', '2015-05-30 16:30:09', NULL, 2, 18),\
+(114, 0, 0, 23, 4.5, '', '2015-05-30 19:55:06', '2015-05-31 19:55:06', NULL, 5, 10),\
+(115, 0, 1, 22, 4.8, '', '2015-05-30 20:46:39', '2015-06-01 09:00:00', NULL, 4, 10),\
+(116, 0, 0, 9, 2.3, '', '2015-06-02 14:11:44', '2015-06-03 14:11:44', NULL, 23, 13),\
+(117, 1, 0, 15, 0, '', '2015-06-03 09:00:28', '2015-06-04 09:00:28', NULL, 17, 6),\
+(118, 1, 1, 10, 0, '', '2015-06-03 09:01:51', '2015-06-04 09:01:51', NULL, 24, 12),\
+(119, 1, 1, 4, 0, '', '2015-06-03 11:07:25', '2015-06-04 11:07:25', NULL, 25, 15),\
+(121, 0, 0, 15, 2.7, '', '2015-06-03 11:09:20', '2015-06-04 11:09:20', NULL, 17, 5),\
+(122, 0, 1, 13, 3, 'Ce poireau \'e0 \'e9t\'e9 cultiv\'e9 dans mon jardin sans OGM.', '2015-06-03 11:10:26', '2015-06-04 11:10:26', NULL, 24, 12);\
 \
 -- --------------------------------------------------------\
 \
@@ -444,7 +434,7 @@ CREATE TABLE `users` (\
   `user_salt` varchar(45) DEFAULT NULL,\
   `user_type` tinyint(1) DEFAULT NULL,\
   `date` datetime DEFAULT NULL\
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;\
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;\
 \
 --\
 -- Contenu de la table `users`\
@@ -454,7 +444,10 @@ INSERT INTO `users` (`user_id`, `user_name`, `user_firstname`, `user_post_office
 (0000000001, 'LEGALLOIS', 'Maxime', '9 chemin des hirondelles', 'Coubron', 'France', '1992-12-17 00:00:00', NULL, 'mlegallois@gmail.com', 'info', NULL, NULL, '2015-05-04 00:00:00'),\
 (0000000005, 'LALLE', 'Quentin', '10 rue de vanve', 'Paris', '75009', '0000-00-00 00:00:00', 0, 'quentin@gmail.com', '$2y$10$9HJY7swY.KyHLbQwCYHHJOelB8y6p3ceCLhf/k', '', 0, '0000-00-00 00:00:00'),\
 (0000000007, 'l', 'm', 'E', 'C', 'C', '0000-00-00 00:00:00', 0, 'm@gmail.com', '$2y$10$boHVua3eCLbcNqAZSCvpdej1NRGg6oXXVCRqjNcYYuFefpQKrDee2', '', 0, '0000-00-00 00:00:00'),\
-(0000000008, 'LEGALLOIS', 'Maxime', '9 chemin des hirondelles', 'Coubron', '93470', '0000-00-00 00:00:00', 0, 'mlegalloi@gmail.com', '$2y$10$XFXdldQj2YtekBGK6X0dCOfCWOxKFPXY2Xp24MhVxxGWFnTMSGQvG', '', 0, '0000-00-00 00:00:00');\
+(0000000009, 'michel', 'jean', '9 chemin', 'Coubron', '93470', '0000-00-00 00:00:00', 0, 'jm@gmail.com', '$2y$10$cQcrzRKGOe8iOIlLWLC9WemqfbOZSn7YSrvvrT9CnF8GA0RD4/AHy', '', 0, '0000-00-00 00:00:00'),\
+(0000000010, 'legallois', 'benjamin ', '9 chemin des hirondelles', 'Coubron', '93470', '0000-00-00 00:00:00', 0, 'blegallois@gmail.com', '$2y$10$VKzrmqudJ94gpqAt6fOt.ON.ZXiLbmEAsJmFlW/e7IU7IJBB4O8oa', '', 0, '0000-00-00 00:00:00'),\
+(0000000011, 'Simon', 'jean', '9 chemin', 'Paris', '93470', '0000-00-00 00:00:00', 0, 'jm@gmail.com', '$2y$10$wPEpqlLhFvwA5gIt0mvY2ORZUQJj.POr9w9IjPc7Z0jzFR8HWT8tK', '', 0, '0000-00-00 00:00:00'),\
+(0000000012, 'baratier', 'guillaume', '76 avenue machin', 'Paris', '75008', '0000-00-00 00:00:00', 0, 'gbarat@gmail.com', '$2y$10$HQhjQ4qVIu7iDYUbCYQXg.TMmNctOcK1F9PlRCbo11cqDhjoJREou', '', 0, '0000-00-00 00:00:00');\
 \
 --\
 -- Index pour les tables export\'e9es\
@@ -564,12 +557,12 @@ ALTER TABLE `users`\
 -- AUTO_INCREMENT pour la table `basket_change`\
 --\
 ALTER TABLE `basket_change`\
-MODIFY `baket_change_id` int(11) NOT NULL AUTO_INCREMENT;\
+MODIFY `baket_change_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;\
 --\
 -- AUTO_INCREMENT pour la table `basket_sale`\
 --\
 ALTER TABLE `basket_sale`\
-MODIFY `basket_sale_id` int(11) NOT NULL AUTO_INCREMENT;\
+MODIFY `basket_sale_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;\
 --\
 -- AUTO_INCREMENT pour la table `billet`\
 --\
@@ -594,17 +587,17 @@ MODIFY `product_date_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;\
 -- AUTO_INCREMENT pour la table `product_in_basket_change`\
 --\
 ALTER TABLE `product_in_basket_change`\
-MODIFY `product_in_basket_change_id` int(11) NOT NULL AUTO_INCREMENT;\
+MODIFY `product_in_basket_change_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;\
 --\
 -- AUTO_INCREMENT pour la table `product_in_basket_sale`\
 --\
 ALTER TABLE `product_in_basket_sale`\
-MODIFY `product_in_basket_sale_id` int(11) NOT NULL AUTO_INCREMENT;\
+MODIFY `product_in_basket_sale_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;\
 --\
 -- AUTO_INCREMENT pour la table `product_on_line`\
 --\
 ALTER TABLE `product_on_line`\
-MODIFY `product_on_line_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;\
+MODIFY `product_on_line_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=123;\
 --\
 -- AUTO_INCREMENT pour la table `transaction`\
 --\
@@ -614,7 +607,7 @@ MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT;\
 -- AUTO_INCREMENT pour la table `users`\
 --\
 ALTER TABLE `users`\
-MODIFY `user_id` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;\
+MODIFY `user_id` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;\
 --\
 -- Contraintes pour les tables export\'e9es\
 --\

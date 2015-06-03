@@ -158,6 +158,9 @@ if($choixE == 1){//panier echange non vide
    <tfoot> <!-- En-tête du tableau -->
        <tr>
             <th><input type="submit" value="Valider Panier Echange" /></th>
+            <form method="POST" action="Page_accueil.php">
+              <td><input type="submit" value="Retour Accueil"/></td>
+          </form>
         </tr>
     </tfoot>
 </table>

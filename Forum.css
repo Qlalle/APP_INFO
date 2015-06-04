@@ -1,71 +1,62 @@
-h1#forum{
+h1{
     
     background-image:url(Fond.png);
+    text-align: center;
    
 }
 
-span#Sujet
+span
 {
     font-family: sans-serif;
     font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -10px ;
 }
 
-span#Date
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left; 
-    position: relative ;
-    left: -150px ;
-}
-
-span#Auteur
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -150px ;
-
-}
-
-span#Bi_Name
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: 25px ;
-}
-
-span#Bi_Date
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -50px ;
-}
-
-span#Us_Name
-{
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    position: relative ;
-    left: -80px ;
-}
-
-
-table
+div#corps
 {
     background-image:url(Fond.png);
     
 }
-td, th /* Mettre une bordure sur les td ET les th */
+p#pseudo
 {
-    text-align: center;
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: white ;
+    position:relative;
+    top: -250;
+    right:30;
 }
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: white;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: #8a0 ;
+
+}
+
+a#inscription{
+    width: 10px;
+    color: white;
+    
+}
+table#hd{
+    position: relative;
+    top:-247px;
+    left: 1010px;
+    background: transparent;
+}
+

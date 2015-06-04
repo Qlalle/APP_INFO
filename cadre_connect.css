@@ -6,8 +6,8 @@ p#pseudo
     text-align: right ;
     color: black ;
     position:relative;
-    top: -250;
-    right:30;
+    top: -250px;
+    right:30px;
 }
 p#mdp
 {
@@ -17,8 +17,8 @@ p#mdp
     text-align: right ;
     color: black ;
     position:relative;
-    top:-250;
-    right:30;
+    top:-250px;
+    right:30px;
 }
 p#bouton 
 {
@@ -28,8 +28,8 @@ p#bouton
     text-align: right; ;
     color: #8a0 ;
     position:relative;
-    top:-250;
-    right:30;
+    top:-250px;
+    right:30px;
 
 }
 a#inscription{

@@ -10,6 +10,17 @@
 
  <div id="corps" style="overflow:auto; height: 725px; width: 1178px; border: 1px solid orange">
 <h1> Mon Profil</h1>
+<?php
+     $reponse = $bdd->query('SELECT * FROM users');
+     while ($donnees = $reponse->fetch())
+          {
+          }
+    ?>
+
+
+  <p>
+    <?php if($donnees['user_type'] == 0) { ?><img src="../APP_INFO/avatar_homme.png"/> <?php } else { ?><img src="../APP_INFO/avatar_femme.png"/> <?php } ?>
+  </p>
 
   <p>
       <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?></label><br/><br/>
@@ -18,9 +29,10 @@
       <label><b>Ville : </b><?php echo "".$_SESSION['user_city'];?></label><br/><br/>
       <label><b>Email : </b><?php echo "".$_SESSION['user_email'];?></label>
       <br/><br/><br/><br/>
-      <a href="mesachats.php">Mes achats</a><br/><br/>
-      <a href="mesechanges.php">Mes echanges</a><br/><br/>
-      <a href="mesventes.php">Transactions</a>
+      <a href="mesachats.php">Historique de mes achats</a><br/><br/>
+      <a href="mesechanges.php">Historique de mes echanges</a><br/><br/>
+      <a href="promotion.php">Historique de mes promotions</a><br/><br/>
+      <a href="transaction.php">Transaction en cours</a>
 </p>
   </div>
 </html>

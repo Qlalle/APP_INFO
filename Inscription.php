@@ -27,10 +27,9 @@
  <tbody >
 <form method="post" >
 
-<label>Civilité*             </label> <select name="civilite">
-    <option value=""></option>
-    <option value="M">M</option>
-    <option value="Mme">Mme</option>
+<label>Civilité*             </label> <select name="user_type">
+    <option value="0">M</option>
+    <option value="1">Mme</option>
 </select><br/><br/>
 <label>Prénom*                </label> <input type="text" name="first_name" id="first_name" onkeyup="verifpre()"/><br/><br/>
 <label>Nom*                   </label><input type="text" name="last_name" id="last_name" onkeyup="verifnom()"/><br/><br/>
@@ -62,7 +61,7 @@
         htmlentities($email = $_POST['email']);
         htmlentities($email2 = $_POST['email2']);
         htmlentities($country = $_POST['country']);
-        htmlentities($civilite = $_POST['civilite']);
+        htmlentities($user_type = $_POST['user_type']);
         htmlentities($first_name = $_POST['first_name']);
         htmlentities($last_name = $_POST['last_name']);
         htmlentities($birthday = $_POST['birthday']);
@@ -73,9 +72,10 @@
       
         // empecher les codes php dans la base
       // Je verifie que TOUT les champs sont remplis.
-      if(empty($password)||empty($email)|| empty($Regle)||empty($civilite) || empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
+      if(empty($password)||empty($email)|| empty($Regle)|| empty($first_name) || empty($last_name) || empty($birthday ) || empty($job) || empty($user_post_office_box) || empty($city) || empty($email) )
       {
-        echo'Vous devez remplir toutes les coordonnées';
+                    $message0="Vous devez remplir toutes les coordonnées";
+                      echo '<script type="text/javascript">window.alert("'.$message0.'"); window.location.href="Inscription.php";</script>';
       }
       else
       {
@@ -85,14 +85,18 @@
 
 
                       $passwordh = password_hash($password, PASSWORD_DEFAULT);
-                      $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','','')");
+                      $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','$user_type','')");
                       //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
-                      echo "Bonjour $first_name votre compte est bien enregistré";
+              
+                      $message="Bonjour $first_name votre compte est bien enregistré";
+                          echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
                   } else {
-                      echo '<p> Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas </p>';
+                      $message1="Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas";
+                          echo '<script type="text/javascript">window.alert("'.$message1.'"); window.location.href="Inscription.php";</script>';
                   }
               } else {
-                  echo 'Votre email n\'est pas valide';
+                      $message2="Votre email n\'est pas valide";
+                          echo '<script type="text/javascript">window.alert("'.$message2.'"); window.location.href="Inscription.php";</script>';
               }
           
       }

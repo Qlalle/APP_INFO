@@ -23,7 +23,7 @@ else {
 ?>
 
 
-    <div id="forum"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>
+    <div id="for"><a href="Forum.php"><img src="Livre.png" alt="logo"  /></a>
   		<h2 id="t" class="Style5"><a id="fo" href="Forum.php">Forum</h2></a>
 		</div>
 

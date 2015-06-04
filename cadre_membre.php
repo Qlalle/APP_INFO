@@ -11,7 +11,7 @@
 
 	<form action="deconnexion.php" method="post">
 		<p id="boutonDeco">
-		    <input type="submit" value="Déconnexion" />
+		    <input type="submit" name="deco" value="Déconnexion" />
 		</p>
 	</form>
 

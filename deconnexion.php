@@ -10,5 +10,7 @@ session_start();
 // Suppression des variables de session et de la session
 $_SESSION = array();
 session_destroy();
-header('Location: /APP_INFO/Page_accueil.php');
+		$message='Vous allez etre deconnecter';
+
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="page_accueil.php";</script>';
 ?>

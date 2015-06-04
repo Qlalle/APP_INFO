@@ -158,12 +158,13 @@ if($choixE == 1){//panier echange non vide
    <tfoot> <!-- En-tête du tableau -->
        <tr>
             <th><input type="submit" value="Valider Panier Echange" /></th>
+            <form method="POST" action="Page_accueil.php">
+              <th><input style="texte-align:center" type="submit" value="Retour Accueil"/></th>
+          </form>
         </tr>
     </tfoot>
 </table>
-          <form method="POST" action="Page_accueil.php">
-              <td><input type="submit" value="Retour Accueil"/></td>
-          </form>
+          
     <!--code html (et css) d'un panier echange ou il y a quelques chose, on utilise alors les tableaux et les données cités précédement dans la partie "PANIER ECHANGE"-->
     <!--<form method="POST" action="validation_panier_echange.php">
 

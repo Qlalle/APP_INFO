@@ -27,7 +27,8 @@
  <tbody >
 <form method="post" >
 
-<label>Civilité*             </label> <select name="user_type">
+<label>Civilité*</label> 
+<select name="user_type">
     <option value="0">M</option>
     <option value="1">Mme</option>
 </select><br/><br/>

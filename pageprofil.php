@@ -11,16 +11,20 @@
  <div id="corps" style="overflow:auto; height: 725px; width: 1178px; border: 1px solid orange">
 <h1> Mon Profil</h1>
 <?php
-     $reponse = $bdd->query('SELECT * FROM users');
+     $reponse = $bdd->query("SELECT * FROM users WHERE user_email LIKE '%".$_SESSION['user_email']."%'");
      while ($donnees = $reponse->fetch())
           {
-          }
+
     ?>
 
 
   <p>
     <?php if($donnees['user_type'] == 0) { ?><img src="../APP_INFO/avatar_homme.png"/> <?php } else { ?><img src="../APP_INFO/avatar_femme.png"/> <?php } ?>
   </p>
+  <?php
+                }
+                $reponse->closeCursor(); 
+              ?>
 
   <p>
       <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?></label><br/><br/>
@@ -34,5 +38,7 @@
       <a href="promotion.php">Historique de mes promotions</a><br/><br/>
       <a href="transaction.php">Transaction en cours</a>
 </p>
+
+         
   </div>
 </html>

@@ -1,0 +1,120 @@
+h1#header{
+    height:266px;
+}
+header {
+    height: 320px;
+}
+p#pseudo
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: white ;
+    position:relative;
+    top: -250;
+    right:30;
+}
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: white;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: #8a0 ;
+
+}
+
+a#inscription{
+    width: 10px;
+    color: white;
+    
+}
+div#forum
+{
+    position:relative;
+    top:-200;
+    right:-1090px;
+    width: 10px;
+}
+a#fo{
+    color:orange;
+    text-align: center;
+}
+h2#t
+{
+    position:relative;
+    top:-20px;
+    right:-25px;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 20px;
+    width: 10px;
+    color: white;
+}
+
+div#searchbar
+{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: #8a0 ;
+    top : -250;
+    left: 55px;
+
+}
+a#ra{
+    position:relative; 
+    padding-right: 0px ;
+    text-align: center;
+    width:1040px; 
+    height:0;
+    color: white ;
+    top : -220;
+    left:600px;
+}
+
+div#corps
+{
+    border-collapse: collapse;
+    background-image:url(Fond.png);
+    padding-left: 20px;
+    
+}
+div#bas{
+border-collapse: collapse;
+    background-image:url(Fond.png);
+    padding-left: 20px;
+}
+td /* Mettre une bordure sur les td ET les th */
+{
+    text-align: center;
+    width: 100px;
+}
+td#produit{
+    width: 200px;
+    text-align: left;
+}
+#qt,#pr{
+    width:45px;
+
+}
+table#hd{
+    position: relative;
+    top:-247px;
+    left: 1010px;
+    background: transparent;
+}
+

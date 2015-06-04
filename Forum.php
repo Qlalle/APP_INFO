@@ -48,6 +48,14 @@ include("bdd_connect.php");
 
 		?>
 	</tbody>
+
+					<tfoot>	
+					<tr>			
+					<form method="POST" action="Page_accueil.php">
+              			<td><input type="submit" value="Retour Accueil"/></td>
+         		     </form>
+         		 </tr>
+         		     </tfoot>
 </table>	
 </div>
 </div>

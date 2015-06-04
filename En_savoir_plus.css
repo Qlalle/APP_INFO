@@ -100,7 +100,7 @@ td /* Mettre une bordure sur les td ET les th */
     text-align: center;
 
 }
-td#dep,td#prix,td#quantite{
+td#depa,td#prix,td#quantite{
     text-align: center;
     width: 100px;
 }

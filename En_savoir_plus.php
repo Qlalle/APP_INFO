@@ -45,6 +45,8 @@
          		     </form>
          		 </tr>
          		     </tfoot>
+         		 </table>
+         		</div>
 			<?php
 		}
 		?>

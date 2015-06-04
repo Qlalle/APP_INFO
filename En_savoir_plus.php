@@ -23,9 +23,9 @@
 								?>
 					
 					<td id="produit"> <img src="<?php echo $donnees['image'];?>"/><br/><br/><?php    echo $donnees['product_name'];?><br/><br/><?php    echo $donnees['product_comment_user'];?></td>
-					<td><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
-					<td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
-       				<td><?php    echo $donnees['departement_nom'];?></td>
+					<td id="quantite"><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
+					<td id="prix"><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
+       				<td id="depa"><?php    echo $donnees['departement_nom'];?></td>
 					</tr>
 
 					<?php

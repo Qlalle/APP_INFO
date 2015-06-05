@@ -210,3 +210,9 @@ table#hd{
     background: transparent;
 }
 
+div#plandusite{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    background-image:url(Fond.png);
+}

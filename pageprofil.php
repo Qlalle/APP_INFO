@@ -27,7 +27,8 @@
               ?>
 
   <p>
-      <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?></label><br/><br/>
+      <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?>
+          <form action="modif_firstname.php" method="post"> <input type="submit" value="modifier" /></form></label><br/><br/>
       <label><b>Nom : </b><?php echo "".$_SESSION['user_name'];?></label><br/><br/>
       <label><b>Adresse : </b><?php echo "".$_SESSION['user_post_office_box'];?></label><br/><br/>
       <label><b>Ville : </b><?php echo "".$_SESSION['user_city'];?></label><br/><br/>

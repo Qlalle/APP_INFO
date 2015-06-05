@@ -28,10 +28,10 @@ session_start();
     </div>
 
 <table>
-    <div id="plandusite">
+    <div id="plandusite" style="overflow:none; height: 650px; width: 100%; border: 1px solid orange">
 
         </br>
-        Plan du site:
+        <h1>Plan du site:</h1>
 
         </br></br>
         <a href="Page_accueil.php"> Accueil </a></br></br>

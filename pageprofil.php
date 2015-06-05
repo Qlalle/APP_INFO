@@ -34,7 +34,7 @@
       <label><b>Ville : </b><?php echo "".$_SESSION['user_city'];?></label><br/><br/>
       <label><b>Email : </b><?php echo "".$_SESSION['user_email'];?></label>
       <br/><br/><br/><br/>
-      <a href="mesachats.php">Historique de mes achats</a><br/><br/>
+      <a href="histoAchats.php">Historique de mes achats</a><br/><br/>
       <a href="mesechanges.php">Historique de mes echanges</a><br/><br/>
       <a href="promotion.php">Historique de mes promotions</a><br/><br/>
       <a href="transaction.php">Transaction en cours</a>

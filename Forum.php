@@ -33,12 +33,14 @@ include("bdd_connect.php");
 			// On affiche chaque entrée une à une
 			while ($donnees = $reponse->fetch())
 			{
-
+			$id=$donnees['billet_id'];
 		?>
 
-			<td align=left><a href="#"><?php echo $donnees['billet_name']; ?></a></td>
-			<td align=center><?php echo $donnees['billet_date']; ?></td>
-			<td align=center><?php echo $donnees['user_name']; ?> <?php echo $donnees['user_firstname'];?></td>
+          	<form method="POST" action="<?php echo "Sujet.php?id=$id";?>">
+				<td align=center><a href="<?php echo "Sujet.php?id=$id";?>"><?php echo $donnees['billet_name'];?></a></td>
+			</form>
+				<td align=center><?php echo $donnees['billet_date']; ?></td>
+				<td align=center><?php echo $donnees['user_name']; ?> <?php echo $donnees['user_firstname'];?></td>
 		</tr>
 
 		<?php

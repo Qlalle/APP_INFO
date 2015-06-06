@@ -85,7 +85,7 @@ include("bdd_connect.php");
     <label for="departement">Choix du departement*</label><br/>
 <select name="departement" id="departement">
       <?php
-          $reponse = $bdd->query('select departement_nom,departement_id, departement_code FROM departement');
+          $reponse = $bdd->query('SELECT departement_nom,departement_id, departement_code FROM departement');
 
           while ($donnees = $reponse->fetch())
           {
@@ -132,6 +132,7 @@ include("bdd_connect.php");
       <input type="submit" name="EnvoyerDonnee" value="Valider" style="width:130px"/>
     </p>
  </form>
+ 
       <form method="POST" action="verif_vente.php">
      <p id="bouton2">
       <input type="submit" value="Annuler" name="annuler" style="width:130px"/>

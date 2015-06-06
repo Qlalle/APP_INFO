@@ -86,7 +86,7 @@
 
 
                       $passwordh = password_hash($password, PASSWORD_DEFAULT);
-                      $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','$user_type','')");
+                      $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','$user_type',NOW())");
                       //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
               
                       $message="Bonjour $first_name votre compte est bien enregistré";

@@ -49,7 +49,7 @@
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
       <td><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
-       <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
+       <td><?php    echo $donnees['product_name'];?></td>
         <td><input type="submit" value="Ajouter au panier"/></td>
           </form>
           <form method="POST" action="<?php echo "En_savoir_plus.php?id=$id";?>">

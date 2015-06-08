@@ -85,6 +85,7 @@ p#bouton2{
     position: relative;
     top: -36px;
     left:200px;
+    width: 100px;
 }
 a#inscription{
     width: 10px;

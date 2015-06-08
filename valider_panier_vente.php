@@ -10,6 +10,10 @@ include("model_panier.php");
 //enregistrer données dans "historique_achat" avec validation=0
 
     //création histo
+$message='Votre panier a ete valider';
+
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="transactionencours.php";</script>';
+
 
 
 $reponsea=$bdd->query('SELECT user_id FROM users WHERE user_email="'.$email.'"');
@@ -50,7 +54,7 @@ for($i=0;$i<$index0;$i++) {
             'id_historique_achat' => $reponseb['historique_achat_id'],
             'quantite_d_achat' => $matrice0[$i][2],
             'nom_produit' => $matrice0[$i][5],
-            'id_vendeur' => $matrice0[$i][11],
+            'id_vendeur' => $matrice0[$i][4],
             'prix_unitaire' => $matrice0[$i][0],
             'activation' =>0
         ));
@@ -58,14 +62,6 @@ for($i=0;$i<$index0;$i++) {
         echo $e->getMessage();
     }
 }
-
-
-
-
-
-
-
-
 
 //créer warnings aux vendeurs
 
@@ -263,10 +259,3 @@ $sql = 'DELETE FROM basket_sale WHERE id_user='.$reponsea['user_id'].'';
 
             // use exec() because no results are returned
 $bdd->exec($sql);
-echo "Record deleted successfully";
-
-
-//afficher message reussite
-?>
-<?php
-echo "votre demande a bien été traité";

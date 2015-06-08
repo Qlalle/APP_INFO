@@ -6,6 +6,7 @@ $reponse1 = $reponse1->fetch();
 
 
 
+
 //panier des achats
 
 if($reponse1['basket_sale_id']!=NULL) {
@@ -28,6 +29,7 @@ if($reponse1['basket_sale_id']!=NULL) {
 
         $id=$donnees0['product_on_line_id'];
 
+
         //$bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse2['quantity']-$donnees0['quantity_basket_sale']).'"  WHERE product_on_line_id="' . $donnees0['id_product_on_line'] . '"');
 
         ?>
@@ -35,8 +37,8 @@ if($reponse1['basket_sale_id']!=NULL) {
         $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$donnees0['quantity_basket_sale'],$reponse7['departement_nom'],$reponse2['product_description'],$reponse2['product_name'],$sous_total,$donnees0['product_in_basket_sale_id'],$reponse7['product_on_line_id'],$reponse7['quantity']);
         $index0+=1;
 
-
-    }$reponse0->closeCursor();
+    }
+    $reponse0->closeCursor();
     $choixV=1;
     ?>
 <?php
@@ -80,6 +82,5 @@ if($reponse2['baket_change_id']!= NULL) {
 else{
     $choixE=2;
 }
-
 ?>
 

@@ -26,6 +26,8 @@ if($reponse1['basket_sale_id']!=NULL) {
         $sous_total = ($reponse2['product_price'])*($donnees0['quantity_basket_sale']);
         $total_sale+=$sous_total;
 
+        $id=$donnees0['product_on_line_id'];
+
         //$bdd->exec('UPDATE product_on_line SET quantity ="'.($reponse2['quantity']-$donnees0['quantity_basket_sale']).'"  WHERE product_on_line_id="' . $donnees0['id_product_on_line'] . '"');
 
         ?>

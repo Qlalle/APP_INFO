@@ -53,7 +53,9 @@ if($choixV == 1){//panier achat non vide
   <td><?php echo $matrice0[$i][6];?>€</td>
   <td><input type="submit" value="Supprimer du panier achat" /></td>
                </form>
-  <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+          <form method="POST" action="<?php echo "En_savoir_plus.php?id=$id";?>">
+        <td><input type="submit" value="En savoir plus"/></td>
+          </form>
         </tr>
   <?php
 }
@@ -146,7 +148,9 @@ if($choixE == 1){//panier echange non vide
   <td><?php echo $matrice1[$i][4];?><br/><?php echo $matrice1[$i][3];?></td>
   <td><input type="submit" value="Supprimer du panier échange" /></td>
                </form>
-  <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+          <form method="POST" action="<?php echo "En_savoir_plus.php?id=$id";?>">
+        <td><input type="submit" value="En savoir plus"/></td>
+          </form>
         </tr>
   <?php
 }

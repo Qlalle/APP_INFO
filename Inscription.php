@@ -78,28 +78,36 @@
                     $message0="Vous devez remplir toutes les coordonnées";
                       echo '<script type="text/javascript">window.alert("'.$message0.'"); window.location.href="Inscription.php";</script>';
       }
-      else
-      {
+      else {
 
-              if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+              $sql = $bdd->prepare('SELECT user_email FROM users WHERE user_email = \'' . $email . '\';');
+              $sql->execute(array('.$email.' => $_POST['email']));
+
+              $res = $sql->fetch();
+              if ($res) {
+                  $message3 = "L\'Email que vous avez utilisé existe déjà";
+                  echo '<script type="text/javascript">window.alert("' . $message3 . '"); window.location.href="Inscription.php";</script>';
+              } else {
                   if (($password == $passe2) && ($email == $email2)) {
 
 
                       $passwordh = password_hash($password, PASSWORD_DEFAULT);
                       $reponse = $bdd->query("INSERT INTO users VALUES('', '$last_name','$first_name', '$user_post_office_box','$city', '$country', '$birthday','', '$email','$passwordh','','$user_type',NOW())");
                       //affiche un mot gentil, dans le futur on doit changer pour que ceci apparaisse sur une autre.
-              
-                      $message="Bonjour $first_name votre compte est bien enregistré";
-                          echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
+
+                      $message = "Bonjour $first_name votre compte est bien enregistré";
+                      echo '<script type="text/javascript">window.alert("' . $message . '"); window.location.href="Page_accueil.php";</script>';
                   } else {
-                      $message1="Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas";
-                          echo '<script type="text/javascript">window.alert("'.$message1.'"); window.location.href="Inscription.php";</script>';
+                      $message1 = "Les deux mots de passe ou les deux e-mails que vous avez rentrés ne correspondent pas";
+                      echo '<script type="text/javascript">window.alert("' . $message1 . '"); window.location.href="Inscription.php";</script>';
                   }
-              } else {
-                      $message2="Votre email n\'est pas valide";
-                          echo '<script type="text/javascript">window.alert("'.$message2.'"); window.location.href="Inscription.php";</script>';
               }
-          
+          } else {
+              $message2 = "Votre email n\'est pas valide";
+              echo '<script type="text/javascript">window.alert("' . $message2 . '"); window.location.href="Inscription.php";</script>';
+          }
       }
     }
     

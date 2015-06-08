@@ -5,6 +5,7 @@ include("verif_panier.php");
 $email=$_SESSION['user_email'];
 
 
+
 //$_SESSION['email']=$email;
 /*$id_productq=$_POST['id_prod'];
 echo "id du produit en ligne : ".$id_productq; echo "   ";

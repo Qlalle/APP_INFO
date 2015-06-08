@@ -65,10 +65,12 @@ if($choixV == 1){//panier achat non vide
 
 <table style="overflow:none; height: 50px; width: 100%; border: 1px solid orange">
    <tfoot> <!-- En-tête du tableau -->
+   <form method="POST" action="valider_panier_vente.php">
        <tr>
            <th style="font-size:20px">Prix total : <?php echo $total_sale;?>€</th>
             <th><input type="submit" value="Valider Panier Achat" /></th>
         </tr>
+   </form>
     </tfoot>
 </table>
     <!--code html (et css) d'un panier vente ou il y a quelques chose, on utilise alors les tableaux et les données cités précédement dans la partie "PANIER VENTE"-->
@@ -91,7 +93,7 @@ else {//panier achat vide
        </tr>
    </thead>
  </table>
- <div id="fon" style="overflow:auto; height: 350px; width: 100%; border: 1px solid orange">
+ <div id="fon" style="overflow:auto; height: 275px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
  <h3 style="color:red">Votre Panier d'achat est vide</h3>
 </table>
@@ -158,13 +160,9 @@ if($choixE == 1){//panier echange non vide
    <tfoot> <!-- En-tête du tableau -->
        <tr>
             <th><input type="submit" value="Valider Panier Echange" /></th>
-            <form method="POST" action="Page_accueil.php">
-              <th><input style="texte-align:center" type="submit" value="Retour Accueil"/></th>
-          </form>
         </tr>
     </tfoot>
 </table>
-          
     <!--code html (et css) d'un panier echange ou il y a quelques chose, on utilise alors les tableaux et les données cités précédement dans la partie "PANIER ECHANGE"-->
     <!--<form method="POST" action="validation_panier_echange.php">
 
@@ -185,15 +183,10 @@ else {//panier echange vide
        </tr>
    </thead>
  </table>
- <div id="fon" style="overflow:auto; height: 350px; width: 100%; border: 1px solid orange">
+ <div id="fon" style="overflow:auto; height: 275px; width: 100%; border: 1px solid orange">
 <table id="fond" style="width: 100%;">
  <h3 style="color:red">Votre Panier d'echange est vide</h3>
 </table>
-</div>
-<div id="bouton" style="overflow:auto; height: 20px; width: 100%; border: 1px solid orange">
-          <form method="POST" action="Page_accueil.php">
-              <td><input style="texte-align:center" type="submit" value="Retour Accueil"/></td>
-          </form>
 </div>
     <!--code html (et css) d'un panier echange vide, les variables et tableaux n'existent pas.-->
 

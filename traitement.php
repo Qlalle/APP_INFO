@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if(isset($_POST['sale_or_change'])){      $sale_or_change=$_POST['sale_or_change'];
 }
@@ -28,9 +29,9 @@ else
         $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     try {
  
-    $req = $bdd->prepare('INSERT INTO product_on_line VALUES (NULL,:sale_or_change,:quality_type,:quantity, :product_price,:product_comment_user, NOW(), DATE_ADD(NOW(), INTERVAL 1 DAY), NULL, "'.$_POST["produit"].'", "'.$_POST["departement"].'")');
+    $req = $bdd->prepare('INSERT INTO product_on_line VALUES (NULL,:sale_or_change,:quality_type,:quantity, :product_price,:product_comment_user, NOW(), DATE_ADD(NOW(), INTERVAL 1 DAY), NULL,"'.$_POST["produit"].'", "'.$_POST["departement"].'","'.$_SESSION['user_id'].'")');
     if (!$req) {
-        //print_r($bdd->errorInfo());
+        print_r($bdd->errorInfo());
     }
     $req->execute(array(
     	'sale_or_change'=>$sale_or_change,

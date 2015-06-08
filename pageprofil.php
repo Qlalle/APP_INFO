@@ -27,12 +27,12 @@
               ?>
 
   <p>
-      <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?>
-          <form action="modif_firstname.php" method="post"> <input type="submit" value="modifier" /></form></label><br/><br/>
+      <label><b>Prénom : </b><?php echo "".$_SESSION['user_firstname'];?></label><br/><br/>
       <label><b>Nom : </b><?php echo "".$_SESSION['user_name'];?></label><br/><br/>
       <label><b>Adresse : </b><?php echo "".$_SESSION['user_post_office_box'];?></label><br/><br/>
       <label><b>Ville : </b><?php echo "".$_SESSION['user_city'];?></label><br/><br/>
       <label><b>Email : </b><?php echo "".$_SESSION['user_email'];?></label>
+      <form action="modif_firstname.php" method="post"> <input type="submit" value="modifier" /></form></label><br/><br/>
       <br/><br/><br/><br/>
       <a href="histoAchats.php">Historique de mes achats</a><br/><br/>
       <a href="mesechanges.php">Historique de mes echanges</a><br/><br/>

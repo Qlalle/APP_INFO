@@ -20,6 +20,8 @@ $firstname = $tab['user_firstname'];
 $name = $tab['user_name'];
 $post_office_box = $tab['user_post_office_box'];
 $city = $tab['user_city'];
+$id = $tab['user_id'];
+
 
 
 
@@ -31,6 +33,7 @@ if (password_verify($mdp, $password['user_password']))
     $_SESSION['user_name']= $name;
     $_SESSION['user_post_office_box']= $post_office_box;
     $_SESSION['user_city']= $city;
+    $_SESSION['user_id']=$id;
 
     header('Location: /APP_INFO/Page_accueil.php');
     echo 'vous etes bien connecte.';

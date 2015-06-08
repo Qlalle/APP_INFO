@@ -36,9 +36,9 @@
 <label>Nom*                   </label><input type="text" name="last_name" id="last_name" onkeyup="verifnom()"/><br/><br/>
 <label>Date de Naissance*     </label><input type="date" name= "birthday" max="2016-01-01" min="1900-01-01">(jj/mm/aaaa)<br/><br/>
 <label>Adresse*               </label>  <input type="text" name="user_post_office_box" id="user_post_office_box" onkeyup="verifadresse()"/><br/><br/>
-<label>Profession*            </label><input type="text" name="job" id="job" onkeyup="verifprof()"/><br/><br/>
+    <label>Ville*                 </label><input type="text" name="city" id="city" onkeyup="verifville()"/><br/><br/>
 <label>Code postale*          </label> <input type="text" name="country" id="country" onkeyup="verifpost()"/><br/><br/>
-<label>Ville*                 </label><input type="text" name="city" id="city" onkeyup="verifville()"/><br/><br/>
+    <label>Profession*            </label><input type="text" name="job" id="job" onkeyup="verifprof()"/><br/><br/>
 <label>E-mail*                </label><input type="text" name="email" id="email" onkeyup="verifmail()"/><br/><br/>
 <label>Confirmez e-mail*      </label><input type="text" name="email2" id="email2" onkeyup="verifmail2()" /><br/><br/>
 <label>Mot de passe*          </label><input type="password" name="password"/><br/><br/>

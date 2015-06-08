@@ -19,7 +19,7 @@
    <thead> <!-- En-tête du tableau -->
        <tr>
            
-           <th style="font-size:20px">Identité acheteur: <?php echo $tab[$i][2];?>&nbsp;&nbsp;&nbsp;<?php echo $tab[$i][1];?></th>
+           <th style="font-size:20px">Identité acheteur : <?php echo $tab[$i][2];?>&nbsp;&nbsp;&nbsp;<?php echo $tab[$i][1];?></th>
           </tr>
     </thead>
      </table>

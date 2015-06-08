@@ -5,8 +5,6 @@ var testverifadresse=true;
 var testverifville=true;
 var testverifmail=true;
 var testverifmail2=true;
-var testvalidation=true;
-var testglobal=true;
 var testverifprof=true;
 var testverifpost=true;
 

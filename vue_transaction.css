@@ -3,7 +3,7 @@ div#conteneur1 {
     margin: 0px auto;
     border: 2px solid #AB4;
     background: #FFF url("tomates3.jpg") repeat scroll 0% 0%;
-    height: 1190px;
+    height: 1290px;
 }
 h1#header
 {
@@ -120,27 +120,28 @@ table
 div#fon{
        background-image:url(Fond.png);
 }
-
-td#prod{
-    position: relative;
-    left: 165px;
-    width: 100px;
+td#qt /* Mettre une bordure sur les td ET les th */
+{
     text-align: center;
 }
-td#qt{
-    position: relative;
-    left: 410px;
+td#prod,  td#prix{
+    width: 150px;
+    text-align: center;
+    text-align: center;
 }
-td#prix{
+th#pro{
     position: relative;
-    left: 50px;
-    width: 50px;
+    left: 100px;
 }
-td#mail{
+th#quant{
     position: relative;
-    left: 300px;
-    width: 100px;
+    left: 100px;
 }
+th#price{
+    position: relative;
+    left: -40px;
+}
+
 div#bouton{
      background-image:url(Fond.png);
      text-align: center;

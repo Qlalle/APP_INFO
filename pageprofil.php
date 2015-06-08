@@ -8,7 +8,7 @@
   ?>
     <link rel="stylesheet" href="pageprofil.css" />
 
- <div id="corps" style="overflow:auto; height: 725px; width: 1178px; border: 1px solid orange">
+ <div id="corps" style="overflow:none; height: 755px; width: 1178px; border: 1px solid orange">
 <h1> Mon Profil</h1>
 <?php
      $reponse = $bdd->query("SELECT * FROM users WHERE user_email LIKE '%".$_SESSION['user_email']."%'");
@@ -39,7 +39,7 @@
       <a href="histoAchats.php">Historique de mes achats</a><br/><br/>
       <a href="mesechanges.php">Historique de mes echanges</a><br/><br/>
       <a href="promotion.php">Historique de mes promotions</a><br/><br/>
-      <a href="transaction.php">Transaction en cours</a>
+      <a href="transactionencours.php">Transaction en cours</a>
 </p>
 
          

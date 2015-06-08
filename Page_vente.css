@@ -81,7 +81,11 @@ p#bouton
     color: #8a0 ;
 
 }
-
+p#bouton2{
+    position: relative;
+    top: -36px;
+    left:200px;
+}
 a#inscription{
     width: 10px;
     color: white;

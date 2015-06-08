@@ -17,8 +17,8 @@
        <tr>
            <th>Date achat</th>
            <th>Produit</th>
-           <th>Quantité</th>
            <th>Sous-total</th>
+           <th>Quantité</th>
            <th>Email vendeur</th>
         </tr>
     </thead>
@@ -43,14 +43,14 @@ for($i=0;$i<$taille;$i++){
 <table style="width: 100%;">
    <tbody> <!-- En-tête du tableau -->
        <tr>
-            <td><?php echo ${"tab".$i}[$j][0];?></td>
-            <td><?php echo ${"tab".$i}[$j][1];?></td>
-            <td><?php echo ${"tab".$i}[$j][2];?>€/kg</td>
-            <td><?php echo ${"tab".$i}[$j][3];?></td>
-            </tr>
-            </tbody>
-       </table>
-   </div>
+            <td id="prod"><?php echo ${"tab".$i}[$j][0];?></td>
+            <td id="qt"><?php echo ${"tab".$i}[$j][1];?></td>
+            <td id="prix"><?php echo ${"tab".$i}[$j][2];?>€/kg</td>
+            <td id="mail"><?php echo ${"tab".$i}[$j][3];?></td>
+        </tr>
+    </tbody>
+</table>
+          </div>
 <?php
     }
 }

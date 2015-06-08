@@ -108,6 +108,9 @@ td#produit{
     width: 200px;
     text-align: left;
 }
+td#ajout{
+    width: 100px;
+}
 #qt,#pr{
     width:45px;
 

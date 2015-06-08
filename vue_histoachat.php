@@ -55,5 +55,5 @@ for($i=0;$i<$taille;$i++){
     }
 }
 ?>
-<div id="fon" style="overflow:auto; height: 575px; width: 100%">
+<div id="fon" style="overflow:auto; height: 530px; width: 100%">
     </div>

@@ -192,3 +192,14 @@ else {//panier echange vide
 
 <?php }
 ?>
+<div id="bas" style="overflow:none; height: 20px; width: 1200px; border: 1px solid orange">
+          <table style="width: 100%;">
+          <tfoot> 
+          <tr>      
+          <form method="POST" action="Page_accueil.php">
+                    <th><input style="texte-align:right" type="submit" value="Retour Accueil"/></th>
+                 </form>
+             </tr>
+                 </tfoot>
+             </table>
+            </div>

@@ -8,7 +8,7 @@
   ?>
     <link rel="stylesheet" href="pageprofil.css" />
 
- <div id="corps" style="overflow:none; height: 755px; width: 1178px; border: 1px solid orange">
+ <div id="corps" style="overflow:none; height: 780px; width: 1178px; border: 1px solid orange">
 <h1> Mon Profil</h1>
 <?php
      $reponse = $bdd->query("SELECT * FROM users WHERE user_email LIKE '%".$_SESSION['user_email']."%'");

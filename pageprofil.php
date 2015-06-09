@@ -38,7 +38,7 @@
       <br/><br/><br/><br/>
       <a href="histoAchats.php">Historique de mes achats</a><br/><br/>
       <a href="mesechanges.php">Historique de mes echanges</a><br/><br/>
-      <a href="promotion.php">Historique de mes promotions</a><br/><br/>
+      <a href="vuetransactionvalide.php">Transaction valide</a><br/><br/>
       <a href="transactionencours.php">Transaction en cours</a>
 </p>
 

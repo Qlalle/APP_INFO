@@ -34,7 +34,7 @@ if($reponse1['basket_sale_id']!=NULL) {
 
         ?>
         <?php
-        $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$donnees0['quantity_basket_sale'],$reponse7['departement_nom'],$reponse2['product_description'],$reponse2['product_name'],$sous_total,$donnees0['product_in_basket_sale_id'],$reponse7['product_on_line_id'],$reponse7['quantity']);
+        $matrice0[$index0]=array($reponse2['product_price'],$reponse2['image'],$donnees0['quantity_basket_sale'],$reponse7['departement_nom'],$reponse2['product_description'],$reponse2['product_name'],$sous_total,$donnees0['product_in_basket_sale_id'],$reponse7['product_on_line_id'],$reponse7['quantity'],$sous_total,$reponse7['id_saler']);
         $index0+=1;
 
     }

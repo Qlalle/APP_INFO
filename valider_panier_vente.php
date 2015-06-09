@@ -12,7 +12,7 @@ include("model_panier.php");
     //création histo
 $message='Votre panier a ete valider';
 
-    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="transactionencours.php";</script>';
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
 
 
 
@@ -54,7 +54,7 @@ for($i=0;$i<$index0;$i++) {
             'id_historique_achat' => $reponseb['historique_achat_id'],
             'quantite_d_achat' => $matrice0[$i][2],
             'nom_produit' => $matrice0[$i][5],
-            'id_vendeur' => $matrice0[$i][4],
+            'id_vendeur' => $matrice0[$i][11],
             'prix_unitaire' => $matrice0[$i][0],
             'activation' =>0
         ));
@@ -234,7 +234,7 @@ for($i=0;$i<$nb_case;$i++) {
     $mail->SetFrom($reponseg['user_email']);
     $mail->Subject = 'notification achat sur Bio&Bon'; ?> </br> <?php
     $mail->Body = $msg;
-    $mail->AddAddress('jeanbaptistesmn@gmail.com');
+    $mail->AddAddress('quentin.lalle@gmail.com');
     //$mail->AddCC($to, $Prenom);
     /**/
 

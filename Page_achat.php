@@ -34,7 +34,7 @@ include("bdd_connect.php");
    </thead>
  </table>
  <div style="overflow:auto; height: 600px; width: 100%; border: 1px solid orange">
-<table style="width: 100%;">
+<table id="fond" style="width: 100%;">
    <tbody > <!-- Corps du tableau -->
           <tr>
            <?php

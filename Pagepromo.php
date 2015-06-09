@@ -41,11 +41,11 @@ include("bdd_connect.php");
 
           $reponse = $bdd->query('SELECT * FROM product_on_line INNER JOIN departement ON departement_id=id_departement INNER JOIN product_data ON id_product_date=product_date_id where sale_or_change="0" ORDER BY product_on_line_id DESC');
 
-          $promo = false;
+
           while ($donnees = $reponse->fetch())
           {
             $id=$donnees['product_on_line_id'];
-            $promo = true;
+
       ?>
       <?php   
           $date=$donnees['date_fin'];
@@ -55,6 +55,7 @@ if ($datetime) {
           //echo $datetime;
 } else {
           $datetime = new DateTime("+1 day");
+          $datetime = $datetime->getTimestamp();
 }
           $now = new DateTime();
           $now = $now->getTimestamp();
@@ -78,14 +79,18 @@ if ($datetime) {
        </tr> 
       <?php 
     }
+     else {
+          
+          
+         }
+             if ($now>$datetime+1296000){
+      $bdd->query('DELETE FROM product_on_line');
 
-     else {  
-     } ?>
-      <?php
-          }
-          ?>
-           <h3><?php echo ($promo)?"":"Pas de promo actuellement";?></h3>
-           <?php
+     }
+       }
+       ?>
+           <h3><?php echo "Pas de promo actuellement";?></h3>
+           <?php 
           $reponse->closeCursor(); 
       ?>
            

@@ -15,7 +15,7 @@
     <li><a href="Page_echange.php"> Echange </a></li>
     <li><a href="Pagebio.php"> Bio </a></li>
     <li><a href="Pagepromo.php"> Promo </a></li>
-    <li><a href="Page_vente.php"> Ajout produit </a></li>
+    <li><a href="verif_connect.php"> Ajout produit </a></li>
   </ul>
 </div>
 
@@ -37,7 +37,7 @@
 <label>Date de Naissance*     </label><input type="date" name= "birthday" max="2016-01-01" min="1900-01-01">(jj/mm/aaaa)<br/><br/>
 <label>Adresse*               </label>  <input type="text" name="user_post_office_box" id="user_post_office_box" onkeyup="verifadresse()"/><br/><br/>
     <label>Ville*                 </label><input type="text" name="city" id="city" onkeyup="verifville()"/><br/><br/>
-<label>Code postale*          </label> <input type="text" name="country" id="country" onkeyup="verifpost()"/><br/><br/>
+<label>Code postal*          </label> <input type="text" name="country" id="country" onkeyup="verifpost()"/><br/><br/>
     <label>Profession*            </label><input type="text" name="job" id="job" onkeyup="verifprof()"/><br/><br/>
 <label>E-mail*                </label><input type="text" name="email" id="email" onkeyup="verifmail()"/><br/><br/>
 <label>Confirmez e-mail*      </label><input type="text" name="email2" id="email2" onkeyup="verifmail2()" /><br/><br/>

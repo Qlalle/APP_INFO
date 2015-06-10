@@ -1,0 +1,97 @@
+h1{
+    
+    background-image:url(Fond.png);
+    text-align: center;
+   
+}
+
+span
+{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+div#corps
+{
+    background-image:url(Fond.png);
+    
+}
+p#pseudo
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 3px ;
+    text-align: right ;
+    color: white ;
+    position:relative;
+    top: -250;
+    right:30;
+}
+p#mdp
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: white;
+    position:relative;
+    top:-250;
+    right:30;
+}
+p#bouton 
+{
+    margin: 0 ;
+    padding-right: 10px ;
+    line-height: 30px ;
+    text-align: right ;
+    color: #8a0 ;
+
+}
+
+a#inscription{
+    width: 10px;
+    color: white;
+    
+}
+table#hd{
+    position: relative;
+    top:-247px;
+    left: 1010px;
+    background: transparent;
+}
+
+th#com{
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+
+th#date{
+    position: relative;
+    left: -55px;
+    top:0px;
+}
+
+th#nom{
+    position: relative;
+    left: -20px;
+    top:0px;
+}
+
+td#comment{
+  position: relative;
+  left: 25px;
+  top:0px;  
+}
+
+td#com_date{
+  position: relative;
+  left: -20px;
+  top:0px;  
+}
+
+td#user_name{
+  position: relative;
+  left: 0px;
+  top:0px;   
+}

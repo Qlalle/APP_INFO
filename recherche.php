@@ -22,7 +22,7 @@ include("bdd_connect.php");
            <th><span id="prix">Prix</span></th>
            <th><span id="photo">Photo</span></th>
            <th><span>Quantité</span></th>
-           <th><span id="Departement">Departement</span></th>
+           <th><span id="Departement">Département</span></th>
            <th><span id="description">Description</span></th>
            <th> </th>
        </tr>
@@ -45,6 +45,7 @@ include ('connect.php'); // lien avec l'autre page
           $alreadyItrerates = array();
           while ($donnees = $reponse->fetch())
           {
+            $id=$donnees['product_on_line_id'];
               {
                 ?>
 
@@ -54,13 +55,16 @@ include ('connect.php'); // lien avec l'autre page
                <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
-      <td><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
+      <td><input type="number" name="quantity" id="qt" step="0.1" value="0.1" min="0.1" max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
-       <td><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
+       <td><?php    echo $donnees['product_name'];?></td>
         <td><input type="submit" value="Ajouter au panier" /></td>
-        <td><input type="submit" value="En savoir plus" onclick="document.location.href = 'Page produit banane.html';"/></td>
+              </form>
+            <form method="POST" action="<?php echo "En_savoir_plus.php?id=$id";?>">
+        <td><input type="submit" value="En savoir plus"/></td>
+          </form>
       <td><?php if($donnees['quality_type'] == 1) { ?><img src="bio.jpg"/><?php } else { ?><?php    echo "";?><?php } ?></td>
-      </form>
+
        </tr> 
 
       <?php

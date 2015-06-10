@@ -1,9 +1,10 @@
+<meta charset="utf-8" />
 <?php
 session_start();
 if(isset($_POST['annuler'])){ ?>
     <script type="text/javascript">
 
-	    	if (confirm('Etes-vous sur de vouloir annuler la vente ?')){
+	    	if (confirm('Êtes-vous sur de vouloir annuler la vente ?')){
 	    		document.location.href="page_accueil.php"; 
 			}
 			else {

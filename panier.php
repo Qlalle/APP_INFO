@@ -1,5 +1,13 @@
 <?php
 session_start();
+?>
+<DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    ?>
+    <?php
 include("bdd_connect.php");
 include("verif_panier.php");
 $email=$_SESSION['user_email'];
@@ -12,7 +20,7 @@ echo "id du produit en ligne : ".$id_productq; echo "   ";
 echo "quantite choisie : ".$_POST['quantity']; echo "   ";
 echo "le type de vente : ".$_POST['qualityType'];
 echo "vous etes : ".$email;echo "   ";*/
-$message='Votre produit a ete ajouter au panier';
+$message='Votre produit a été ajouté au panier';
 
     echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
 ?>

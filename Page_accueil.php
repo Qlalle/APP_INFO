@@ -24,8 +24,8 @@
        <tr>
            <th><span id="prix">Prix</span></th>
            <th><span id="photo">Photo</span></th>
-           <th><span>Quantité</span></th>
-           <th><span id="region">Région</span></th>
+           <th><span>Quantité /kg</span></th>
+           <th><span id="region">Département</span></th>
            <th><span id="description">Description</span></th>
            <th> </th>
        </tr>
@@ -47,7 +47,7 @@
                <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
       <td><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td> 
       <td> <img src="<?php echo $donnees['image'];?>"/></td>
-      <td><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
+      <td><input type="number" name="quantity" id="qt" step="0.1" value="0.1" min="0.1" max="<?php echo $donnees['quantity'];?>"/></td>
        <td id="dep"><?php    echo $donnees['departement_nom'];?></td>
        <td><?php    echo $donnees['product_name'];?></td>
         <td><input type="submit" value="Ajouter au panier"/></td>

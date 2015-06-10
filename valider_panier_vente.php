@@ -1,5 +1,20 @@
 <?php
 session_start();
+?>
+<DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Guillaume
+ * Date: 08/06/2015
+ * Time: 11:01
+ */
+
 include("bdd_connect.php");
 
 $email=$_SESSION['user_email'];
@@ -10,7 +25,7 @@ include("model_panier.php");
 //enregistrer données dans "historique_achat" avec validation=0
 
     //création histo
-$message='Votre panier a ete valider';
+$message='Votre panier a été validé';
 
     echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
 

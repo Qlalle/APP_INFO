@@ -25,7 +25,7 @@
 							 <input type="hidden" name="id_prod" value=" <?php echo $donnees['product_on_line_id']; ?> " />
                				 <input type="hidden" name="qualityType" value=" <?php echo $donnees['product_price']; ?> " />
 					<td id="produit"> <img src="<?php echo $donnees['image'];?>"/><br/><br/><u>Description </u>: <br/><?php    echo $donnees['product_name'];?><br/><?php    echo $donnees['product_comment_user'];?></td>
-					<td id="quantite"><input type="number" name="quantity" id="qt" step="1" value="1" min="1" max="<?php echo $donnees['quantity'];?>"/></td>
+					<td id="quantite"><input type="number" name="quantity" id="qt" step="0.1" value="0.1" min="0.1" max="<?php echo $donnees['quantity'];?>"/></td>
 					<td id="prix"><?php if($donnees['product_price'] == 0) { ?>Echange<?php } else { ?><?php    echo $donnees['product_price'];?>€/kg<?php } ?></td>
 					<td id="ajout"><input type="submit" value="Ajouter au panier"/></td>
 						</form>
@@ -46,6 +46,7 @@
        				<label><b><u>Prénom</u> : </b><?php echo $donnees['user_firstname'];?></label><br/>
        				<label><b><u>Email</u> : </b><?php echo $donnees['user_email'];?></label><br/>
        				<label><b><u>Adresse</u> : </b><?php echo $donnees['user_post_office_box'];?></label><br/>
+       				<label><b><u>Ville</u> : </b><?php echo $donnees['user_city'];?></label><br/>
        		
 					
 

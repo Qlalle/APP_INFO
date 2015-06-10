@@ -1,12 +1,25 @@
 <?php
+session_start();
+?>
+<DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+<?php
 /**
  * Created by PhpStorm.
  * User: Guillaume
  * Date: 08/06/2015
  * Time: 11:01
  */
-session_start();
+
 include("bdd_connect.php");
+
+$message='Votre ville a bien été modifié';
+
+    echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="pageprofil.php";</script>';
 
 $email=$_SESSION['user_email'];
 $mcity=$_POST['mcity'];

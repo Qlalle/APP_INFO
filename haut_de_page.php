@@ -36,9 +36,7 @@ else {
                <input class="bouton" type="submit" value="Rechercher" />                                                                              
             </form>
     </div>
-
-    <a id="ra" href="#">Recherche avancée</a>
-    
+  
 </header>
 
     

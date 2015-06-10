@@ -99,7 +99,7 @@ span#photo
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -45px ;
+    left: -5px ;
 
 }
 span#quant
@@ -108,7 +108,7 @@ span#quant
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -155px ;
+    left: -100px ;
 
 }
 span#region
@@ -126,7 +126,7 @@ span#description
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -410px ;
+    left: -467px ;
 
 }
 
@@ -227,7 +227,7 @@ td /* Mettre une bordure sur les td ET les th */
 
 td#dep{
     position: relative;
-    left: 30px;
+    left: 2px;
 }
 table#hd{
     position: relative;
@@ -237,7 +237,7 @@ table#hd{
 }
 td#qq{
     position: relative;
-    left: -20px;
+    left: -46px;
 }
 td#pho{
     position: relative;

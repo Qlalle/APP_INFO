@@ -1,4 +1,4 @@
-﻿div#conteneur
+div#conteneur
 {
     width: 1200px ;
     margin: 0 auto ;
@@ -40,7 +40,7 @@ span#prix
     font-size: 20px;
     text-align: left;
     position: relative ;
-    left: 0px ;
+    left: -15px ;
 
 }
 span#photo
@@ -58,7 +58,7 @@ span
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: 0px ;
+    left: -70px ;
 
 }
 span#Departement

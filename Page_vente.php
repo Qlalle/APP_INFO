@@ -114,7 +114,7 @@ include("bdd_connect.php");
 
 
   <p>
-    <label>Quantité : *</label><input type="number" name="quantity" id="qt" step="1" value="1" min="1"/>
+    <label>Quantité :* /kg</label><input type="number" name="quantity" id="qt" step="0.1" value="0.1" min="0.1"/>
   </p>
   <p>
     <label>Prix : *</label><input type="number" name="product_price" id="pr" step="0.1" value="0" min="0"/>€/kg

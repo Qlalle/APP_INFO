@@ -1,5 +1,5 @@
+<meta charset="utf-8" />
 <?php
-
 /**
  * Created by PhpStorm.
  * User: Guillaume
@@ -10,7 +10,6 @@ session_start();
 // Suppression des variables de session et de la session
 $_SESSION = array();
 session_destroy();
-		$message='Vous allez etre deconnecter';
-
+		$message='Vous allez être deconnecté';
     echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="page_accueil.php";</script>';
 ?>

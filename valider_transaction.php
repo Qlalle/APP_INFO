@@ -1,12 +1,27 @@
 <?php
 session_start();
+?>
+<DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Guillaume
+ * Date: 08/06/2015
+ * Time: 11:01
+ */
+
 include("bdd_connect.php");
 
 $email=$_SESSION['user_email'];
 
 $id_warning_box=$_POST['id_warning_box_sale'];
 
-$message='Votre transaction a bien ete valide';
+$message='Votre transaction a bien été validé';
 
     echo '<script type="text/javascript">window.alert("'.$message.'"); window.location.href="Page_accueil.php";</script>';
 

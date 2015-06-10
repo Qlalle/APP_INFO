@@ -16,7 +16,7 @@ span#photo
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -45px ;
+    left: 0px ;
 
 }
 span
@@ -25,7 +25,7 @@ span
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -140px ;
+    left: -100px ;
 
 }
 span#region
@@ -43,7 +43,7 @@ span#description
     font-size: 20px;
     text-align: left; 
     position: relative ;
-    left: -345px ;
+    left: -380px ;
 
 }
 
@@ -198,7 +198,7 @@ div#fon{
        background-image:url(Fond.png);
 }
 #qt{
-    width:35px;
+    width:40px;
     position: relative;
     left:15px;
 }

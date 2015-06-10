@@ -22,7 +22,7 @@ if($choixV == 1){//panier achat non vide
            <th><span id="prix1">Prix</span></th>
            <th><span id="photo1">Photo</span></th>
            <th><span id="quant1">Quantité</span></th>
-           <th><span id="region1">Région</span></th>
+           <th><span id="region1">Département</span></th>
            <th><span id="description1">Description</span></th>
            <th><span id="soustotal1">Sous-total</span></th>
            <th> </th>
@@ -89,7 +89,7 @@ else {//panier achat vide
            <th><span id="prix1">Prix</span></th>
            <th><span id="photo1">Photo</span></th>
            <th><span id="quant1">Quantité</span></th>
-           <th><span id="region1">Région</span></th>
+           <th><span id="region1">Département</span></th>
            <th><span id="description1">Description</span></th>
            <th> </th>
        </tr>
@@ -119,7 +119,7 @@ if($choixE == 1){//panier echange non vide
            <th><span id="prix">Prix</span></th>
            <th><span id="photo">Photo</span></th>
            <th><span id="quant">Quantité</span></th>
-           <th><span id="region">Région</span></th>
+           <th><span id="region">Département</span></th>
            <th><span id="description">Description</span></th>
            <th> </th>
        </tr>
@@ -181,7 +181,7 @@ else {//panier echange vide
            <th><span id="prix">Prix</span></th>
            <th><span id="photo">Photo</span></th>
            <th><span id="quant">Quantité</span></th>
-           <th><span id="region">Région</span></th>
+           <th><span id="region">Département</span></th>
            <th><span id="description">Description</span></th>
            <th> </th>
        </tr>

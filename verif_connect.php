@@ -11,7 +11,7 @@
  * Date: 08/06/2015
  * Time: 11:01
  */
-
+session_start();
 if ((!isset($_SESSION['user_email'])) || ($_SESSION['user_email'] == '')){
 
 
